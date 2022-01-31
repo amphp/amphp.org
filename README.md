@@ -8,8 +8,9 @@ git submodule add https://github.com/amphp/amphp.github.io docs/.shared
 # adjust navigation and paths in _config.yml
 cd docs
 ln -s .shared/asset asset
-bundle install --path vendor/bundle
-bundle exec jekyll serve
+bundle config set --local path 'vendor/bundle'
+bundle install
+bundle exec jekyll serve -l
 ```
 
 ## Setup for an existing repository
@@ -18,6 +19,7 @@ bundle exec jekyll serve
 cd docs
 git submodule init
 git submodule update
-bundle install --path vendor/bundle
-bundle exec jekyll serve
+bundle config set --local path 'vendor/bundle'
+bundle install
+bundle exec jekyll serve -l
 ```
