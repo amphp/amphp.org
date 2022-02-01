@@ -127,11 +127,11 @@
 
         <ul>
             <li>
-                <span class="menu-section">
+                <span class="menu-section open">
                     Getting Started
                 </span>
 
-                <ul>
+                <ul class="open">
                     <li>
                         <a class="menu-item" href="/installation">
                             Installation
@@ -367,6 +367,24 @@
         </ul>
     </div>
   </div>
+
+    <script>
+        document.querySelectorAll('.menu-section').forEach(element => {
+            element.addEventListener('click', () => {
+                element.classList.toggle('open');
+                element.nextElementSibling.classList.toggle('open');
+            });
+        });
+
+        document.querySelectorAll('.menu-item').forEach(element => {
+            if (element.href === window.location.href) {
+                element.classList.add('active');
+
+                element.parentElement.parentElement.classList.add('open');
+                element.parentElement.parentElement.previousElementSibling.classList.add('open');
+            }
+        });
+    </script>
 </aside>
 
 <div class="site-wrapper">
