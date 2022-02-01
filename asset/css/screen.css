@@ -363,6 +363,7 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
 #docsearch {
     width: 100%;
     max-width: 600px;
+    min-height: 42px;
 }
 
 .site-wrapper {
