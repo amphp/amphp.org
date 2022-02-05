@@ -993,6 +993,7 @@ a.menu-item:hover::before, a.menu-item.active::before {
         width: 100%;
         height: auto;
         position: relative;
+        border-bottom: 1px solid #ddd;
     }
 
     .site-wrapper {
