@@ -597,6 +597,8 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     margin: 0 1px;
     position: relative;
     cursor: pointer;
+    font-size: 13px;
+    letter-spacing: 0.02em;
 }
 
 .menu-section::before {
@@ -604,7 +606,7 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     position: absolute;
     display: block;
     left: 0;
-    top: 10px;
+    top: 7px;
     font: normal normal normal 14px/1 FontAwesome;
     text-align: center;
     transition: transform 200ms;
@@ -618,7 +620,8 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     display: block;
     padding: 4px 12px;
     margin: 0;
-    font-size: 16px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
     text-decoration: none;
     font-weight: normal;
     align-items: center;
@@ -653,6 +656,7 @@ a.menu-item:hover::before, a.menu-item.active::before {
     padding: 0;
     margin: 0;
     border: 0;
+    font-size: 12px;
 }
 
 .highlight-area .cols > div:first-child {
