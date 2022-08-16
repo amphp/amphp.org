@@ -7,8 +7,7 @@ layout: docs
 ---
 
 It may surprise people to learn that the PHP standard library already has everything we need to write event-driven and
-non-blocking applications. PHP 8.1 ships with fibers built-in, but users on PHP 8.0 can
-install [`ext-fiber`](https://github.com/amphp/ext-fiber) with almost identical behavior.
+non-blocking applications. PHP 8.1 ships with fibers built-in.
 
 Our packages can be installed as [Composer](https://getcomposer.org/) dependencies on PHP 8 and later, e.g.
 
