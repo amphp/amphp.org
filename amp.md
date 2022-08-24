@@ -4,6 +4,7 @@ title: amphp/amp
 description: 'Learn about futures and cancellations as fundamental primitives for asynchronous programming.'
 image: undraw/undraw_city_life.svg
 permalink: /amp
+source: 'https://github.com/amphp/amp/blob/v3/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
