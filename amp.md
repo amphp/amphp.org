@@ -1,4 +1,5 @@
 ---
+notice: 'This file is imported and can be edited at https://github.com/amphp/amp/blob/v3/README.md'
 title: amphp/amp
 description: 'Learn about futures and cancellations as fundamental primitives for asynchronous programming.'
 image: undraw/undraw_city_life.svg
