@@ -81,12 +81,8 @@ building on top of these, e.g.
 
 This package requires PHP 8.1 or later. No extensions required!
 
-<small>
-
 [Extensions](https://revolt.run/extensions) are only needed if your app necessitates a high numbers of concurrent socket
 connections, usually this limit is configured up to 1024 file descriptors.
-
-</small>
 
 ## Usage
 
@@ -94,7 +90,7 @@ connections, usually this limit is configured up to 1024 file descriptors.
 
 Coroutines are interruptible functions. In PHP, they can be implemented using [fibers](https://wiki.php.net/rfc/fibers).
 
-> **Note**
+{:.note}
 > Previous versions of Amp used generators for a similar purpose, but fibers can be interrupted anywhere in the call stack making previous boilerplate like `Amp\call()` unnecessary.
 
 At any given time, only one fiber is running. When a coroutine suspends, execution of the coroutine is temporarily
@@ -261,7 +257,7 @@ In these cases `Future::complete(mixed)` and `Future::error(Throwable)` can be u
 
 ##### DeferredFuture
 
-> **Note**
+{:.note}
 > The `DeferredFuture` API described below is an advanced API that many applications probably don't need.
 > Use [`Amp\async()`](#Coroutines) or [combinators](#Combinators) instead where possible.
 
@@ -278,11 +274,11 @@ final class DeferredFuture
 }
 ```
 
-> **Warning**
+{:.warning}
 > If you're passing `DeferredFuture` objects around, you're probably doing something wrong.
 > They're supposed to be internal state of your operation.
 
-> **Warning**
+{:.warning}
 > You can't complete a future with another future; Use `Future::await()` before calling `DeferredFuture::complete()` in such cases.
 
 Here's a simple example of an asynchronous value producer `asyncMultiply()` creating a `DeferredFuture` and returning the
@@ -323,7 +319,7 @@ using `Cancellation::subscribe()` to subscribe any cancellation requests that mi
 
 The caller creates a `Cancellation` by using one of the implementations below.
 
-> **Note**
+{:.note}
 > Cancellations are advisory only. A DNS resolver might ignore cancellation requests after the query has been sent as the response has to be processed anyway and can still be cached. An HTTP client might continue a nearly finished HTTP request to reuse the connection, but might abort a chunked encoding response as it cannot know whether continuing is actually cheaper than aborting.
 
 #### TimeoutCancellation
