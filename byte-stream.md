@@ -26,7 +26,7 @@ This package requires PHP 8.1 or later.
 
 Streams are an abstraction over ordered sequences of bytes. This package provides the fundamental interfaces `ReadableStream` and `WritableStream`.
 
-> **Note**
+{:.note}
 > Previous versions used the terms `InputStream` and `OutputStream`, but these terms can be confusing depending on the use case.
 
 ### ReadableStream
@@ -46,7 +46,7 @@ while (($chunk = $stream->read()) !== null) {
 // do something with $buffer
 ```
 
-> **Note**
+{:.note}
 > `Amp\ByteStream\buffer($stream)` can be used instead, but we'd like to demonstrate manual consumption here.
 
 This package offers some basic implementations, other libraries might provide even more implementations, such as [`amphp/socket`](https://github.com/amphp/socket).
@@ -88,7 +88,7 @@ while (($chunk = $readableStream->read()) !== null) {
 $writableStream->end();
 ```
 
-> **Note**
+{:.note}
 > `Amp\ByteStream\pipe($readableStream, $writableStream)` can be used instead, but we'd like to demonstrate manual consumption / writing here.
 
 This package offers some basic implementations, other libraries might provide even more implementations, such as [`amphp/socket`](https://github.com/amphp/socket).
