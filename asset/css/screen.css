@@ -61,6 +61,14 @@ body {
     color: var(--color-text);
 }
 
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .small-hint {
     font-size: 0.8125rem;
     letter-spacing: -0.003em;
@@ -666,6 +674,14 @@ a.menu-item:hover::before, a.menu-item.active::before {
     margin: 0;
     border: 0;
     font-size: 12px;
+}
+
+span.menu-item {
+    opacity: 0.5;
+}
+
+.menu-item-version {
+    color: #aaa !important;
 }
 
 .highlight-area .cols > div:first-child {
