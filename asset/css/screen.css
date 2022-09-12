@@ -91,6 +91,8 @@ code {
 }
 
 a code {
+    color: rgba(17, 104, 191, 0.9);
+    background-color: rgba(179, 222, 255, 0.2);
     border-color: rgba(19, 119, 222, .2);
 }
 
