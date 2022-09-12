@@ -272,6 +272,11 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     width: var(--navigation-width);
 }
 
+.navigation a code {
+    color: inherit;
+    background: transparent;
+}
+
 .search {
     padding: 0 8px;
     margin: 0 0 16px 0;
