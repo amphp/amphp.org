@@ -101,7 +101,7 @@ pre {
     box-shadow: 0 1px 2px rgba(0,0,0,.05);
     background: #fff;
     line-height: 1.45; /* prevent jumping before highlight */
-    font-size: .875em;
+    font-size: 14px;
     /* These are technically the same, but use both */
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -382,10 +382,12 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
 .site-width {
     max-width: 950px;
     margin: 0 auto;
+    width: 100vw;
 }
 
 .content {
     padding: 32px;
+    overflow-wrap: break-word;
 }
 
 .content em {
@@ -1131,9 +1133,14 @@ a.menu-item:hover::before, a.menu-item.active::before {
     }
 
     #footer {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0;
+        padding-right: 0;
         padding-bottom: 1rem;
+    }
+
+    pre,
+    pre > code {
+        font-size: 0.75rem;
     }
 }
 
