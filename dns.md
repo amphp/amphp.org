@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/dns/blob/v2/README.md'
-title: amphp/cache
+title: amphp/dns
 description: 'Learn how to resolve hostnames to IP addresses and query the domain name system.'
 image: undraw/undraw_searching.svg
 permalink: /dns
