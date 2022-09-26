@@ -106,8 +106,11 @@
 </head>
 <body>
 <input type="checkbox" id="menu" name="menu">
-<aside class="navigation">
-  <div class="navigation-scroll">
+<header id="top">
+    <div class="mobile-only" id="menu-switch">
+        <label for="menu"><i class="fa fa-lg fa-bars"></i></label>
+    </div>
+
     <div id="logo-container">
         <a class="logo" href="/">
             <span class="logo-img-container">
@@ -116,15 +119,13 @@
         </a>
     </div>
 
-    <div class="mobile-only" id="menu-switch">
-        <label for="menu"><i class="fa fa-lg fa-bars"></i></label>
+    <div class="search">
+        <div id="docsearch"></div>
     </div>
-
+</header>
+<aside class="navigation">
+  <div class="navigation-scroll">
     <div id="top-menu">
-        <div class="search">
-            <div id="docsearch"></div>
-        </div>
-
         <ul>
             <li>
                 <span class="menu-section open">

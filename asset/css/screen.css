@@ -11,11 +11,11 @@ html {
 
     --docsearch-searchbox-background: #eee !important;
     --docsearch-searchbox-shadow: inset 0 0 0 1px #ccc !important;
-    --docsearch-primary-color: #1376dd !important;
+    --docsearch-primary-color: #403f57 !important;
     --docsearch-logo-color: #444 !important;
     --docsearch-footer-shadow: 0 -1px 0 #ccc !important;
-    --docsearch-key-shadow: 0 0 0 1px #ccc !important;
-    --docsearch-key-gradient: linear-gradient(-35deg, #d5dbe4, #f8f8f8) !important;
+    --docsearch-key-shadow: 0 0 0 1px rgba(0,0,0,.1) !important;
+    --docsearch-key-gradient: linear-gradient(-35deg, #edf0f5, #f8f8f8) !important;
 
     --font-sans-serif: "Inter", sans-serif;
 
@@ -230,18 +230,44 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
 
 #docsearch .DocSearch-Button {
     --docsearch-searchbox-background: #fff;
-    box-shadow: 0 0 0 1px #ddd inset, 0 0 0 3px #eee;
     height: 42px !important;
 }
 
-#docsearch .DocSearch-Button:hover {
-    box-shadow: 0 0 0 1px #ccc inset, 0 0 0 3px #e8e8e8;
+#docsearch .DocSearch-Button:hover,
+#docsearch .DocSearch-Button:focus {
+    box-shadow: none;
+}
+
+.DocSearch-Button-Key,
+.DocSearch-Commands-Key {
+    padding: 0 !important;
+}
+
+.DocSearch-Hit-source {
+    color: var(--color-text) !important;
+}
+
+#top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 199; /* below docsearch: 200 */
+}
+
+.search {
+    padding: 0 1rem;
 }
 
 .navigation {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 81px;
     bottom: 0;
     width: var(--navigation-width);
     background: #fff;
@@ -285,13 +311,10 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     background: transparent;
 }
 
-.search {
-    padding: 0 8px;
-    margin: 0 0 16px 0;
-}
-
 #logo-container {
     flex: 0 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -306,7 +329,7 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     gap: 16px;
     text-decoration: none;
     position: relative;
-    padding: 1rem;
+    padding: 0 1rem;
     justify-content: flex-start;
     margin-right: 4px;
 }
@@ -381,8 +404,6 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
 }
 
 #docsearch {
-    width: 100%;
-    max-width: 600px;
     min-height: 42px;
 }
 
@@ -1024,18 +1045,15 @@ span.menu-item {
     }
 
     .navigation {
+        top: -1px;
         width: 100%;
         height: auto;
         position: relative;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 0;
     }
 
     .site-wrapper {
         margin: 0;
-    }
-
-    #logo-container {
-        margin-left: calc(40px + 2rem);
     }
 
     .logo {
@@ -1057,15 +1075,11 @@ span.menu-item {
 
     #menu-switch {
         text-align: center;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: calc(40px + 2rem);
-        height: calc(40px + 2rem);
+        width: 80px;
+        height: 80px;
         justify-self: stretch;
         align-self: stretch;
         display: flex;
-        margin-right: -8px;
     }
 
     #menu-switch > label {
@@ -1090,7 +1104,7 @@ span.menu-item {
         border-top: 1px solid rgba(0,0,0,.1);
     }
 
-    #menu:checked + aside #top-menu {
+    #menu:checked ~ aside #top-menu {
         display: block;
     }
 
