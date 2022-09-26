@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="{{ shared_asset_path }}/css/screen.css?v={{site.github.build_revision}}"/>
 
     <!-- non-critical CSS is lazy-loaded -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" as="style" type="text/css">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" type="text/css"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" as="style" type="text/css">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" type="text/css"></noscript>
     <link rel="preload" href="{{ shared_asset_path }}/css/font-awesome.min.css?v={{site.github.build_revision}}" as="style" type="text/css">
     <noscript><link rel="stylesheet" href="{{ shared_asset_path }}/css/font-awesome.min.css?v={{site.github.build_revision}}" type="text/css"></noscript>
     <link rel="preload" href="{{ shared_asset_path }}/css/code.css?v={{site.github.build_revision}}" as="style" type="text/css">
@@ -77,7 +77,7 @@
     </script>
 
     <script>
-        loadCss('https://cdn.jsdelivr.net/npm/@docsearch/css@alpha');
+        loadCss('https://cdn.jsdelivr.net/npm/@docsearch/css@3');
         loadCss('{{ shared_asset_path }}/css/font-awesome.min.css?v={{site.github.build_revision}}');
         loadCss('{{ shared_asset_path }}/css/code.css?v={{site.github.build_revision}}');
 
@@ -93,11 +93,11 @@
             hljs.initHighlightingOnLoad();
         });
 
-        loadScript('https://cdn.jsdelivr.net/npm/@docsearch/js@alpha', function () {
+        loadScript('https://cdn.jsdelivr.net/npm/@docsearch/js@3', function () {
             docsearch({
                 appId: 'A5ZG0Y68AG',
-                apiKey: '3985e2b9114d3ebec8a721b2a281ae3b',
-                indexName: 'amphp',
+                apiKey: '6b0e299ad51fa720d825ab4bca1bd7c7',
+                indexName: 'amphp_v3',
                 container: '#docsearch',
                 debug: false
             });
