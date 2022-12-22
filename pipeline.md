@@ -1,0 +1,30 @@
+---
+notice: 'This file is imported and can be edited at https://github.com/amphp/pipeline/blob/1.x/README.md'
+title: amphp/pipeline
+description: 'Learn how to do create and consume asynchronous sets.'
+image: undraw/undraw_logistics.svg
+permalink: /pipeline
+source: 'https://github.com/amphp/pipeline/blob/1.x/README.md'
+layout: docs
+---
+Asynchronous iterators and operators.
+
+## Installation
+
+This package can be installed as a [Composer](https://getcomposer.org/) dependency.
+
+```bash
+composer require amphp/pipeline
+```
+
+## Versioning
+
+`amphp/pipeline` follows the [semver](http://semver.org/) semantic versioning specification like all other `amphp` packages.
+
+## Security
+
+If you discover any security related issues, please email [`me@kelunik.com`](mailto:me@kelunik.com) instead of using the issue tracker.
+
+## License
+
+The MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information.
