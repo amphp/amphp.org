@@ -1289,7 +1289,12 @@ h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
     cursor: help;
 }
 
-.github-release-legacy {
+.github-release-v3 {
+    margin: 0 !important;
+    cursor: help;
+}
+
+.github-release-v2 {
     margin: 0 !important;
     cursor: help;
 }
