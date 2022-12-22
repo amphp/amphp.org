@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/phpunit-util/blob/v3/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/phpunit-util/blob/3.x/README.md'
 title: amphp/phpunit-util
 description: 'Learn how to write tests with PHPUnit while making use of timeouts and minimum runtimes.'
 image: undraw/undraw_qa_engineers.svg
 permalink: /phpunit-util
-source: 'https://github.com/amphp/phpunit-util/blob/v3/README.md'
+source: 'https://github.com/amphp/phpunit-util/blob/3.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
