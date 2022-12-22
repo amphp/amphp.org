@@ -13,19 +13,25 @@ layout: docs
 
 <h2>Business Sponsors</h2>
 
-{% for sponsor in site.data.sponsors.business %}
-<div class="business-sponsor">
-    <h3 class="my-0"><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></h3>
-    <p class="my-0">{{ sponsor.description }}</p>
+<div class="business-sponsors">
+    {% for sponsor in site.data.sponsors.business %}
+    <div class="business-sponsor">
+        <p><a href="{{ sponsor.link }}"><img class="sponsor-logo" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}"/></a></p>
+        <h3 class="my-0"><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></h3>
+        <p class="my-0">{{ sponsor.description }}</p>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
 
 <h2>Other Sponsors</h2>
 
 <div class="other-sponsors">
-    <p>
+    <p>Thank you to all our sponsors!</p>
+    <ul>
     {% for sponsor in site.data.sponsors.other %}
-        <a title="{{ sponsor.github }}" href="https://github.com/{{ sponsor.github }}">{{ sponsor.github }}</a>{% if forloop.last == false %},{% endif %}
-    {% endfor %}
-    </p>
+        <li class="sponsor-github {% if sponsor.highlight %}sponsor-highlight{% endif %}">
+            <a title="{{ sponsor.github }}" href="https://github.com/{{ sponsor.github }}">{{ sponsor.github }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>

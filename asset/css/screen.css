@@ -14,7 +14,7 @@ html {
     --docsearch-primary-color: #403f57 !important;
     --docsearch-logo-color: #444 !important;
     --docsearch-footer-shadow: 0 -1px 0 #ccc !important;
-    --docsearch-key-shadow: 0 0 0 1px rgba(0,0,0,.1) !important;
+    --docsearch-key-shadow: 0 0 0 1px rgba(0, 0, 0, .1) !important;
     --docsearch-key-gradient: linear-gradient(-35deg, #edf0f5, #f8f8f8) !important;
 
     --font-sans-serif: "Inter", sans-serif;
@@ -108,7 +108,7 @@ pre {
     padding: 16px;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
     background: #fff;
     line-height: 1.45; /* prevent jumping before highlight */
     font-size: 14px;
@@ -253,7 +253,7 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     width: 100%;
     height: 80px;
     background: white;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -271,7 +271,7 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
     bottom: 0;
     width: var(--navigation-width);
     background: #fff;
-    box-shadow: 1px 0 0 rgba(0,0,0,.1);
+    box-shadow: 1px 0 0 rgba(0, 0, 0, .1);
     z-index: 5;
     padding: 0;
     overflow-y: hidden;
@@ -1101,7 +1101,7 @@ span.menu-item {
         left: 0;
         right: 0;
         bottom: 0;
-        border-top: 1px solid rgba(0,0,0,.1);
+        border-top: 1px solid rgba(0, 0, 0, .1);
     }
 
     #menu:checked ~ aside #top-menu {
@@ -1210,6 +1210,42 @@ h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
     }
 }
 
+.business-sponsors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.business-sponsors > div {
+    margin: 0 20px 20px;
+}
+
+.business-sponsor {
+    text-align: center;
+}
+
+.business-sponsor > h3 {
+    margin-top: 0;
+}
+
+.business-sponsor > p {
+    margin-bottom: 0;
+}
+
+img.sponsor-logo {
+    max-width: 200px;
+}
+
+.other-sponsors a {
+    font-weight: normal;
+}
+
+.sponsor-highlight > a {
+    font-weight: bold;
+}
+
 .sponsor-button {
     margin: 16px 10px !important;
     text-align: left;
@@ -1239,7 +1275,7 @@ h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
 .github-release {
     border-radius: 2px;
     padding: 16px;
-    box-shadow: 0 1px 2px rgba(0,0,0,.15), 0 2px 8px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15), 0 2px 8px rgba(0, 0, 0, .05);
     background: #ffffff;
 }
 
@@ -1283,7 +1319,7 @@ h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
 
 .github-release-revolt {
     margin: 0 !important;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     background: #fdd837;
     cursor: help;
