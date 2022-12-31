@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/byte-stream/blob/v2/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/byte-stream/blob/2.x/README.md'
 title: amphp/byte-stream
 description: 'Learn about stream abstractions for ordered sequences of bytes.'
 image: undraw/undraw_developer_activity.svg
 permalink: /byte-stream
-source: 'https://github.com/amphp/byte-stream/blob/v2/README.md'
+source: 'https://github.com/amphp/byte-stream/blob/2.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
