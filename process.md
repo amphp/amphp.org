@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/process/blob/v2/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/process/blob/2.x/README.md'
 title: amphp/process
 description: 'Learn how to run child processes, stream data, and collect their exit codes.'
 image: undraw/undraw_fatherhood.svg
 permalink: /process
-source: 'https://github.com/amphp/process/blob/v2/README.md'
+source: 'https://github.com/amphp/process/blob/2.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
