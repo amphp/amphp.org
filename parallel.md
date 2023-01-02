@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/parallel/blob/v2/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/parallel/blob/2.x/README.md'
 title: amphp/parallel
 description: 'Learn how to do true parallel processing in PHP using multiple processes or native threads, without blocking and no extensions required.'
 image: undraw/undraw_logistics.svg
 permalink: /parallel
-source: 'https://github.com/amphp/parallel/blob/v2/README.md'
+source: 'https://github.com/amphp/parallel/blob/2.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
