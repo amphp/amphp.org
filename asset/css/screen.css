@@ -1283,7 +1283,7 @@ img.sponsor-logo {
     opacity: 1;
 }
 
-.github-release h3 {
+.github-release > h3 {
     margin: 0;
     display: flex;
     align-items: center;
