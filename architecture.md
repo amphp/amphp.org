@@ -7,7 +7,7 @@ layout: docs
 ---
 Traditionally, PHP follows a sequential execution model.
 The PHP engine executes one line after the other in sequential order.
-Often, however, programs consist of multiple independent sub-programs with can be executed concurrently.
+Often, however, programs consist of multiple independent sub-programs which can be executed concurrently.
 
 There have been various techniques for implementing concurrency in PHP over the years, e.g. callbacks and generators shipped in PHP 5.
 These approaches suffered from the ["What color is your function"](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/) problem, which we solved by shipping Fibers with PHP 8.1.
