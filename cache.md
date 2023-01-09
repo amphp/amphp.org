@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/cache/blob/v2/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/cache/blob/2.x/README.md'
 title: amphp/cache
 description: 'Learn about the Cache interface to serve data faster.'
 image: undraw/undraw_memory_storage.svg
 permalink: /cache
-source: 'https://github.com/amphp/cache/blob/v2/README.md'
+source: 'https://github.com/amphp/cache/blob/2.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
