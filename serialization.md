@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/serialization/blob/master/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/serialization/blob/1.x/README.md'
 title: amphp/serialization
 description: 'Learn how to serialize data for IPC and data storage in PHP.'
 image: undraw/undraw_drone_delivery.svg
 permalink: /serialization
-source: 'https://github.com/amphp/serialization/blob/master/README.md'
+source: 'https://github.com/amphp/serialization/blob/1.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
