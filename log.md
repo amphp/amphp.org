@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/log/blob/v2/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/log/blob/2.x/README.md'
 title: amphp/log
 description: 'Learn how to write logs for your application in a non-blocking way.'
 image: undraw/undraw_diary.svg
 permalink: /log
-source: 'https://github.com/amphp/log/blob/v2/README.md'
+source: 'https://github.com/amphp/log/blob/2.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
