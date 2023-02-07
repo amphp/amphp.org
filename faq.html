@@ -1,59 +1,40 @@
 ---
-title: FAQ - Frequently Asked Questions
+title: Frequently Asked Questions
 permalink: /faq
 layout: base
 ---
 <div class="content site-width">
-    <h1>FAQ - Frequently Asked Questions</h1>
+    <h1>Frequently Asked Questions</h1>
 
-    <h3>What is Amp?</h3>
+    <h3>What is AMPHP?</h3>
     <p>
-        Amp is a concurrency framework for PHP providing primitives to manage concurrency such as an event loop,
-        promises, and asynchronous iterators.
+        AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
+        <code>amphp/amp</code> is the core package providing futures and cancellations.
+        With AMPHP v3 the event loop moved to its own organization in collaboration with the ReactPHP team and others, which is now known as <a href="https://revolt.run/">Revolt</a>.
     </p>
 
-    <h3>What is amphp?</h3>
+    <h3>When should I use AMPHP?</h3>
     <p>
-        Amphp is the group behind Amp maintaining it and its core components.
-    </p>
-
-    <h3>When should I use Amp?</h3>
-    <p>
-        Amp is always useful if you have I/O-bound tasks that can run concurrently, e.g. making two HTTP requests
+        AMPHP is always useful if you have I/O-bound tasks that can run concurrently, e.g. making two HTTP requests
         concurrently instead of sequentially and operating on the result of both. Such I/O-bound tasks include <a
-            href="https://github.com/amphp/aerys">WebSocket servers</a> and <a href="https://github.com/Room-11/Jeeves">chat
+            href="https://github.com/amphp/websocket-server">WebSocket servers</a> and <a href="https://github.com/Room-11/Jeeves">chat
         bots</a>.
     </p>
 
-    <h3>Why should I use Amp over other solutions like ReactPHP?</h3>
+    <h3>Why should I use AMPHP over other solutions like ReactPHP?</h3>
     <p>
-        Amp makes async code more readable with coroutines instead of <code>then</code>-chains and generally has more focus on performance. <a href="//amphp.org/react-adapter/">But why not both?</a> Amp is fully compatible with any ReactPHP library.
-    </p>
-
-    <h3>Why did you develop Amp instead of contributing to ReactPHP?</h3>
-    <p>
-        It might surprise you, but Amp isn't that much younger than ReactPHP. At the time Amp was started, ReactPHP was
-        still very young. ReactPHP was inspired a lot by Node and thus offers a lot of callback based APIs. Amp follows
-        a different approach and uses PHP's generators to build coroutines which make async code way easier to reason
-        about. We think <code>then()</code>-style promises are sub-optimal in a world with generators.
-    </p>
-
-    <h3>What is the status of Amp?</h3>
-    <p>
-        Amp is very stable. Its first stable version dates back to 2015 with v1.0.0. v2.0.0 is a result of the discussions
-        in the <a href="https://github.com/async-interop/event-loop"><code>async-interop</code></a> group and the merge
-        with <a href="https://github.com/icicleio/icicle">Icicle</a>, providing even better APIs for writing concurrent
-        and even <a href="https://github.com/amphp/parallel">parallel</a> code now.
-    </p>
-    <p>
-        Other components might not be as stable as Amp itself. If you want to know more about the stability of a specific
-        component, just have a look at its documentation.
+        AMPHP makes asynchronous code more readable with first-class fiber support instead of promises and <code>then</code>-chains
+        and generally has more focus on performance.
+        However, there's no reason to lock into either of these ecosystems, because they're fully compatible!
+        You can use <a href="https://amphp.org/react-adapter"><code>amphp/react-adapter</code></a> for AMPHP v2 and
+        <a href="https://github.com/revoltphp/event-loop-adapter-react"><code>revolt/event-loop-adapter-react</code></a> for AMPHP v3
+        and choose any library from the ReactPHP, AMPHP, or Revolt ecosystem.
     </p>
 
     <h3>How can I contribute?</h3>
     <p>
-        Everyone can help. To get started, there are open <a
-            href="https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aamphp">discussions on
+        Everyone can help. To get started, there are <a
+            href="https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Aamphp">open discussions on
         GitHub</a> you can contribute to.
         Found something you could work on? Comment and open a pull request. Missing a specific package that isn't async
         compatible? Write it.
