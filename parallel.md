@@ -106,9 +106,7 @@ class FetchTask implements Task
 ```
 
 ```php
-use Amp\Parallel\Worker\DefaultWorker;
-
-$worker = new DefaultWorker();
+$worker = Amp\Parallel\Worker\createWorker();
 $task = new FetchTask('https://amphp.org');
 
 $execution = $worker->submit($task);
@@ -207,7 +205,7 @@ return function (Channel $channel): mixed {
 use Amp\Parallel\Context\ProcessContext;
 
 // Creates and starts a child process context using ProcessContext
-$context = ProcessContext::start(__DIR__ . '/child.php');
+$context = Amp\Parallel\Context\contextFactory()->start(__DIR__ . '/child.php');
 
 $url = 'https://google.com';
 $context->send($url);
