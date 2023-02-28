@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/file/blob/v3/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/file/blob/3.x/README.md'
 title: amphp/file
 description: 'Learn how to read and write files without blocking.'
 image: undraw/undraw_my_files.svg
 permalink: /file
-source: 'https://github.com/amphp/file/blob/v3/README.md'
+source: 'https://github.com/amphp/file/blob/3.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
