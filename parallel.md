@@ -54,7 +54,7 @@ foreach ($urls as $url) {
 // communication with a task. Here we're only interested in the
 // task result, so we use the Future from Execution::getFuture()
 $responses = Future\await(array_map(
-    fn (Worker\Execution $e => $e->getFuture(),
+    fn (Worker\Execution $e) => $e->getFuture(),
     $executions,
 ));
 
