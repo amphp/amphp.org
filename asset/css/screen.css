@@ -208,6 +208,29 @@ body {
     background-blend-mode: luminosity;
 }
 
+.radial {
+    background-image: url("/asset/img/gear.svg");
+    background-size: cover;
+    opacity: 0.15;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: -100px;
+    bottom: -180px;
+    animation: 10s radial linear infinite;
+    z-index: -1;
+}
+
+@keyframes radial {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .highlight-area-cta {
     flex: 0 0 auto;
     font-size: 1em;
@@ -1388,6 +1411,7 @@ img.sponsor-logo {
     font-size: 1.25rem;
     font-weight: 400;
     color: rgba(64, 62, 87, 0.8);
+    position: relative;
 }
 
 .article-intro p {
