@@ -194,7 +194,7 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
 
 .intro-start {
     display: flex;
-    margin: 12px 0 32px 0;
+    margin: 24px 0 32px 0;
     gap: 16px;
     max-width: 400px;
     align-items: center;
@@ -206,6 +206,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: luminosity;
+    overflow-x: hidden;
 }
 
 .radial {
@@ -215,7 +216,7 @@ body {
     width: 300px;
     height: 300px;
     position: absolute;
-    right: -100px;
+    right: -120px;
     bottom: -180px;
     animation: 10s radial linear infinite;
     z-index: -1;

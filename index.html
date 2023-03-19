@@ -8,17 +8,33 @@ layout: landing
 <div class="site-width">
     <div class="content">
         <div>
-            <img srcset="{{ shared_asset_path }}/img/logo_text_60.png 1x, {{ shared_asset_path }}/img/logo_text_120.png 2x" width="200" height="60" alt="Amp Logo">
+            <img srcset="{{ shared_asset_path }}/img/logo_text_60.png 1x, {{ shared_asset_path }}/img/logo_text_120.png 2x"
+                 width="200" height="60" alt="Amp Logo">
         </div>
 
         <div class="article-intro">
             <h1 style="margin: 0 0 16px 0">Build fast, concurrent applications with PHP</h1>
 
             <p>
-                Benefit from concurrency by replacing your blocking I/O with non-blocking I/O, or designing your system with non-blocking I/O from the ground up.
+                Benefit from concurrency by replacing your blocking I/O with non-blocking I/O,<br>
+                or designing your system with non-blocking I/O from the ground up.
             </p>
 
             <div class="radial"></div>
+        </div>
+
+        <div style="padding-right: 180px">
+            <p>
+                We shipped fibers in PHP 8.1 to extend its capabilities for concurrent applications.
+            </p>
+
+            <p>
+                The PHP standard library has already provided everything else we needed for years now, but it only ships the
+                low-level building blocks. AMPHP provides higher-level libraries using non-blocking I/O
+                under the hood.
+                Fibers allow these libraries to just work, no matter whether they're used in concurrent or traditional
+                contexts.
+            </p>
         </div>
 
         <div class="intro-start">
@@ -30,43 +46,45 @@ layout: landing
         <h2>Latest Releases</h2>
 
         <ul class="github-releases">
-        {% for release in site.data.releases %}
-        <li class="github-release {% if release.preview %}github-release-preview{% endif %}">
-            {% if release.revolt %}
-                <img title="This release is based on the Revolt event loop." class="github-release-v3 float-right" src="{{ shared_asset_path }}/img/logo_v3.png" width="53" height="32">
-            {% else %}
-                <img title="This release is based on the Amp v2 event loop." class="github-release-v2 float-right" src="{{ shared_asset_path }}/img/logo_v2.png" width="53" height="32">
-            {% endif %}
+            {% for release in site.data.releases %}
+            <li class="github-release {% if release.preview %}github-release-preview{% endif %}">
+                {% if release.revolt %}
+                <img title="This release is based on the Revolt event loop." class="github-release-v3 float-right"
+                     src="{{ shared_asset_path }}/img/logo_v3.png" width="53" height="32">
+                {% else %}
+                <img title="This release is based on the Amp v2 event loop." class="github-release-v2 float-right"
+                     src="{{ shared_asset_path }}/img/logo_v2.png" width="53" height="32">
+                {% endif %}
 
-            <div class="github-release-meta">
+                <div class="github-release-meta">
                 <span class="github-release-date">
                     <i class="fa fa-clock-o fa-fw"></i>
 
                     Released on {{ release.date | slice: 0, 10 }}
                 </span>
 
-                <span class="github-release-tag">
+                    <span class="github-release-tag">
                     <i class="fa fa-tag fa-fw"></i>
 
                     <a href="{{ release.html_url }}">{{ release.tag_name | slice: 1, 100 }} on GitHub</a>
                 </span>
-            </div>
+                </div>
 
-            <h3>
-                {{ release.name }}
+                <h3>
+                    {{ release.name }}
 
-                {% if release.preview %}
-                <span class="badge badge-preview">
+                    {% if release.preview %}
+                    <span class="badge badge-preview">
                     Preview
                 </span>
-                {% endif %}
-            </h3>
+                    {% endif %}
+                </h3>
 
-            <div class="github-release-body">
-                {{ release.body | markdownify }}
-            </div>
-        </li>
-        {% endfor %}
+                <div class="github-release-body">
+                    {{ release.body | markdownify }}
+                </div>
+            </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
