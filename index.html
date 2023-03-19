@@ -1,36 +1,31 @@
 ---
 title: Asynchronous Multitasking PHP
 permalink: /
-layout: base
+layout: landing
 ---
 {% include shared-asset-path.jekyll %}
 
 <div class="site-width">
     <div class="content">
-        <div class="article-intro text-center">
-            <img src="{{ shared_asset_path }}/img/undraw/undraw_maker_launch.svg" width="250">
+        <div>
+            <img srcset="{{ shared_asset_path }}/img/logo_text_60.png 1x, {{ shared_asset_path }}/img/logo_text_120.png 2x" width="200" height="60" alt="Amp Logo">
+        </div>
 
-            <h1 style="margin: 32px 0 16px 0">Build fast, concurrent applications with PHP</h1>
+        <div class="article-intro">
+            <h1 style="margin: 0 0 16px 0">Build fast, concurrent applications with PHP</h1>
 
             <p>
-                AMPHP is a collection of event-driven libraries for PHP<br>
-                designed with fibers and concurrency in mind.
+                Benefit from concurrency by replacing your blocking I/O with non-blocking I/O, or designing your system with non-blocking I/O from the ground up.
             </p>
+        </div>
+
+        <div class="radial"></div>
+
+        <div class="intro-start">
+            <a href="/installation" class="highlight-area-cta">Get Started <i class="fa fa-angle-right"></i></a>
         </div>
 
         <div class="clear-both"></div>
-
-        <div>
-            <p class="text-center" style="max-width: 600px; margin: 0 auto">
-                Our wide range of packages allows building entire applications using non-blocking I/O to allow for concurrency in long-running processes and server applications.
-                You can also leverage our libraries in portions of your existing application without a full-blown
-                migration to non-blocking I/O.
-            </p>
-
-            <div class="intro-start text-center">
-                <a href="/installation" class="highlight-area-cta">Get Started <i class="fa fa-angle-right"></i></a>
-            </div>
-        </div>
 
         <h2>Latest Releases</h2>
 
@@ -43,6 +38,20 @@ layout: base
                 <img title="This release is based on the Amp v2 event loop." class="github-release-v2 float-right" src="{{ shared_asset_path }}/img/logo_v2.png" width="53" height="32">
             {% endif %}
 
+            <div class="github-release-meta">
+                <span class="github-release-date">
+                    <i class="fa fa-clock-o fa-fw"></i>
+
+                    Released on {{ release.date | slice: 0, 10 }}
+                </span>
+
+                <span class="github-release-tag">
+                    <i class="fa fa-tag fa-fw"></i>
+
+                    <a href="{{ release.html_url }}">{{ release.tag_name | slice: 1, 100 }} on GitHub</a>
+                </span>
+            </div>
+
             <h3>
                 {{ release.name }}
 
@@ -52,20 +61,6 @@ layout: base
                 </span>
                 {% endif %}
             </h3>
-
-            <div class="github-release-meta">
-                <span class="github-release-date">
-                    <i class="fa fa-clock-o fa-fw"></i>
-
-                    Released on {{ release.date }}
-                </span>
-
-                <span class="github-release-tag">
-                    <i class="fa fa-tag fa-fw"></i>
-
-                    <a href="{{ release.html_url }}">{{ release.tag_name }} on GitHub</a>
-                </span>
-            </div>
 
             <div class="github-release-body">
                 {{ release.body | markdownify }}

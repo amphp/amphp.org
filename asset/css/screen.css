@@ -171,7 +171,7 @@ h1 {
 h2 {
     font-size: 1.375rem;
     padding: 0;
-    margin: 32px 0 8px 0;
+    margin: 32px 0 16px 0;
     line-height: 1.25;
     color: var(--color-text);
     letter-spacing: -0.02em;
@@ -194,11 +194,18 @@ h2 code, h3 code, h4 code, h5 code, h6 code {
 
 .intro-start {
     display: flex;
-    margin: 32px auto 64px auto;
+    margin: 12px 0 32px 0;
     gap: 16px;
     max-width: 400px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+}
+
+body {
+    background-image: radial-gradient(50% 50% at 25% 75%, #2a6e9911 0, hsla(0,0%,100%,0) 100%), radial-gradient(50% 50% at 75% 25%, #d57a1f11 0, hsla(0,0%,100%,0) 100%);
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
 }
 
 .highlight-area-cta {
@@ -1188,10 +1195,10 @@ h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
 
 @keyframes target-highlight {
     0% {
-        color: #ce3a6e;
+        color: var(--color-highlight);
     }
     50% {
-        color: #ce3a6e;
+        color: var(--color-highlight);
     }
     100% {
         color: black;
@@ -1200,10 +1207,10 @@ h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
 
 @-webkit-keyframes target-highlight {
     0% {
-        color: #ce3a6e;
+        color: var(--color-highlight);
     }
     50% {
-        color: #ce3a6e;
+        color: var(--color-highlight);
     }
     100% {
         color: black;
@@ -1269,12 +1276,12 @@ img.sponsor-logo {
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 8px;
+    gap: 16px;
 }
 
 .github-release {
-    border-radius: 2px;
-    padding: 16px;
+    border-radius: 8px;
+    padding: 24px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .15), 0 2px 8px rgba(0, 0, 0, .05);
     background: #ffffff;
 }
@@ -1284,19 +1291,22 @@ img.sponsor-logo {
 }
 
 .github-release > h3 {
-    margin: 0;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
     line-height: 1;
+    margin: 16px 0 8px 0;
 }
 
 .github-release-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    margin: 8px 0;
+    gap: 24px;
+    margin: 0 0 12px 0;
     color: #555;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
 }
 
 .github-release-meta a {
@@ -1306,10 +1316,6 @@ img.sponsor-logo {
 
 .github-release-meta .fa {
     opacity: 0.65;
-}
-
-.github-release-meta .fa-tag {
-    transform: translateY(1px);
 }
 
 .github-release-body ul {

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+
+    {% include shared-asset-path.jekyll %}
+
+    <title>{{ page.title }} | AMPHP</title>
+
+    <meta name="description" content="{{ page.description | default: 'Amp is a non-blocking concurrency library for PHP based on Revolt.' }}">
+    <meta name="keywords" content="{{ page.keywords | join: ', ' | default: 'amp, amphp, non-blocking, concurrency, io, php, future, coroutines, revolt' }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ shared_asset_path }}/css/screen.css?v={{site.github.build_revision}}"/>
+
+    <!-- non-critical CSS is lazy-loaded -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" as="style" type="text/css">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" type="text/css"></noscript>
+    <link rel="preload" href="{{ shared_asset_path }}/css/font-awesome.min.css?v={{site.github.build_revision}}" as="style" type="text/css">
+    <noscript><link rel="stylesheet" href="{{ shared_asset_path }}/css/font-awesome.min.css?v={{site.github.build_revision}}" type="text/css"></noscript>
+    <link rel="preload" href="{{ shared_asset_path }}/css/code.css?v={{site.github.build_revision}}" as="style" type="text/css">
+    <noscript><link rel="stylesheet" href="{{ shared_asset_path }}/css/code.css?v={{site.github.build_revision}}" type="text/css"></noscript>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="google-site-verification" content="lX-Oenz4-gpqzuAF71A-3MQBlDfgr9pIQIfrVniz1As">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@asyncphp">
+    <meta name="twitter:creator" content="@asyncphp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:image" content="{{ page.ogImage | default: 'https://amphp.org/asset/img/og-image.png' }}">
+    <meta property="og:description" content="{{ page.description | default: 'Amp is a non-blocking concurrency library for PHP based on Revolt.' }}">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <meta name="apple-mobile-web-app-title" content="AMPHP">
+    <meta name="application-name" content="AMPHP">
+    <meta name="theme-color" content="#1376dd">
+
+    <script>
+        function loadScript(src, onload) {
+            var script = document.createElement("script");
+            script.type = "application/javascript";
+            script.async = true;
+            script.onload = function () {
+                script.onload = null;
+                if (onload) {
+                    onload();
+                }
+            };
+
+            (document.getElementsByTagName("head")[0]).appendChild(script);
+            script.src = src;
+        }
+
+        function loadCss(src) {
+            var resource = document.createElement('link');
+            resource.setAttribute('rel', 'stylesheet');
+            resource.setAttribute('href', src);
+            resource.setAttribute('type', 'text/css');
+
+            (document.getElementsByTagName("head")[0]).appendChild(resource);
+        }
+    </script>
+
+    <script>
+        loadCss('https://cdn.jsdelivr.net/npm/@docsearch/css@3');
+        loadCss('{{ shared_asset_path }}/css/font-awesome.min.css?v={{site.github.build_revision}}');
+        loadCss('{{ shared_asset_path }}/css/code.css?v={{site.github.build_revision}}');
+
+        loadScript('{{ shared_asset_path }}/js/anchor.min.js?v={{site.github.build_revision}}', function () {
+            var anchors = new AnchorJS();
+            anchors.options.icon = "#";
+            anchors.options.placement = "left";
+            anchors.add("h2,h3,h4,h5,h6");
+        });
+
+        loadScript('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js', function () {
+            hljs.configure({tabReplace: '    ', languages: ['php', 'js']});
+            hljs.initHighlightingOnLoad();
+        });
+
+        loadScript('https://cdn.jsdelivr.net/npm/@docsearch/js@3', function () {
+            docsearch({
+                appId: 'A5ZG0Y68AG',
+                apiKey: '6b0e299ad51fa720d825ab4bca1bd7c7',
+                indexName: 'amphp_v3',
+                container: '#docsearch',
+                debug: false
+            });
+        });
+    </script>
+</head>
+<body>
+    {{ content }}
+</body>
+</html>
