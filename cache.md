@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/cache/blob/2.x/README.md'
-title: amphp/cache
-description: 'Learn about the Cache interface to serve data faster.'
+title: 'Cache Data in Concurrent PHP Applications'
+description: 'Learn how to cache data to serve requests faster in a concurrency safe way.'
 image: undraw/undraw_memory_storage.svg
 permalink: /cache
 source: 'https://github.com/amphp/cache/blob/2.x/README.md'
