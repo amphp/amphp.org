@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/pipeline/blob/1.x/README.md'
-title: amphp/pipeline
+title: 'Concurrent Datasets in PHP'
 description: 'Learn how to do create and consume asynchronous sets.'
 image: undraw/undraw_logistics.svg
 permalink: /pipeline
