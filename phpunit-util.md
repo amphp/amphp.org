@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/phpunit-util/blob/3.x/README.md'
-title: amphp/phpunit-util
+title: 'Simplify PHPUnit Tests Involving Asynchronous Behavior'
 description: 'Learn how to write tests with PHPUnit while making use of timeouts and minimum runtimes.'
 image: undraw/undraw_qa_engineers.svg
 permalink: /phpunit-util
