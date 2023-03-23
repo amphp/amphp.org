@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/sync/blob/2.x/README.md'
-title: amphp/sync
-description: 'Learn about synchronization primitives to organize concurrency.'
+title: 'Synchronize Concurrent Execution in PHP'
+description: 'Learn how to use synchronization primitives to organize concurrency.'
 image: undraw/undraw_developer_activity.svg
 permalink: /sync
 source: 'https://github.com/amphp/sync/blob/2.x/README.md'
