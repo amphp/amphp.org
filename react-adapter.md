@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/react-adapter/blob/master/README.md'
-title: amphp/react-adapter
+title: 'ReactPHP Compatibility'
 description: 'Learn how to use any ReactPHP library and make it compatible with Amp.'
 image: undraw/undraw_logistics.svg
 permalink: /react-adapter
