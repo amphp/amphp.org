@@ -33,7 +33,7 @@ This package requires PHP 8.1 or later.
 
 ## Usage
 
-More extensive code examples reside in the [`examples`](examples) directory.
+More extensive code examples reside in the [`examples`](https://github.com/amphp/mysql/tree/master/examples) directory.
 
 ```php
 $config = Amp\Mysql\MysqlConfig::fromString(
