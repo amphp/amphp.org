@@ -1,10 +1,10 @@
 ---
-notice: 'This file is imported and can be edited at https://github.com/amphp/mysql/blob/v3/README.md'
+notice: 'This file is imported and can be edited at https://github.com/amphp/mysql/blob/3.x/README.md'
 title: 'MySQL Connection Pool in PHP'
 description: 'Learn how to query and update data in MySQL databases.'
 image: undraw/undraw_fishing.svg
 permalink: /mysql
-source: 'https://github.com/amphp/mysql/blob/v3/README.md'
+source: 'https://github.com/amphp/mysql/blob/3.x/README.md'
 layout: docs
 ---
 AMPHP is a collection of event-driven libraries for PHP designed with fibers and concurrency in mind.
