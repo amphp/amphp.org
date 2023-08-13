@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-server/blob/3.x/README.md'
-title: 'A non-blocking HTTP application server for PHP based on Revolt.'
+title: 'HTTP server applications in PHP based on Revolt'
 description: 'Learn how to build non-blocking, concurrent HTTP/1.1 and HTTP/2 server applications in PHP based on Revolt.'
 image: undraw/undraw_logistics.svg
 permalink: /http-server
