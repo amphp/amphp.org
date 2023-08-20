@@ -26,10 +26,9 @@ composer require amphp/redis
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Amp\Redis\Redis;
-use function Amp\Redis\createRedisClient;
+use Amp\Redis\Command\RedisCommands;use function Amp\Redis\createRedisClient;
 
-$redis = new Redis(createRedisClient('redis://'));
+$redis = new RedisCommands(createRedisClient('redis://'));
 
 $redis->set('foo', '21');
 $result = $redis->increment('foo', 21);
