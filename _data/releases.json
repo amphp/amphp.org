@@ -1,1 +1,371 @@
-[{"name":"amphp\/hpack 3.1.6","package":"amphp\/hpack","tag_name":"v3.1.6","html_url":"https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.1.6","date":"2023-09-04T19:13:11Z","body":"- Fixed decoding `proxy-authenticate` header (was decoded as `proxy-authentication` before)\r\n- Fix float conversion on too large integers (properly rejected with an exception now)","revolt":true},{"name":"amphp\/byte-stream 2.0.2","package":"amphp\/byte-stream","tag_name":"v2.0.2","html_url":"https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.0.2","date":"2023-09-01T04:46:58Z","body":"- Fixed throwing an `Error` when invoking `getStdin()`, `getStdout()`, and `getStderr()` if the corresponding STDIO stream had been previously closed. Instead, an already closed stream instance is returned.","revolt":true},{"name":"amphp\/parallel 2.2.2","package":"amphp\/parallel","tag_name":"v2.2.2","html_url":"https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.2","date":"2023-08-30T18:15:35Z","body":"- Fixed potential hang of a `ProcessContext` created by `DefaultContextFactory` if output buffers fill by piping STDOUT and STDERR to the same pipes on the parent process. This also provides parity with the default behavior of `ThreadContext`.","revolt":true},{"name":"amphp\/http-server-form-parser 2.0.0","package":"amphp\/http-server-form-parser","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/http-server-form-parser\/releases\/tag\/v2.0.0","date":"2023-08-25T03:01:02Z","body":"This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `BufferingParser` and `StreamingParser` to `FormParser` and `StreamingFormParser`, respectively.\r\n- Removed the `parseForm` function in favor of the `Form::fromRequest()` static method.\r\n- Removed `ParsingMiddleware`. Use `Form::fromRequest()` instead.\r\n- Removed `ParseException`. Form parsing errors will throw an `HttpErrorException` from `amphp\/http-server` instead, which do not need to be caught (the server will automatically return an error response).","revolt":true},{"name":"amphp\/http-server 3.2.0","package":"amphp\/http-server","tag_name":"v3.2.0","html_url":"https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.2.0","date":"2023-08-24T23:48:01Z","body":"- Allowed `league\/uri@v7.1` and `psr\/message@v2`\r\n- Added previous param to `HttpErrorException` constructor\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.1.0...v3.2.0","revolt":true},{"name":"amphp\/http 2.1.0","package":"amphp\/http","tag_name":"v2.1.0","html_url":"https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.0","date":"2023-08-24T04:31:15Z","body":"- Updated `league\/uri-components` requirements to `^2.4.2 | ^7.1` as part of fixing #24 and allow `psr\/message@v2`\r\n- Changed request query string encoding to use RFC3986 rules to as part of fixing #24\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.0.0...v2.1.0","revolt":true},{"name":"amphp\/http-server-session 3.0.0","package":"amphp\/http-server-session","tag_name":"v3.0.0","html_url":"https:\/\/github.com\/amphp\/http-server-session\/releases\/tag\/v3.0.0","date":"2023-08-20T18:31:25Z","body":"This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `Storage`, `InMemoryStorage`, `RedisStorage`, `DefaultIdGenerator`, and `Driver` to `SessionStorage`, `LocalSessionStorage`, `RedisSessionStorage`, `Base64UrlSessionIdGenerator`, and `SessionFactory`, respectively\r\n- Renamed methods on `Session`: `open()` to `lock()`, `save()` to `commit()`\r\n- Added `Session::rollback()` to undo local changes and re-read the session data from storage\r\n- Added `SessionTrainer` for examining session changes unit testing","revolt":true},{"name":"amphp\/redis 2.0.0","package":"amphp\/redis","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.0","date":"2023-08-20T16:57:56Z","body":"Initial release compatible with AMPHP v3. As with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Added `RedisParcel` in the `Sync` sub-namespace implementing the `Parcel` interface from `amphp\/sync`\r\n - Added `RedisConnector` interface to decouple connecting and init commands such as `AUTH` and `SELECT`\r\n - Reorganized class names \/ namespaces for better overview\r\n   - `Redis` moved to `RedisClient`\r\n   - `Subscriber` \/ `Subscription` moved to `RedisSubscriber` \/ `RedisSubscription`\r\n   -  `Cache` moved to `RedisCache`\r\n   - `Mutex` sub-namespace has been changed to `Sync`. All classes within now have a prefix of Redis, e.g., `Mutex` \u2192 `RedisMutex`, `MutexOptions` \u2192 `RedisMutexOptions`\r\n   - `Config` moved to `RedisConfig`\r\n   - `RespSocket` moved to `Amp\\Redis\\Connection\\RedisConnection` and is an interface now\r\n   - `RespParser` moved to `Amp\\Redis\\Protocol\\RespParser`\r\n   - `QueryExecutor` moved to `Amp\\Redis\\Connection\\RedisLink`\r\n   - `RemoteExecutor` moved to `Amp\\Redis\\Connection\\ReconnectingRedisLink`\r\n   - `RedisHyperLogLog` moved to `Amp\\Redis\\Command\\RedisHyperLogLog`\r\n   - `RedisList` moved to `Amp\\Redis\\Command\\RedisList`\r\n   - `RedisMap` moved to `Amp\\Redis\\Command\\RedisMap`\r\n   - `RedisSet` moved to `Amp\\Redis\\Command\\RedisSet`\r\n   - `RedisSortedSet` moved to `Amp\\Redis\\Command\\RedisSortedSet`\r\n   - `SortOptions` moved to `Amp\\Redis\\Command\\Option\\SortOptions`\r\n   - `SetOptions` moved to `Amp\\Redis\\Command\\Option\\SetOptions`\r\n   - `SocketException` moved to `Amp\\Redis\\Connection\/RedisConnectionException`\r\n   - `ParserException` moved to `Amp\\Redis\\Protocol\\ProtocolException`\r\n   - `QueryException` moved to `Amp\\Redis\\Protocol\\QueryException`\r\n - `RedisSubscription` is now a simple PHP iterator now that `Amp\\Iterator` is no longer necessary with fibers.\r\n","revolt":true},{"name":"amphp\/http-server-static-content 2.0.0","package":"amphp\/http-server-static-content","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/http-server-static-content\/releases\/tag\/v2.0.0","date":"2023-08-20T15:20:11Z","body":"This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- `DocumentRoot` now requires an instance of `HttpServer` and `ErrorHandler` to construct\r\n- Removed `DocumentRoot::onStart()` and `DocumentRoot::onStop()`, as it's now internally registered\r\n- Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`\r\n- Added `StaticResource` to serve a single static file","revolt":true},{"name":"amphp\/socket 2.2.0","package":"amphp\/socket","tag_name":"v2.2.0","html_url":"https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.0","date":"2023-08-19T15:32:42Z","body":"## What's Changed\r\n* Add support for `league\/uri` 7.x\r\n* Undefined variable `$socket` in example by @61-6c-69 in https:\/\/github.com\/amphp\/socket\/pull\/106\r\n\r\n## New Contributors\r\n* @61-6c-69 made their first contribution in https:\/\/github.com\/amphp\/socket\/pull\/106\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.1.0...v2.2.0","revolt":true},{"name":"amphp\/sync 2.1.0","package":"amphp\/sync","tag_name":"v2.1.0","html_url":"https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.1.0","date":"2023-08-19T13:59:33Z","body":"## What's Changed\r\n* Added re-entry support to `synchronized()` by @kelunik in https:\/\/github.com\/amphp\/sync\/pull\/26\r\n* Fixed error handling in `SharedMemoryParcel`\r\n* Fixed a typo by @thgs in https:\/\/github.com\/amphp\/sync\/pull\/25\r\n\r\n## New Contributors\r\n* @thgs made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/25\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.0.0...v2.1.0","revolt":true},{"name":"amphp\/http-client 4.6.3","package":"amphp\/http-client","tag_name":"v4.6.3","html_url":"https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v4.6.3","date":"2023-08-15T20:16:52Z","body":"## What's Changed\r\n* Allow `psr\/http-message` ^2 by @drealecs in https:\/\/github.com\/amphp\/http-client\/pull\/328\r\n* Allow `league\/uri` ^7 by @nicolas-grekas in https:\/\/github.com\/amphp\/http-client\/pull\/335\r\n* Fix HTTP\/2 cancellation while receiving the response\r\n\r\n## New Contributors\r\n* @drealecs made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/328\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v4.6.2...v4.6.3","revolt":false},{"name":"amphp\/http-server-router 2.0.0","package":"amphp\/http-server-router","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/http-server-router\/releases\/tag\/v2.0.0","date":"2023-08-05T19:33:16Z","body":"This release is compatible with `amphp\/http-server@^3`.\r\n\r\n - A PSR-3 logger is now required in the `Router` constructor\r\n - Starting the server with an empty `Router` is now allowed and only logs a notice instead of throwing an exception\r\n - Middleware can be added via `addMiddleware()` instead of `stack()`\r\n - Removed support for adding middleware directly via `addRoute()`, use `stackMiddleware()` instead if you need this\r\n - Removed `Router::onStart()`, as it's now internally registered\r\n - Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`","revolt":true},{"name":"amphp\/log 2.0.0","package":"amphp\/log","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/log\/releases\/tag\/v2.0.0","date":"2023-08-05T19:05:50Z","body":"- Increased minimum PHP version to 8.1\r\n- Make use of fibers with Amp v3 and Revolt\r\n- Added support for Monolog v3.x\r\n\r\nThis release does not contain any changes in comparison to `v2.0.0-beta.2`.","revolt":true},{"name":"amphp\/process 2.0.1","package":"amphp\/process","tag_name":"v2.0.1","html_url":"https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.1","date":"2023-07-31T17:56:29Z","body":"- Fixed error handling if the started process fails immediately.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.0...v2.0.1","revolt":true},{"name":"amphp\/file 3.0.1","package":"amphp\/file","tag_name":"v3.0.1","html_url":"https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.0.1","date":"2023-07-23T19:04:03Z","body":"## What's Changed\r\n\r\n* Fix `touch()` on non-existent files in ext-uv and ext-eio by @kelunik (#73)\r\n* Fix `write()` truncation with ext-uv and ext-eio by @danog in (#76)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.0...v3.0.1","revolt":true},{"name":"amphp\/dns 2.0.1","package":"amphp\/dns","tag_name":"v2.0.1","html_url":"https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.0.1","date":"2023-01-21T16:08:27Z","body":"## What's Changed\r\n\r\n* Fix fallback to blocking resolver by @danog and @kelunik in https:\/\/github.com\/amphp\/dns\/pull\/108 and https:\/\/github.com\/amphp\/dns\/pull\/109\r\n* Try entire search list when resolve type is restricted by @trowski: [`9d988e31`](https:\/\/github.com\/amphp\/dns\/commit\/9d988e3127dc233210a5336baf329d58a294bcb9)\r\n* Improve static analysis with more specific DnsResolver return types by @trowski: [`7344cceb`](https:\/\/github.com\/amphp\/dns\/commit\/7344cceb95d6e66bf8c867e0b50417ced4b055d8)\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.0.0...v2.0.1","revolt":true},{"name":"amphp\/windows-registry 1.0.0","package":"amphp\/windows-registry","tag_name":"v1.0.0","html_url":"https:\/\/github.com\/amphp\/windows-registry\/releases\/tag\/v1.0.0","date":"2023-01-10T20:34:04Z","body":"Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- `WindowsRegistry` offers the methods as static methods now instead of instance methods.","revolt":true},{"name":"amphp\/cache 2.0.0","package":"amphp\/cache","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/cache\/releases\/tag\/v2.0.0","date":"2023-01-09T21:07:48Z","body":"Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Renamed `ArrayCache` to `LocalCache`, swapping the constructor argument order\r\n - Modified `LocalCache` to implement `IteratorAggregate` and `Countable`, acting as an LRU cache now (#20)\r\n - Support arbitrary values in `LocalCache`, `NullCache`, and `PrefixCache`\r\n - Changed `Cache` to support arbitrary values\r\n - Introduced separate `StringCache` interface for caching only strings\r\n - Added `StringCacheAdapter` to use any `Cache` in place of a `StringCache`\r\n - Removed `FileCache` (will be available in `amphp\/file` instead)","revolt":true},{"name":"amphp\/postgres 1.4.5","package":"amphp\/postgres","tag_name":"v1.4.5","html_url":"https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v1.4.5","date":"2023-01-07T18:54:57Z","body":"- Fixed cancelling an active query if a connection is closed when using `ext-pgsql` (#54)","revolt":false},{"name":"amphp\/sql-common 1.1.4","package":"amphp\/sql-common","tag_name":"v1.1.4","html_url":"https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v1.1.4","date":"2023-01-06T04:33:14Z","body":"- Fixed potential double deferred resolve when a connection pool is full.","revolt":false},{"name":"amphp\/parser 1.1.0","package":"amphp\/parser","tag_name":"v1.1.0","html_url":"https:\/\/github.com\/amphp\/parser\/releases\/tag\/v1.1.0","date":"2022-12-30T19:26:39Z","body":"- PHP 7.4 now required\r\n- Improved performance of the parser when requesting small chunks of data and when yielding an integer length delimiter","revolt":true},{"name":"amphp\/pipeline 1.0.0","package":"amphp\/pipeline","tag_name":"v1.0.0","html_url":"https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.0.0","date":"2022-12-23T16:56:59Z","body":"Initial stable release &#x1F389;\r\n\r\n#### Changes from 1.0.0 Beta 7\r\n- Marked `ConcurrentArrayIterator`, `ConcurrentChainedIterator`, and `ConcurrentIterableIterator` as `@internal`. Instead of these classes, use `Pipeline::fromIterable()` or `Pipeline::concat()`\r\n- `Pipeline::concat()` now accepts an array of any `iterable`, not only other `Pipeline` objects","revolt":true},{"name":"amphp\/sql 1.0.2","package":"amphp\/sql","tag_name":"v1.0.2","html_url":"https:\/\/github.com\/amphp\/sql\/releases\/tag\/v1.0.2","date":"2022-12-18T23:03:07Z","body":"- Fix a deprecation notice on PHP 8.1 if a configuration key does not have a value.","revolt":false},{"name":"amphp\/phpunit-util 3.0.0","package":"amphp\/phpunit-util","tag_name":"v3.0.0","html_url":"https:\/\/github.com\/amphp\/phpunit-util\/releases\/tag\/v3.0.0","date":"2022-12-18T17:53:05Z","body":"This package has been redesigned for compatibility with AMPHP v3 and fibers. `AsyncTestCase` serves a similar purpose as before, providing helper methods for unit testing within an async context. Each test case is run within a unique fiber to allow suspending during the test run.\r\n\r\n- `AsyncTestCase::setUpAsync()` and `tearDownAsync()` have been removed. Use `AsyncTestCase::setUp()` and `tearDown()` instead, as both of these methods are now able to execute async using fibers.\r\n- `AsyncTestCase::createCallback()` now returns a `Closure`. Additionally, an optional parameter for expected arguments upon invocation have been added (uses `InvocationMocker::with(...)` to set expected arguments).","revolt":true},{"name":"amphp\/amp 3.0.0","package":"amphp\/amp","tag_name":"v3.0.0","html_url":"https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.0","date":"2022-12-18T17:13:34Z","body":"\r\n#### Event Loop\r\n\r\nAmp no longer ships its own event loop. It's now based on [Revolt](https:\/\/revolt.run). `Revolt\\EventLoop` is quite similar to Amp's previous `Amp\\Loop`. A very important difference is using `float $seconds` instead of `int $milliseconds` for timers though!\r\n\r\n#### Promises\r\n\r\n`Future` is a replacement for the previous `Promise`.\r\nThere's no need for callbacks or `yield` anymore!\r\nIts `await()` method is based on fibers and replaces generator based coroutines \/ `Amp\\Promise\\wait()`.\r\n\r\n- Renamed `Amp\\Deferred` to `Amp\\DeferredFuture`.\r\n- Removed `Amp\\Promise\\wait()`: Use `Amp\\Future::await()` instead, which can be called in any (nested) context unlike before.\r\n- Removed `Amp\\call()`: Remove the passed closure boilerplate and all `yield` keywords, interruption is handled via fibers now instead of generator coroutines.\r\n- Removed `Amp\\asyncCall()`: Replace invocations with `Amp\\async()`, which starts a new fiber instead of using generators.\r\n- Removed `Amp\\coroutine()`: There's no direct replacement.\r\n- Removed `Amp\\asyncCoroutine()`: There's no direct replacement.\r\n- Removed `Amp\\Promise\\timeout()`: `Future::await()` accepts an optional `Cancellation`, which can be used as a replacement.\r\n- Removed `Amp\\Promise\\rethrow()`: Unhandled errors are now automatically thrown into the event loop, so there's no need for that function anymore.\r\n- Unhandled errors can be ignored using `Future::ignore()` if needed, but should usually be handled in some way.\r\n- Removed `Amp\\Promise\\wrap()`: Use `Future::finally()` instead.\r\n- Renamed `Amp\\getCurrentTime()` to `Amp\\now()` returning the time in seconds instead of milliseconds.\r\n- Changed `Amp\\delay()` to accept the delay in seconds now instead of milliseconds.\r\n- Added `Amp\\weakClosure()` to allow a class to hold a self-referencing Closure without creating a circular reference that prevents automatic garbage collection.\r\n- Added `Amp\\trapSignal()` to await one or multiple signals.\r\n\r\n#### Promise Combinators\r\n\r\nPromise combinators have been renamed:\r\n\r\n- `Amp\\Promise\\race()` has been renamed to `Amp\\Future\\awaitFirst()`\r\n- `Amp\\Promise\\first()` has been renamed to `Amp\\Future\\awaitAny()`\r\n- `Amp\\Promise\\some()` has been renamed to `Amp\\Future\\awaitAnyN()`\r\n- `Amp\\Promise\\any()` has been renamed to `Amp\\Future\\awaitAll()`\r\n- `Amp\\Promise\\all()` has been renamed to `Amp\\Future\\await()`\r\n\r\n#### CancellationToken\r\n\r\n- `CancellationToken` has been renamed to `Cancellation`.\r\n- `CancellationTokenSource` has been renamed to `DeferredCancellation`.\r\n- `NullCancellationToken` has been renamed to `NullCancellation`.\r\n- `TimeoutCancellationToken` has been renamed to `TimeoutCancellation`.\r\n- `CombinedCancellationToken` has been renamed to `CompositeCancellation`.\r\n- `SignalCancellation` has been added.\r\n\r\n#### Iterators\r\n\r\nIterators have been removed from `amphp\/amp` as normal PHP iterators can be used with fibers now and there's no need for a separate API.\r\nHowever, there's still some need for _concurrent_ iterators, which is covered by the new [`amphp\/pipeline`](https:\/\/github.com\/amphp\/pipeline) library now.\r\n\r\n#### Closable\r\n\r\n`Amp\\Closable` has been added as a new basic interface for closable resources such as streams or sockets.\r\n\r\n#### Strict Types\r\n\r\nStrict types now declared in all library files.\r\nThis will affect callbacks invoked within this library's code which use scalar types as parameters.\r\nFunctions used with `Amp\\async()` are the most likely to be affected by this change \u2014 these functions will now be invoked within a strict-types context.","revolt":true},{"name":"amphp\/php-cs-fixer-config 2.0.0","package":"amphp\/php-cs-fixer-config","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.0.0","date":"2022-12-18T15:51:30Z","body":" - Common code style for all packages based on Amp v3.\r\n - Now includes `strict_types` and several other minor updates.","revolt":true},{"name":"amphp\/websocket 1.0.3","package":"amphp\/websocket","tag_name":"v1.0.3","html_url":"https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v1.0.3","date":"2022-04-11T23:50:33Z","body":"- Added `GOING_AWAY` to the list of normal close codes, which will cause `Client::receive()` to return null instead of throwing an exception if a browser sends this code when navigating away from a page\r\n- Fixed undefined array access in rare case where the event loop is exited after receiving a message on the websocket and then re-entered at a later time (amphp\/websocket-client#39)","revolt":false},{"name":"amphp\/websocket-client 1.0.1","package":"amphp\/websocket-client","tag_name":"v1.0.1","html_url":"https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v1.0.1","date":"2022-03-10T20:11:00Z","body":" - Ignore `\/docs` in `.gitattributes` to avoid broken symlink (#38)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v1.0.0...v1.0.1","revolt":false},{"name":"amphp\/parallel-functions 1.1.0","package":"amphp\/parallel-functions","tag_name":"v1.1.0","html_url":"https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v1.1.0","date":"2022-02-03T19:56:18Z","body":"## What's Changed\r\n - Update to `laravel\/serializable-closure` instead of `opis\/closure` by @owenvoke\r\n - Increase minimum PHP version to PHP 7.4 by @owenvoke\r\n\r\n## New Contributors\r\n* @sci3ma made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/24\r\n* @owenvoke made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/31\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel-functions\/compare\/v1.0.0...v1.1.0","revolt":false},{"name":"amphp\/rpc 1.0.0","package":"amphp\/rpc","tag_name":"v1.0.0","html_url":"https:\/\/github.com\/amphp\/rpc\/releases\/tag\/v1.0.0","date":"2022-02-02T22:13:33Z","body":"Initial release.","revolt":false},{"name":"amphp\/cluster 1.0.1","package":"amphp\/cluster","tag_name":"v1.0.1","html_url":"https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v1.0.1","date":"2021-12-14T00:48:53Z","body":"Update to use [`amphp\/file`](https:\/\/github.com\/amphp\/file) `v2.x`.","revolt":false},{"name":"amphp\/mysql 2.1.2","package":"amphp\/mysql","tag_name":"v2.1.2","html_url":"https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v2.1.2","date":"2021-12-05T16:42:20Z","body":"- Fixed a bug when decoding a JSON field (#113)","revolt":false},{"name":"amphp\/http-client-cookies 1.2.0","package":"amphp\/http-client-cookies","tag_name":"v1.2.0","html_url":"https:\/\/github.com\/amphp\/http-client-cookies\/releases\/tag\/v1.2.0","date":"2021-10-21T20:59:11Z","body":" - Added compatibility with `amphp\/file` v2\r\n - Updated public suffix list","revolt":false},{"name":"amphp\/beanstalk 0.3.2","package":"amphp\/beanstalk","tag_name":"v0.3.2","html_url":"https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.3.2","date":"2020-11-18T18:43:53Z","body":" - Added support for Symfony YAML library v4 and v5. (#34)\r\n","revolt":false},{"name":"amphp\/websocket-server 2.0.0","package":"amphp\/websocket-server","tag_name":"v2.0.0","html_url":"https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v2.0.0","date":"2020-07-05T17:52:19Z","body":"### Changes since RC3\r\n\r\n- Renamed `Endpoint` to `Gateway`. An alias to `Endpoint` is provided for compatibility.\r\n- Renamed `WebsocketObserver` to `WebsocketServerObserver`.\r\n\r\n### Upgrading from v1.x to v2.0\r\n\r\nThis library has been refactored to use the new [`amphp\/websocket`](https:\/\/github.com\/amphp\/websocket) library containing components that can be shared between server and clients.\r\n\r\n`Websocket` is now a final class that requires an instance of `ClientHandler`, which has two methods to handle client handshakes and the client connection.\r\n- `handleHandshake()`: This method is invoked when a WebSocket connection attempt is made. The application may alter the given Response to deny the connection attempt or set application-specific headers.\r\n- `handleClient()`: This method is invoked upon a successful WebSocket connection. This method should use a loop to receive messages from the WebSocket connection.\r\n\r\n```php\r\nuse Amp\\Http\\Server\\Request;\r\nuse Amp\\Http\\Server\\Response;\r\nuse Amp\\Http\\Status;\r\nuse Amp\\Success;\r\nuse Amp\\Websocket\\Client;\r\nuse Amp\\Websocket\\Server\\ClientHandler;\r\nuse Amp\\Websocket\\Server\\Gateway;\r\nuse Amp\\Websocket\\Server\\Websocket;\r\n\r\n$websocket = new Websocket(new class implements ClientHandler {\r\n    public function handleHandshake(Gateway $gateway, Request $request, Response $response): Promise\r\n    {\r\n        if (!\\in_array($request->getHeader('origin'), ['http:\/\/localhost:1337', 'http:\/\/127.0.0.1:1337', 'http:\/\/[::1]:1337'], true)) {\r\n            return $gateway->getErrorHandler()->handleError(Status::FORBIDDEN, 'Origin forbidden', $request);\r\n        }\r\n\r\n        return new Success($response);\r\n    }\r\n\r\n    public function handleClient(Gateway $gateway, Client $client, Request $request, Response $response): Promise\r\n    {\r\n        return Amp\\call(function () use ($gateway, $client) {\r\n            while ($message = yield $client->receive()) {\r\n                \\assert($message instanceof Message);\r\n                $gateway->broadcast(\\sprintf('%d: %s', $client->getId(), yield $message->buffer()));\r\n            }\r\n        });\r\n    }\r\n});\r\n```\r\n\r\nWebSocket clients are now represented by a [`Client`](https:\/\/github.com\/amphp\/websocket\/blob\/v1.0.0\/src\/Client.php) object. This object contains several methods for getting information about the client and for sending messages to a single client.\r\n\r\nServers can send to multiple clients using `Gateway::broadcast()` and `Gateway::multicast()` (plus binary versions, `Gateway::broadcastBinary()` and `Gateway::multicastBinary()`). A `Gateway` instance is provided to `ClientHandler::handleHandshake()` and `ClientHandler::handleClient()`.\r\n","revolt":false},{"name":"amphp\/serialization 1.0.0","package":"amphp\/serialization","tag_name":"v1.0.0","html_url":"https:\/\/github.com\/amphp\/serialization\/releases\/tag\/v1.0.0","date":"2020-03-28T14:03:14Z","body":"Initial release.","revolt":true},{"name":"amphp\/http-tunnel 1.0.0","package":"amphp\/http-tunnel","tag_name":"v1.0.0","html_url":"https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v1.0.0","date":"2019-12-31T17:10:50Z","body":"Initial release.","revolt":false},{"name":"amphp\/http-client-cache 1.0.0","package":"amphp\/http-client-cache","tag_name":"v1.0.0","html_url":"https:\/\/github.com\/amphp\/http-client-cache\/releases\/tag\/v1.0.0","date":"2019-12-21T19:52:55Z","body":"Initial release.","revolt":false},{"name":"amphp\/react-adapter 2.1.0","package":"amphp\/react-adapter","tag_name":"v2.1.0","html_url":"https:\/\/github.com\/amphp\/react-adapter\/releases\/tag\/v2.1.0","date":"2019-11-04T22:20:56Z","body":" - `React\\EventLoop\\Factory` is now automatically replaced with another implementation that throws on each usage to prevent two loops existing concurrently by accident.\r\n   Set `AMP_REACT_ADAPTER_DISABLE_FACTORY_OVERRIDE=1` as environment variable or constant to disable this protection.","revolt":false},{"name":"amphp\/react-stream-adapter 0.1.0","package":"amphp\/react-stream-adapter","tag_name":"v0.1.0","html_url":"https:\/\/github.com\/amphp\/react-stream-adapter\/releases\/tag\/v0.1.0","date":"2018-03-07T10:13:55Z","body":"Initial release.","revolt":false}]
+[
+    {
+        "name": "amphp\/hpack 3.1.6",
+        "package": "amphp\/hpack",
+        "tag_name": "v3.1.6",
+        "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.1.6",
+        "date": "2023-09-04T19:13:11Z",
+        "body": "- Fixed decoding `proxy-authenticate` header (was decoded as `proxy-authentication` before)\r\n- Fix float conversion on too large integers (properly rejected with an exception now)",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/byte-stream 2.0.2",
+        "package": "amphp\/byte-stream",
+        "tag_name": "v2.0.2",
+        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.0.2",
+        "date": "2023-09-01T04:46:58Z",
+        "body": "- Fixed throwing an `Error` when invoking `getStdin()`, `getStdout()`, and `getStderr()` if the corresponding STDIO stream had been previously closed. Instead, an already closed stream instance is returned.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/parallel 2.2.2",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.2",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.2",
+        "date": "2023-08-30T18:15:35Z",
+        "body": "- Fixed potential hang of a `ProcessContext` created by `DefaultContextFactory` if output buffers fill by piping STDOUT and STDERR to the same pipes on the parent process. This also provides parity with the default behavior of `ThreadContext`.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-server-form-parser 2.0.0",
+        "package": "amphp\/http-server-form-parser",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-server-form-parser\/releases\/tag\/v2.0.0",
+        "date": "2023-08-25T03:01:02Z",
+        "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `BufferingParser` and `StreamingParser` to `FormParser` and `StreamingFormParser`, respectively.\r\n- Removed the `parseForm` function in favor of the `Form::fromRequest()` static method.\r\n- Removed `ParsingMiddleware`. Use `Form::fromRequest()` instead.\r\n- Removed `ParseException`. Form parsing errors will throw an `HttpErrorException` from `amphp\/http-server` instead, which do not need to be caught (the server will automatically return an error response).",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-server 3.2.0",
+        "package": "amphp\/http-server",
+        "tag_name": "v3.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.2.0",
+        "date": "2023-08-24T23:48:01Z",
+        "body": "- Allowed `league\/uri@v7.1` and `psr\/message@v2`\r\n- Added previous param to `HttpErrorException` constructor\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.1.0...v3.2.0",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http 2.1.0",
+        "package": "amphp\/http",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.0",
+        "date": "2023-08-24T04:31:15Z",
+        "body": "- Updated `league\/uri-components` requirements to `^2.4.2 | ^7.1` as part of fixing #24 and allow `psr\/message@v2`\r\n- Changed request query string encoding to use RFC3986 rules to as part of fixing #24\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.0.0...v2.1.0",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-server-session 3.0.0",
+        "package": "amphp\/http-server-session",
+        "tag_name": "v3.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-server-session\/releases\/tag\/v3.0.0",
+        "date": "2023-08-20T18:31:25Z",
+        "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `Storage`, `InMemoryStorage`, `RedisStorage`, `DefaultIdGenerator`, and `Driver` to `SessionStorage`, `LocalSessionStorage`, `RedisSessionStorage`, `Base64UrlSessionIdGenerator`, and `SessionFactory`, respectively\r\n- Renamed methods on `Session`: `open()` to `lock()`, `save()` to `commit()`\r\n- Added `Session::rollback()` to undo local changes and re-read the session data from storage\r\n- Added `SessionTrainer` for examining session changes unit testing",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/redis 2.0.0",
+        "package": "amphp\/redis",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.0",
+        "date": "2023-08-20T16:57:56Z",
+        "body": "Initial release compatible with AMPHP v3. As with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Added `RedisParcel` in the `Sync` sub-namespace implementing the `Parcel` interface from `amphp\/sync`\r\n - Added `RedisConnector` interface to decouple connecting and init commands such as `AUTH` and `SELECT`\r\n - Reorganized class names \/ namespaces for better overview\r\n   - `Redis` moved to `RedisClient`\r\n   - `Subscriber` \/ `Subscription` moved to `RedisSubscriber` \/ `RedisSubscription`\r\n   -  `Cache` moved to `RedisCache`\r\n   - `Mutex` sub-namespace has been changed to `Sync`. All classes within now have a prefix of Redis, e.g., `Mutex` \u2192 `RedisMutex`, `MutexOptions` \u2192 `RedisMutexOptions`\r\n   - `Config` moved to `RedisConfig`\r\n   - `RespSocket` moved to `Amp\\Redis\\Connection\\RedisConnection` and is an interface now\r\n   - `RespParser` moved to `Amp\\Redis\\Protocol\\RespParser`\r\n   - `QueryExecutor` moved to `Amp\\Redis\\Connection\\RedisLink`\r\n   - `RemoteExecutor` moved to `Amp\\Redis\\Connection\\ReconnectingRedisLink`\r\n   - `RedisHyperLogLog` moved to `Amp\\Redis\\Command\\RedisHyperLogLog`\r\n   - `RedisList` moved to `Amp\\Redis\\Command\\RedisList`\r\n   - `RedisMap` moved to `Amp\\Redis\\Command\\RedisMap`\r\n   - `RedisSet` moved to `Amp\\Redis\\Command\\RedisSet`\r\n   - `RedisSortedSet` moved to `Amp\\Redis\\Command\\RedisSortedSet`\r\n   - `SortOptions` moved to `Amp\\Redis\\Command\\Option\\SortOptions`\r\n   - `SetOptions` moved to `Amp\\Redis\\Command\\Option\\SetOptions`\r\n   - `SocketException` moved to `Amp\\Redis\\Connection\/RedisConnectionException`\r\n   - `ParserException` moved to `Amp\\Redis\\Protocol\\ProtocolException`\r\n   - `QueryException` moved to `Amp\\Redis\\Protocol\\QueryException`\r\n - `RedisSubscription` is now a simple PHP iterator now that `Amp\\Iterator` is no longer necessary with fibers.\r\n",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-server-static-content 2.0.0",
+        "package": "amphp\/http-server-static-content",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-server-static-content\/releases\/tag\/v2.0.0",
+        "date": "2023-08-20T15:20:11Z",
+        "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- `DocumentRoot` now requires an instance of `HttpServer` and `ErrorHandler` to construct\r\n- Removed `DocumentRoot::onStart()` and `DocumentRoot::onStop()`, as it's now internally registered\r\n- Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`\r\n- Added `StaticResource` to serve a single static file",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/socket 2.2.0",
+        "package": "amphp\/socket",
+        "tag_name": "v2.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.0",
+        "date": "2023-08-19T15:32:42Z",
+        "body": "## What's Changed\r\n* Add support for `league\/uri` 7.x\r\n* Undefined variable `$socket` in example by @61-6c-69 in https:\/\/github.com\/amphp\/socket\/pull\/106\r\n\r\n## New Contributors\r\n* @61-6c-69 made their first contribution in https:\/\/github.com\/amphp\/socket\/pull\/106\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.1.0...v2.2.0",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/sync 2.1.0",
+        "package": "amphp\/sync",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.1.0",
+        "date": "2023-08-19T13:59:33Z",
+        "body": "## What's Changed\r\n* Added re-entry support to `synchronized()` by @kelunik in https:\/\/github.com\/amphp\/sync\/pull\/26\r\n* Fixed error handling in `SharedMemoryParcel`\r\n* Fixed a typo by @thgs in https:\/\/github.com\/amphp\/sync\/pull\/25\r\n\r\n## New Contributors\r\n* @thgs made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/25\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.0.0...v2.1.0",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-client 4.6.3",
+        "package": "amphp\/http-client",
+        "tag_name": "v4.6.3",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v4.6.3",
+        "date": "2023-08-15T20:16:52Z",
+        "body": "## What's Changed\r\n* Allow `psr\/http-message` ^2 by @drealecs in https:\/\/github.com\/amphp\/http-client\/pull\/328\r\n* Allow `league\/uri` ^7 by @nicolas-grekas in https:\/\/github.com\/amphp\/http-client\/pull\/335\r\n* Fix HTTP\/2 cancellation while receiving the response\r\n\r\n## New Contributors\r\n* @drealecs made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/328\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v4.6.2...v4.6.3",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/http-server-router 2.0.0",
+        "package": "amphp\/http-server-router",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-server-router\/releases\/tag\/v2.0.0",
+        "date": "2023-08-05T19:33:16Z",
+        "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n - A PSR-3 logger is now required in the `Router` constructor\r\n - Starting the server with an empty `Router` is now allowed and only logs a notice instead of throwing an exception\r\n - Middleware can be added via `addMiddleware()` instead of `stack()`\r\n - Removed support for adding middleware directly via `addRoute()`, use `stackMiddleware()` instead if you need this\r\n - Removed `Router::onStart()`, as it's now internally registered\r\n - Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/log 2.0.0",
+        "package": "amphp\/log",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/log\/releases\/tag\/v2.0.0",
+        "date": "2023-08-05T19:05:50Z",
+        "body": "- Increased minimum PHP version to 8.1\r\n- Make use of fibers with Amp v3 and Revolt\r\n- Added support for Monolog v3.x\r\n\r\nThis release does not contain any changes in comparison to `v2.0.0-beta.2`.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/process 2.0.1",
+        "package": "amphp\/process",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.1",
+        "date": "2023-07-31T17:56:29Z",
+        "body": "- Fixed error handling if the started process fails immediately.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.0...v2.0.1",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/file 3.0.1",
+        "package": "amphp\/file",
+        "tag_name": "v3.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.0.1",
+        "date": "2023-07-23T19:04:03Z",
+        "body": "## What's Changed\r\n\r\n* Fix `touch()` on non-existent files in ext-uv and ext-eio by @kelunik (#73)\r\n* Fix `write()` truncation with ext-uv and ext-eio by @danog in (#76)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.0...v3.0.1",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/dns 2.0.1",
+        "package": "amphp\/dns",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.0.1",
+        "date": "2023-01-21T16:08:27Z",
+        "body": "## What's Changed\r\n\r\n* Fix fallback to blocking resolver by @danog and @kelunik in https:\/\/github.com\/amphp\/dns\/pull\/108 and https:\/\/github.com\/amphp\/dns\/pull\/109\r\n* Try entire search list when resolve type is restricted by @trowski: [`9d988e31`](https:\/\/github.com\/amphp\/dns\/commit\/9d988e3127dc233210a5336baf329d58a294bcb9)\r\n* Improve static analysis with more specific DnsResolver return types by @trowski: [`7344cceb`](https:\/\/github.com\/amphp\/dns\/commit\/7344cceb95d6e66bf8c867e0b50417ced4b055d8)\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.0.0...v2.0.1",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/windows-registry 1.0.0",
+        "package": "amphp\/windows-registry",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/windows-registry\/releases\/tag\/v1.0.0",
+        "date": "2023-01-10T20:34:04Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- `WindowsRegistry` offers the methods as static methods now instead of instance methods.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/cache 2.0.0",
+        "package": "amphp\/cache",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/cache\/releases\/tag\/v2.0.0",
+        "date": "2023-01-09T21:07:48Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Renamed `ArrayCache` to `LocalCache`, swapping the constructor argument order\r\n - Modified `LocalCache` to implement `IteratorAggregate` and `Countable`, acting as an LRU cache now (#20)\r\n - Support arbitrary values in `LocalCache`, `NullCache`, and `PrefixCache`\r\n - Changed `Cache` to support arbitrary values\r\n - Introduced separate `StringCache` interface for caching only strings\r\n - Added `StringCacheAdapter` to use any `Cache` in place of a `StringCache`\r\n - Removed `FileCache` (will be available in `amphp\/file` instead)",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/postgres 1.4.5",
+        "package": "amphp\/postgres",
+        "tag_name": "v1.4.5",
+        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v1.4.5",
+        "date": "2023-01-07T18:54:57Z",
+        "body": "- Fixed cancelling an active query if a connection is closed when using `ext-pgsql` (#54)",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/sql-common 1.1.4",
+        "package": "amphp\/sql-common",
+        "tag_name": "v1.1.4",
+        "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v1.1.4",
+        "date": "2023-01-06T04:33:14Z",
+        "body": "- Fixed potential double deferred resolve when a connection pool is full.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/parser 1.1.0",
+        "package": "amphp\/parser",
+        "tag_name": "v1.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/parser\/releases\/tag\/v1.1.0",
+        "date": "2022-12-30T19:26:39Z",
+        "body": "- PHP 7.4 now required\r\n- Improved performance of the parser when requesting small chunks of data and when yielding an integer length delimiter",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/pipeline 1.0.0",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.0.0",
+        "date": "2022-12-23T16:56:59Z",
+        "body": "Initial stable release &#x1F389;\r\n\r\n#### Changes from 1.0.0 Beta 7\r\n- Marked `ConcurrentArrayIterator`, `ConcurrentChainedIterator`, and `ConcurrentIterableIterator` as `@internal`. Instead of these classes, use `Pipeline::fromIterable()` or `Pipeline::concat()`\r\n- `Pipeline::concat()` now accepts an array of any `iterable`, not only other `Pipeline` objects",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/sql 1.0.2",
+        "package": "amphp\/sql",
+        "tag_name": "v1.0.2",
+        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v1.0.2",
+        "date": "2022-12-18T23:03:07Z",
+        "body": "- Fix a deprecation notice on PHP 8.1 if a configuration key does not have a value.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/phpunit-util 3.0.0",
+        "package": "amphp\/phpunit-util",
+        "tag_name": "v3.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/phpunit-util\/releases\/tag\/v3.0.0",
+        "date": "2022-12-18T17:53:05Z",
+        "body": "This package has been redesigned for compatibility with AMPHP v3 and fibers. `AsyncTestCase` serves a similar purpose as before, providing helper methods for unit testing within an async context. Each test case is run within a unique fiber to allow suspending during the test run.\r\n\r\n- `AsyncTestCase::setUpAsync()` and `tearDownAsync()` have been removed. Use `AsyncTestCase::setUp()` and `tearDown()` instead, as both of these methods are now able to execute async using fibers.\r\n- `AsyncTestCase::createCallback()` now returns a `Closure`. Additionally, an optional parameter for expected arguments upon invocation have been added (uses `InvocationMocker::with(...)` to set expected arguments).",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/amp 3.0.0",
+        "package": "amphp\/amp",
+        "tag_name": "v3.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.0",
+        "date": "2022-12-18T17:13:34Z",
+        "body": "\r\n#### Event Loop\r\n\r\nAmp no longer ships its own event loop. It's now based on [Revolt](https:\/\/revolt.run). `Revolt\\EventLoop` is quite similar to Amp's previous `Amp\\Loop`. A very important difference is using `float $seconds` instead of `int $milliseconds` for timers though!\r\n\r\n#### Promises\r\n\r\n`Future` is a replacement for the previous `Promise`.\r\nThere's no need for callbacks or `yield` anymore!\r\nIts `await()` method is based on fibers and replaces generator based coroutines \/ `Amp\\Promise\\wait()`.\r\n\r\n- Renamed `Amp\\Deferred` to `Amp\\DeferredFuture`.\r\n- Removed `Amp\\Promise\\wait()`: Use `Amp\\Future::await()` instead, which can be called in any (nested) context unlike before.\r\n- Removed `Amp\\call()`: Remove the passed closure boilerplate and all `yield` keywords, interruption is handled via fibers now instead of generator coroutines.\r\n- Removed `Amp\\asyncCall()`: Replace invocations with `Amp\\async()`, which starts a new fiber instead of using generators.\r\n- Removed `Amp\\coroutine()`: There's no direct replacement.\r\n- Removed `Amp\\asyncCoroutine()`: There's no direct replacement.\r\n- Removed `Amp\\Promise\\timeout()`: `Future::await()` accepts an optional `Cancellation`, which can be used as a replacement.\r\n- Removed `Amp\\Promise\\rethrow()`: Unhandled errors are now automatically thrown into the event loop, so there's no need for that function anymore.\r\n- Unhandled errors can be ignored using `Future::ignore()` if needed, but should usually be handled in some way.\r\n- Removed `Amp\\Promise\\wrap()`: Use `Future::finally()` instead.\r\n- Renamed `Amp\\getCurrentTime()` to `Amp\\now()` returning the time in seconds instead of milliseconds.\r\n- Changed `Amp\\delay()` to accept the delay in seconds now instead of milliseconds.\r\n- Added `Amp\\weakClosure()` to allow a class to hold a self-referencing Closure without creating a circular reference that prevents automatic garbage collection.\r\n- Added `Amp\\trapSignal()` to await one or multiple signals.\r\n\r\n#### Promise Combinators\r\n\r\nPromise combinators have been renamed:\r\n\r\n- `Amp\\Promise\\race()` has been renamed to `Amp\\Future\\awaitFirst()`\r\n- `Amp\\Promise\\first()` has been renamed to `Amp\\Future\\awaitAny()`\r\n- `Amp\\Promise\\some()` has been renamed to `Amp\\Future\\awaitAnyN()`\r\n- `Amp\\Promise\\any()` has been renamed to `Amp\\Future\\awaitAll()`\r\n- `Amp\\Promise\\all()` has been renamed to `Amp\\Future\\await()`\r\n\r\n#### CancellationToken\r\n\r\n- `CancellationToken` has been renamed to `Cancellation`.\r\n- `CancellationTokenSource` has been renamed to `DeferredCancellation`.\r\n- `NullCancellationToken` has been renamed to `NullCancellation`.\r\n- `TimeoutCancellationToken` has been renamed to `TimeoutCancellation`.\r\n- `CombinedCancellationToken` has been renamed to `CompositeCancellation`.\r\n- `SignalCancellation` has been added.\r\n\r\n#### Iterators\r\n\r\nIterators have been removed from `amphp\/amp` as normal PHP iterators can be used with fibers now and there's no need for a separate API.\r\nHowever, there's still some need for _concurrent_ iterators, which is covered by the new [`amphp\/pipeline`](https:\/\/github.com\/amphp\/pipeline) library now.\r\n\r\n#### Closable\r\n\r\n`Amp\\Closable` has been added as a new basic interface for closable resources such as streams or sockets.\r\n\r\n#### Strict Types\r\n\r\nStrict types now declared in all library files.\r\nThis will affect callbacks invoked within this library's code which use scalar types as parameters.\r\nFunctions used with `Amp\\async()` are the most likely to be affected by this change \u2014 these functions will now be invoked within a strict-types context.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/php-cs-fixer-config 2.0.0",
+        "package": "amphp\/php-cs-fixer-config",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.0.0",
+        "date": "2022-12-18T15:51:30Z",
+        "body": " - Common code style for all packages based on Amp v3.\r\n - Now includes `strict_types` and several other minor updates.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/websocket 1.0.3",
+        "package": "amphp\/websocket",
+        "tag_name": "v1.0.3",
+        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v1.0.3",
+        "date": "2022-04-11T23:50:33Z",
+        "body": "- Added `GOING_AWAY` to the list of normal close codes, which will cause `Client::receive()` to return null instead of throwing an exception if a browser sends this code when navigating away from a page\r\n- Fixed undefined array access in rare case where the event loop is exited after receiving a message on the websocket and then re-entered at a later time (amphp\/websocket-client#39)",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/websocket-client 1.0.1",
+        "package": "amphp\/websocket-client",
+        "tag_name": "v1.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v1.0.1",
+        "date": "2022-03-10T20:11:00Z",
+        "body": " - Ignore `\/docs` in `.gitattributes` to avoid broken symlink (#38)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v1.0.0...v1.0.1",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/parallel-functions 1.1.0",
+        "package": "amphp\/parallel-functions",
+        "tag_name": "v1.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v1.1.0",
+        "date": "2022-02-03T19:56:18Z",
+        "body": "## What's Changed\r\n - Update to `laravel\/serializable-closure` instead of `opis\/closure` by @owenvoke\r\n - Increase minimum PHP version to PHP 7.4 by @owenvoke\r\n\r\n## New Contributors\r\n* @sci3ma made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/24\r\n* @owenvoke made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/31\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel-functions\/compare\/v1.0.0...v1.1.0",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/rpc 1.0.0",
+        "package": "amphp\/rpc",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/rpc\/releases\/tag\/v1.0.0",
+        "date": "2022-02-02T22:13:33Z",
+        "body": "Initial release.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/cluster 1.0.1",
+        "package": "amphp\/cluster",
+        "tag_name": "v1.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v1.0.1",
+        "date": "2021-12-14T00:48:53Z",
+        "body": "Update to use [`amphp\/file`](https:\/\/github.com\/amphp\/file) `v2.x`.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/mysql 2.1.2",
+        "package": "amphp\/mysql",
+        "tag_name": "v2.1.2",
+        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v2.1.2",
+        "date": "2021-12-05T16:42:20Z",
+        "body": "- Fixed a bug when decoding a JSON field (#113)",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/http-client-cookies 1.2.0",
+        "package": "amphp\/http-client-cookies",
+        "tag_name": "v1.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-cookies\/releases\/tag\/v1.2.0",
+        "date": "2021-10-21T20:59:11Z",
+        "body": " - Added compatibility with `amphp\/file` v2\r\n - Updated public suffix list",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/beanstalk 0.3.2",
+        "package": "amphp\/beanstalk",
+        "tag_name": "v0.3.2",
+        "html_url": "https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.3.2",
+        "date": "2020-11-18T18:43:53Z",
+        "body": " - Added support for Symfony YAML library v4 and v5. (#34)\r\n",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/websocket-server 2.0.0",
+        "package": "amphp\/websocket-server",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v2.0.0",
+        "date": "2020-07-05T17:52:19Z",
+        "body": "### Changes since RC3\r\n\r\n- Renamed `Endpoint` to `Gateway`. An alias to `Endpoint` is provided for compatibility.\r\n- Renamed `WebsocketObserver` to `WebsocketServerObserver`.\r\n\r\n### Upgrading from v1.x to v2.0\r\n\r\nThis library has been refactored to use the new [`amphp\/websocket`](https:\/\/github.com\/amphp\/websocket) library containing components that can be shared between server and clients.\r\n\r\n`Websocket` is now a final class that requires an instance of `ClientHandler`, which has two methods to handle client handshakes and the client connection.\r\n- `handleHandshake()`: This method is invoked when a WebSocket connection attempt is made. The application may alter the given Response to deny the connection attempt or set application-specific headers.\r\n- `handleClient()`: This method is invoked upon a successful WebSocket connection. This method should use a loop to receive messages from the WebSocket connection.\r\n\r\n```php\r\nuse Amp\\Http\\Server\\Request;\r\nuse Amp\\Http\\Server\\Response;\r\nuse Amp\\Http\\Status;\r\nuse Amp\\Success;\r\nuse Amp\\Websocket\\Client;\r\nuse Amp\\Websocket\\Server\\ClientHandler;\r\nuse Amp\\Websocket\\Server\\Gateway;\r\nuse Amp\\Websocket\\Server\\Websocket;\r\n\r\n$websocket = new Websocket(new class implements ClientHandler {\r\n    public function handleHandshake(Gateway $gateway, Request $request, Response $response): Promise\r\n    {\r\n        if (!\\in_array($request->getHeader('origin'), ['http:\/\/localhost:1337', 'http:\/\/127.0.0.1:1337', 'http:\/\/[::1]:1337'], true)) {\r\n            return $gateway->getErrorHandler()->handleError(Status::FORBIDDEN, 'Origin forbidden', $request);\r\n        }\r\n\r\n        return new Success($response);\r\n    }\r\n\r\n    public function handleClient(Gateway $gateway, Client $client, Request $request, Response $response): Promise\r\n    {\r\n        return Amp\\call(function () use ($gateway, $client) {\r\n            while ($message = yield $client->receive()) {\r\n                \\assert($message instanceof Message);\r\n                $gateway->broadcast(\\sprintf('%d: %s', $client->getId(), yield $message->buffer()));\r\n            }\r\n        });\r\n    }\r\n});\r\n```\r\n\r\nWebSocket clients are now represented by a [`Client`](https:\/\/github.com\/amphp\/websocket\/blob\/v1.0.0\/src\/Client.php) object. This object contains several methods for getting information about the client and for sending messages to a single client.\r\n\r\nServers can send to multiple clients using `Gateway::broadcast()` and `Gateway::multicast()` (plus binary versions, `Gateway::broadcastBinary()` and `Gateway::multicastBinary()`). A `Gateway` instance is provided to `ClientHandler::handleHandshake()` and `ClientHandler::handleClient()`.\r\n",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/serialization 1.0.0",
+        "package": "amphp\/serialization",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/serialization\/releases\/tag\/v1.0.0",
+        "date": "2020-03-28T14:03:14Z",
+        "body": "Initial release.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-tunnel 1.0.0",
+        "package": "amphp\/http-tunnel",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v1.0.0",
+        "date": "2019-12-31T17:10:50Z",
+        "body": "Initial release.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/http-client-cache 1.0.0",
+        "package": "amphp\/http-client-cache",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-cache\/releases\/tag\/v1.0.0",
+        "date": "2019-12-21T19:52:55Z",
+        "body": "Initial release.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/react-adapter 2.1.0",
+        "package": "amphp\/react-adapter",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/react-adapter\/releases\/tag\/v2.1.0",
+        "date": "2019-11-04T22:20:56Z",
+        "body": " - `React\\EventLoop\\Factory` is now automatically replaced with another implementation that throws on each usage to prevent two loops existing concurrently by accident.\r\n   Set `AMP_REACT_ADAPTER_DISABLE_FACTORY_OVERRIDE=1` as environment variable or constant to disable this protection.",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/react-stream-adapter 0.1.0",
+        "package": "amphp\/react-stream-adapter",
+        "tag_name": "v0.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/react-stream-adapter\/releases\/tag\/v0.1.0",
+        "date": "2018-03-07T10:13:55Z",
+        "body": "Initial release.",
+        "revolt": false
+    }
+]
