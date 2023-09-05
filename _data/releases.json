@@ -1,11 +1,11 @@
 [
     {
-        "name": "amphp\/hpack 3.1.6",
+        "name": "amphp\/hpack 3.1.7",
         "package": "amphp\/hpack",
-        "tag_name": "v3.1.6",
-        "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.1.6",
-        "date": "2023-09-04T19:13:11Z",
-        "body": "- Fixed decoding `proxy-authenticate` header (was decoded as `proxy-authentication` before)\r\n- Fix float conversion on too large integers (properly rejected with an exception now)",
+        "tag_name": "v3.1.7",
+        "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.1.7",
+        "date": "2023-09-05T05:55:22Z",
+        "body": " - Fixed encoding of headers with length of exactly 255 bytes (#12)",
         "revolt": true
     },
     {
