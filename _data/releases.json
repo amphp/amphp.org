@@ -333,15 +333,6 @@
         "revolt": true
     },
     {
-        "name": "amphp\/http-tunnel 1.0.0",
-        "package": "amphp\/http-tunnel",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v1.0.0",
-        "date": "2019-12-31T17:10:50Z",
-        "body": "Initial release.",
-        "revolt": false
-    },
-    {
         "name": "amphp\/http-client-cache 1.0.0",
         "package": "amphp\/http-client-cache",
         "tag_name": "v1.0.0",
