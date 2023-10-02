@@ -1,20 +1,20 @@
 [
     {
+        "name": "amphp\/websocket 2.0.1",
+        "package": "amphp\/websocket",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.1",
+        "date": "2023-10-02T16:24:25Z",
+        "body": "- Fixed invoking the onClose handler attached to a client when the client socket is closed abruptly (that is, without sending a close frame).",
+        "revolt": true
+    },
+    {
         "name": "amphp\/websocket-server 3.0.0",
         "package": "amphp\/websocket-server",
         "tag_name": "v3.0.0",
         "html_url": "https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v3.0.0",
         "date": "2023-09-10T03:25:41Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nThis release is compatible with [`amphp\/http-server@^3`](https:\/\/github.com\/amphp\/http-server) and [`amphp\/websocket@^2`](https:\/\/github.com\/amphp\/websocket).\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nSimilar to `v2`, a Websocket is created by creating an instance of `Websocket` and using it as a request handler on an HTTP server. However, the constructor arguments have changed to reflect the changes below and the removal of the `Options` object from `amphp\/websocket`.\r\n\r\nA gateway object is no longer provided automatically to a client handler. A client handler may create one or more `WebsocketClientGateway` objects to hold a collection of clients and asynchronously broadcast messages to all (or only some) clients within a gateway.\r\n\r\n- Renamed most classes and interfaces to add `Websocket` as a prefix to avoid name collisions with similarly named classes in other packages which are frequently used together. For example, `ClientHandler` is now `WebsocketClientHandler`, `ClientFactory` is now `WebsocketClientFactory`.\r\n- The handshake accepting functionality of `ClientHandler` has been split into a separate interface, `WebsocketAcceptor`. In general, most applications will want to use `AllowOriginAcceptor`. For more flexibility, create your own implementation by delegating to `Rfc6455Acceptor` and adding your own logic in `handleHandshake()`.\r\n- `WebsocketServerObserver` has been removed. Use the `onStart()` and `onStop()` methods of `HttpServer` if an action is needed when starting or stopping the HTTP server.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/websocket 2.0.0",
-        "package": "amphp\/websocket",
-        "tag_name": "v2.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.0",
-        "date": "2023-09-10T02:56:32Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Renamed most classes and interfaces to add `Websocket` as a prefix to avoid name collisions with similarly named classes in other packages which are frequently used together. For example, `Client` is now `WebsocketClient`, `Message` is now `WebsocketMessage`.\r\n- `WebsocketMessage` (formerly `Message`) now implements `Stringable`, allowing the object to be simply cast to a string to buffer the contents of a message. Max message limits set on the client will apply.\r\n- Added `WebsocketException` as base class for `WebsocketClosedException` as well as a new exception, `WebsocketParserException`.\r\n- The `Options` object has been removed. Various configurations options previously available in this class can now be specified by constructor arguments to various factories, such as `Rfc6455ParserFactory` in this library or the client factories found in [`amphp\/websocket-server`](https:\/\/github.com\/amphp\/websocket-server) and [`amphp\/websocket-client`](https:\/\/github.com\/amphp\/websocket-client).\r\n- Move compression related classes into a `Compression` sub-namespace.\r\n- Split the parser and frame compiler from the client implementation, now found in the `Parser` sub-namespace. This change will allow for greater visibility and logging of activity on a websocket connection.\r\n- Added `WebsocketHeartbeatQueue` and `WebsocketRateLimit` interfaces with implementations `PeriodicHeartbeatQueue` and `ConstantRateLimit`. These interfaces and implementations offer greater extensibility and fine-tuning of connection behavior, while maintaining easy setup for most applications.\r\n- `ClientMetadata` has been removed in favor of `WebsocketCount` and `WebsocketTimestamp` enums coupled with methods on a `WebsocketClient`, `getCount()` and `getTimestamp()`, to query for connection info.\r\n- The callback provided to `WebsocketClient::onClose()` is now invoked with two arguments\u00a0\u2013\u00a0the Websocket client ID and an instance of `WebsocketCloseInfo` providing the close code, reason, time, and whom initiated the close. ",
         "revolt": true
     },
     {
