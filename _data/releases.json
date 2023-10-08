@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client-cookies 2.0.0",
+        "package": "amphp\/http-client-cookies",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-cookies\/releases\/tag\/v2.0.0",
+        "date": "2023-10-08T17:34:21Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Renamed `InMemoryCookieJar` to `LocalCookieJar`",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.0.0",
         "package": "amphp\/http-client",
         "tag_name": "v5.0.0",
@@ -303,15 +312,6 @@
         "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v2.1.2",
         "date": "2021-12-05T16:42:20Z",
         "body": "- Fixed a bug when decoding a JSON field (#113)",
-        "revolt": false
-    },
-    {
-        "name": "amphp\/http-client-cookies 1.2.0",
-        "package": "amphp\/http-client-cookies",
-        "tag_name": "v1.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client-cookies\/releases\/tag\/v1.2.0",
-        "date": "2021-10-21T20:59:11Z",
-        "body": " - Added compatibility with `amphp\/file` v2\r\n - Updated public suffix list",
         "revolt": false
     },
     {
