@@ -1,5 +1,23 @@
 [
     {
+        "name": "amphp\/websocket-server 3.0.1",
+        "package": "amphp\/websocket-server",
+        "tag_name": "v3.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v3.0.1",
+        "date": "2023-10-21T17:22:34Z",
+        "body": "Disables support for WebSocket compression.\r\n\r\nAn unfortunate last-minute API design decision in the 3.x branch broke support for WebSocket compression. While it would be possible to fix this by introducing some new interfaces and classes and deprecating the old interfaces in the 3.x branch, we decided the more elegant solution would be to release a 4.x with a minor BC break. Further details will be provided in the 4.x releases.\r\n\r\nThis release marks the `WebsocketCompressionContextFactory` constructor parameter of `Rfc6455ClientFactory` as deprecated and unused. Passing a compression context factory _will not_ enable compression on the server.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/websocket 2.0.2",
+        "package": "amphp\/websocket",
+        "tag_name": "v2.0.2",
+        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.2",
+        "date": "2023-10-21T17:14:26Z",
+        "body": "- Fixed #11: `Rfc7692Compression::fromClientHeader()` now accepts headers including `client_max_window_bits` without a value.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client-cookies 2.0.0",
         "package": "amphp\/http-client-cookies",
         "tag_name": "v2.0.0",
@@ -15,24 +33,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.0.0",
         "date": "2023-10-08T16:41:47Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- `Request` instances are mutable now and can no longer be reused.\r\n- Removed cloning of request attributes \u2013 You can use any value in attributes now. \r\n- `Request` now extends `HttpRequest` from `amphp\/http`, gaining methods to get and set query parameters on the request instead of needing to manipulate the URI object directly.\r\n- Renamed header methods using the term \"raw\" to use \"pairs\" instead, e.g., `getRawHeaders()` \u2192 `getHeaderPairs()`, `parseRawHeaders()` \u2192 `parseHeaderPairs()`\r\n- Changed timeout unit from milliseconds to seconds (like timers in the event loop)\r\n- Removed `UnprocessedRequestException`, use `Request::isUnprocessed()` instead.\r\n- The `EventListener` interface has been reworked and event listeners can be registered with `HttpClientBuilder::listen()`  now to automatically apply to each request instead of only being registered on specific requests.\r\n- Replaced `FormBody` with new `Form` API\r\n  - Repeated form fields are no longer sent in PHP specific encoding, i.e. `appids=30&appids=20` instead of `appids%5B0%5D=30&appids%5B1%5D=20` (#340)\r\n    If you need the previous names, add `[]` to the name of your field.\r\n- Replaced `RequestBody` with new `HttpContent` API\r\n   - Added `BufferedContent`\r\n   - Added `StreamedContent`\r\n   - Removed `Body\\FileBody`\r\n   - Removed `Body\\FormBody`\r\n   - Removed `Body\\JsonBody`\r\n   - Removed `Body\\StreamBody`\r\n   - Removed `Body\\StringBody`\r\n\r\nThere are no changes compared to 5.0.0 Beta 17.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/websocket 2.0.1",
-        "package": "amphp\/websocket",
-        "tag_name": "v2.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.1",
-        "date": "2023-10-02T16:24:25Z",
-        "body": "- Fixed invoking the onClose handler attached to a client when the client socket is closed abruptly (that is, without sending a close frame).",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/websocket-server 3.0.0",
-        "package": "amphp\/websocket-server",
-        "tag_name": "v3.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v3.0.0",
-        "date": "2023-09-10T03:25:41Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nThis release is compatible with [`amphp\/http-server@^3`](https:\/\/github.com\/amphp\/http-server) and [`amphp\/websocket@^2`](https:\/\/github.com\/amphp\/websocket).\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nSimilar to `v2`, a Websocket is created by creating an instance of `Websocket` and using it as a request handler on an HTTP server. However, the constructor arguments have changed to reflect the changes below and the removal of the `Options` object from `amphp\/websocket`.\r\n\r\nA gateway object is no longer provided automatically to a client handler. A client handler may create one or more `WebsocketClientGateway` objects to hold a collection of clients and asynchronously broadcast messages to all (or only some) clients within a gateway.\r\n\r\n- Renamed most classes and interfaces to add `Websocket` as a prefix to avoid name collisions with similarly named classes in other packages which are frequently used together. For example, `ClientHandler` is now `WebsocketClientHandler`, `ClientFactory` is now `WebsocketClientFactory`.\r\n- The handshake accepting functionality of `ClientHandler` has been split into a separate interface, `WebsocketAcceptor`. In general, most applications will want to use `AllowOriginAcceptor`. For more flexibility, create your own implementation by delegating to `Rfc6455Acceptor` and adding your own logic in `handleHandshake()`.\r\n- `WebsocketServerObserver` has been removed. Use the `onStart()` and `onStop()` methods of `HttpServer` if an action is needed when starting or stopping the HTTP server.",
         "revolt": true
     },
     {
