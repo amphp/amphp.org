@@ -279,15 +279,6 @@
         "revolt": false
     },
     {
-        "name": "amphp\/parallel-functions 1.1.0",
-        "package": "amphp\/parallel-functions",
-        "tag_name": "v1.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v1.1.0",
-        "date": "2022-02-03T19:56:18Z",
-        "body": "## What's Changed\r\n - Update to `laravel\/serializable-closure` instead of `opis\/closure` by @owenvoke\r\n - Increase minimum PHP version to PHP 7.4 by @owenvoke\r\n\r\n## New Contributors\r\n* @sci3ma made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/24\r\n* @owenvoke made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/31\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel-functions\/compare\/v1.0.0...v1.1.0",
-        "revolt": false
-    },
-    {
         "name": "amphp\/rpc 1.0.0",
         "package": "amphp\/rpc",
         "tag_name": "v1.0.0",
@@ -321,6 +312,15 @@
         "html_url": "https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.3.2",
         "date": "2020-11-18T18:43:53Z",
         "body": " - Added support for Symfony YAML library v4 and v5. (#34)\r\n",
+        "revolt": false
+    },
+    {
+        "name": "amphp\/parallel-functions 1.0.0",
+        "package": "amphp\/parallel-functions",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v1.0.0",
+        "date": "2020-07-10T17:20:50Z",
+        "body": " - Removed compatibility with `amphp\/parallel` < 1.1\r\n - Changed the `parallel` function to throw a `SerializationException` instead of an `Error` if serialization fails",
         "revolt": false
     },
     {
