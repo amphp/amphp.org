@@ -315,12 +315,12 @@
         "revolt": false
     },
     {
-        "name": "amphp\/beanstalk 0.3.2",
+        "name": "amphp\/beanstalk 0.2.6",
         "package": "amphp\/beanstalk",
-        "tag_name": "v0.3.2",
-        "html_url": "https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.3.2",
-        "date": "2020-11-18T18:43:53Z",
-        "body": " - Added support for Symfony YAML library v4 and v5. (#34)\r\n",
+        "tag_name": "v0.2.6",
+        "html_url": "https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.2.6",
+        "date": "2020-06-24T18:49:11Z",
+        "body": " - Fixed failing outstanding operations if socket closes (#30)\r\n",
         "revolt": false
     },
     {
