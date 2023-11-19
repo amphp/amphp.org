@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/byte-stream 2.1.0",
+        "package": "amphp\/byte-stream",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.0",
+        "date": "2023-11-19T14:40:23Z",
+        "body": "## What's Changed\r\n* `Payload` now implements `Stringable`\r\n* Add cancelation support for `split` by @xtrime-ru in https:\/\/github.com\/amphp\/byte-stream\/pull\/108\r\n\r\n## New Contributors\r\n* @xtrime-ru made their first contribution in https:\/\/github.com\/amphp\/byte-stream\/pull\/108\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.0.2...v2.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns 2.1.0",
         "package": "amphp\/dns",
         "tag_name": "v2.1.0",
@@ -51,15 +60,6 @@
         "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.0",
         "date": "2023-09-05T20:12:16Z",
         "body": " - Improved detection of `libnghttp2`, i.e. `libnghttp2.so.14` and looking in the Homebrew path\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.1.7...v3.2.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/byte-stream 2.0.2",
-        "package": "amphp\/byte-stream",
-        "tag_name": "v2.0.2",
-        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.0.2",
-        "date": "2023-09-01T04:46:58Z",
-        "body": "- Fixed throwing an `Error` when invoking `getStdin()`, `getStdout()`, and `getStderr()` if the corresponding STDIO stream had been previously closed. Instead, an already closed stream instance is returned.",
         "revolt": true
     },
     {
