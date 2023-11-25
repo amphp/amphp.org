@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel-functions 2.0.0",
+        "package": "amphp\/parallel-functions",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v2.0.0",
+        "date": "2023-11-25T01:11:38Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel 2.2.3",
         "package": "amphp\/parallel",
         "tag_name": "v2.2.3",
@@ -276,15 +285,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v1.0.1",
         "date": "2022-03-10T20:11:00Z",
         "body": " - Ignore `\/docs` in `.gitattributes` to avoid broken symlink (#38)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v1.0.0...v1.0.1",
-        "revolt": false
-    },
-    {
-        "name": "amphp\/parallel-functions 1.1.0",
-        "package": "amphp\/parallel-functions",
-        "tag_name": "v1.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v1.1.0",
-        "date": "2022-02-03T19:56:18Z",
-        "body": "## What's Changed\r\n - Update to `laravel\/serializable-closure` instead of `opis\/closure` by @owenvoke\r\n - Increase minimum PHP version to PHP 7.4 by @owenvoke\r\n\r\n## New Contributors\r\n* @sci3ma made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/24\r\n* @owenvoke made their first contribution in https:\/\/github.com\/amphp\/parallel-functions\/pull\/31\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel-functions\/compare\/v1.0.0...v1.1.0",
         "revolt": false
     },
     {
