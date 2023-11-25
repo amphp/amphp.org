@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.2.3",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.3",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.3",
+        "date": "2023-11-25T00:24:12Z",
+        "body": "- Fixed accepting a socket with `SocketIpcHub::accept()` after cancelling a prior accept operation.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.2...v2.2.3",
+        "revolt": true
+    },
+    {
         "name": "amphp\/byte-stream 2.1.0",
         "package": "amphp\/byte-stream",
         "tag_name": "v2.1.0",
@@ -60,15 +69,6 @@
         "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.0",
         "date": "2023-09-05T20:12:16Z",
         "body": " - Improved detection of `libnghttp2`, i.e. `libnghttp2.so.14` and looking in the Homebrew path\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.1.7...v3.2.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.2",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.2",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.2",
-        "date": "2023-08-30T18:15:35Z",
-        "body": "- Fixed potential hang of a `ProcessContext` created by `DefaultContextFactory` if output buffers fill by piping STDOUT and STDERR to the same pipes on the parent process. This also provides parity with the default behavior of `ThreadContext`.",
         "revolt": true
     },
     {
