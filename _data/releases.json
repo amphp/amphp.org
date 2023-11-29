@@ -1,20 +1,20 @@
 [
     {
+        "name": "amphp\/parallel 2.2.4",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.4",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.4",
+        "date": "2023-11-29T04:45:47Z",
+        "body": "## What's Changed\r\n* Fixed `SocketIpcHub` not removing the temporary socket file if the object was not explicitly closed before destruction (fixes #183).\r\n* Add previous exception message when fail to start process by @thgs in https:\/\/github.com\/amphp\/parallel\/pull\/192\r\n\r\n## New Contributors\r\n* @thgs made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/192\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.3...v2.2.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel-functions 2.0.0",
         "package": "amphp\/parallel-functions",
         "tag_name": "v2.0.0",
         "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v2.0.0",
         "date": "2023-11-25T01:11:38Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.3",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.3",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.3",
-        "date": "2023-11-25T00:24:12Z",
-        "body": "- Fixed accepting a socket with `SocketIpcHub::accept()` after cancelling a prior accept operation.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.2...v2.2.3",
         "revolt": true
     },
     {
