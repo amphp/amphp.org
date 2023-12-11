@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client 5.0.1",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.0.1",
+        "date": "2023-12-11T04:02:24Z",
+        "body": "## What's Changed\r\n* Fail streams only with StreamException by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/354. Response body streams will now only throw `StreamException` or `CancelledException` as specified by the `ReadableStream` interface.\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.0.0...v5.0.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/php-cs-fixer-config 2.0.1",
         "package": "amphp\/php-cs-fixer-config",
         "tag_name": "v2.0.1",
@@ -69,15 +78,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client-cookies\/releases\/tag\/v2.0.0",
         "date": "2023-10-08T17:34:21Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Renamed `InMemoryCookieJar` to `LocalCookieJar`",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.0.0",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.0.0",
-        "date": "2023-10-08T16:41:47Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- `Request` instances are mutable now and can no longer be reused.\r\n- Removed cloning of request attributes \u2013 You can use any value in attributes now. \r\n- `Request` now extends `HttpRequest` from `amphp\/http`, gaining methods to get and set query parameters on the request instead of needing to manipulate the URI object directly.\r\n- Renamed header methods using the term \"raw\" to use \"pairs\" instead, e.g., `getRawHeaders()` \u2192 `getHeaderPairs()`, `parseRawHeaders()` \u2192 `parseHeaderPairs()`\r\n- Changed timeout unit from milliseconds to seconds (like timers in the event loop)\r\n- Removed `UnprocessedRequestException`, use `Request::isUnprocessed()` instead.\r\n- The `EventListener` interface has been reworked and event listeners can be registered with `HttpClientBuilder::listen()`  now to automatically apply to each request instead of only being registered on specific requests.\r\n- Replaced `FormBody` with new `Form` API\r\n  - Repeated form fields are no longer sent in PHP specific encoding, i.e. `appids=30&appids=20` instead of `appids%5B0%5D=30&appids%5B1%5D=20` (#340)\r\n    If you need the previous names, add `[]` to the name of your field.\r\n- Replaced `RequestBody` with new `HttpContent` API\r\n   - Added `BufferedContent`\r\n   - Added `StreamedContent`\r\n   - Removed `Body\\FileBody`\r\n   - Removed `Body\\FormBody`\r\n   - Removed `Body\\JsonBody`\r\n   - Removed `Body\\StreamBody`\r\n   - Removed `Body\\StringBody`\r\n\r\nThere are no changes compared to 5.0.0 Beta 17.",
         "revolt": true
     },
     {
