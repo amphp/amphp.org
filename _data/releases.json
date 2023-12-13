@@ -297,6 +297,15 @@
         "revolt": false
     },
     {
+        "name": "amphp\/cluster 1.0.1",
+        "package": "amphp\/cluster",
+        "tag_name": "v1.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v1.0.1",
+        "date": "2021-12-14T00:48:53Z",
+        "body": "Update to use [`amphp\/file`](https:\/\/github.com\/amphp\/file) `v2.x`.",
+        "revolt": false
+    },
+    {
         "name": "amphp\/mysql 2.1.2",
         "package": "amphp\/mysql",
         "tag_name": "v2.1.2",
@@ -348,15 +357,6 @@
         "html_url": "https:\/\/github.com\/amphp\/react-adapter\/releases\/tag\/v2.1.0",
         "date": "2019-11-04T22:20:56Z",
         "body": " - `React\\EventLoop\\Factory` is now automatically replaced with another implementation that throws on each usage to prevent two loops existing concurrently by accident.\r\n   Set `AMP_REACT_ADAPTER_DISABLE_FACTORY_OVERRIDE=1` as environment variable or constant to disable this protection.",
-        "revolt": false
-    },
-    {
-        "name": "amphp\/cluster 1.0.0",
-        "package": "amphp\/cluster",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v1.0.0",
-        "date": "2019-09-26T21:31:07Z",
-        "body": " - Initial stable release\r\n - Added `--name` and `--pid-file` command line options compared v1.0.0-RC1",
         "revolt": false
     },
     {
