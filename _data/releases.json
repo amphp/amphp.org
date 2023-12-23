@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/pipeline 1.1.0",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.1.0",
+        "date": "2023-12-23T04:41:55Z",
+        "body": "- Added `Pipeline::merge()` which combines multiple iterators, emitting a value whenever any iterator emits a value.\r\n- Fixed `Pipeline::take()` not completing until a value beyond the given count was emitted. The pipeline now completes immediately after emitting the last view.\r\n- Marked the template type of `ConcurrentIterator` as covariant.\r\n",
+        "revolt": true
+    },
+    {
         "name": "amphp\/socket 2.2.1",
         "package": "amphp\/socket",
         "tag_name": "v2.2.1",
@@ -240,15 +249,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parser\/releases\/tag\/v1.1.0",
         "date": "2022-12-30T19:26:39Z",
         "body": "- PHP 7.4 now required\r\n- Improved performance of the parser when requesting small chunks of data and when yielding an integer length delimiter",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/pipeline 1.0.0",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.0.0",
-        "date": "2022-12-23T16:56:59Z",
-        "body": "Initial stable release &#x1F389;\r\n\r\n#### Changes from 1.0.0 Beta 7\r\n- Marked `ConcurrentArrayIterator`, `ConcurrentChainedIterator`, and `ConcurrentIterableIterator` as `@internal`. Instead of these classes, use `Pipeline::fromIterable()` or `Pipeline::concat()`\r\n- `Pipeline::concat()` now accepts an array of any `iterable`, not only other `Pipeline` objects",
         "revolt": true
     },
     {
