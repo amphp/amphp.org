@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/file 3.0.2",
+        "package": "amphp\/file",
+        "tag_name": "v3.0.2",
+        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.0.2",
+        "date": "2023-12-27T22:56:38Z",
+        "body": "## What's Changed\r\n- Fixed detecting if a file is writing from the file mode when `r+` (or similar) is used as the mode. (#77)\r\n- Fixed assertion failing during shutdown destruction of `ParallelFilesystemDriver`. (#81)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.1...v3.0.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel 2.2.5",
         "package": "amphp\/parallel",
         "tag_name": "v2.2.5",
@@ -195,15 +204,6 @@
         "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.1",
         "date": "2023-07-31T17:56:29Z",
         "body": "- Fixed error handling if the started process fails immediately.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/file 3.0.1",
-        "package": "amphp\/file",
-        "tag_name": "v3.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.0.1",
-        "date": "2023-07-23T19:04:03Z",
-        "body": "## What's Changed\r\n\r\n* Fix `touch()` on non-existent files in ext-uv and ext-eio by @kelunik (#73)\r\n* Fix `write()` truncation with ext-uv and ext-eio by @danog in (#76)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.0...v3.0.1",
         "revolt": true
     },
     {
