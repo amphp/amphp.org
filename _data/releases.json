@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.2.5",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.5",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.5",
+        "date": "2023-12-27T18:58:48Z",
+        "body": "## What's Changed\r\n\r\n- Fixed potential hang during shutdown if the process context returned from `DefaultContextFactory` was not shutdown.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.4...v2.2.5",
+        "revolt": true
+    },
+    {
         "name": "amphp\/pipeline 1.1.0",
         "package": "amphp\/pipeline",
         "tag_name": "v1.1.0",
@@ -33,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.0.1",
         "date": "2023-12-03T16:47:19Z",
         "body": "- Removed deprecated rules (#7)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.4",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.4",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.4",
-        "date": "2023-11-29T04:45:47Z",
-        "body": "## What's Changed\r\n* Fixed `SocketIpcHub` not removing the temporary socket file if the object was not explicitly closed before destruction (fixes #183).\r\n* Add previous exception message when fail to start process by @thgs in https:\/\/github.com\/amphp\/parallel\/pull\/192\r\n\r\n## New Contributors\r\n* @thgs made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/192\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.3...v2.2.4",
         "revolt": true
     },
     {
