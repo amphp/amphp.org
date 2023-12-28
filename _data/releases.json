@@ -1,5 +1,23 @@
 [
     {
+        "name": "amphp\/websocket 2.0.3",
+        "package": "amphp\/websocket",
+        "tag_name": "v2.0.3",
+        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.3",
+        "date": "2023-12-28T23:26:38Z",
+        "body": "## What's Changed\r\n- `WebsocketException` now extends `Amp\\ByteStream\\StreamException` to avoid violating the `ReadableStream` interface by throwing a non-`StreamException` from a stream method.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket\/compare\/v2.0.2...v2.0.3",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-server 3.3.0",
+        "package": "amphp\/http-server",
+        "tag_name": "v3.3.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.3.0",
+        "date": "2023-12-28T23:24:56Z",
+        "body": "## What's Changed\r\n- `RequestBody` now implements `Stringable` so the entire request body can be buffered by simply casting the object to a string (note the request body length limits still apply).\r\n- Fixed the HTTP\/2 initial window size being potentially larger than the client would accept.\r\n- Fixed incrementing the HTTP\/2 window size if the body size limit is very large.\r\n- `ClientException` now extends `Amp\\ByteStream\\StreamException` to avoid violating the `ReadableStream` interface by throwing a non-`StreamException` from a stream method.\r\n\r\n## New Contributors\r\n* @cwhite92 made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/353\r\n* @foremtehan made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/356\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.2.0...v3.3.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/websocket-client 2.0.0",
         "package": "amphp\/websocket-client",
         "tag_name": "v2.0.0",
@@ -99,15 +117,6 @@
         "revolt": true
     },
     {
-        "name": "amphp\/websocket 2.0.2",
-        "package": "amphp\/websocket",
-        "tag_name": "v2.0.2",
-        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.2",
-        "date": "2023-10-21T17:14:26Z",
-        "body": "- Fixed #11: `Rfc7692Compression::fromClientHeader()` now accepts headers including `client_max_window_bits` without a value.",
-        "revolt": true
-    },
-    {
         "name": "amphp\/http-client-cookies 2.0.0",
         "package": "amphp\/http-client-cookies",
         "tag_name": "v2.0.0",
@@ -132,15 +141,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-form-parser\/releases\/tag\/v2.0.0",
         "date": "2023-08-25T03:01:02Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `BufferingParser` and `StreamingParser` to `FormParser` and `StreamingFormParser`, respectively.\r\n- Removed the `parseForm` function in favor of the `Form::fromRequest()` static method.\r\n- Removed `ParsingMiddleware`. Use `Form::fromRequest()` instead.\r\n- Removed `ParseException`. Form parsing errors will throw an `HttpErrorException` from `amphp\/http-server` instead, which do not need to be caught (the server will automatically return an error response).",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-server 3.2.0",
-        "package": "amphp\/http-server",
-        "tag_name": "v3.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.2.0",
-        "date": "2023-08-24T23:48:01Z",
-        "body": "- Allowed `league\/uri@v7.1` and `psr\/message@v2`\r\n- Added previous param to `HttpErrorException` constructor\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.1.0...v3.2.0",
         "revolt": true
     },
     {
