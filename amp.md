@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/amp/blob/3.x/README.md'
-title: 'Coroutines, Futures, and Cancellations in PHP'
-description: 'Get started with asynchronous PHP by learning how to use the fundamental primitives.'
+title: amphp/amp
+description: 'Learn about futures and cancellations as fundamental primitives for asynchronous programming.'
 image: undraw/undraw_city_life.svg
 permalink: /amp
 source: 'https://github.com/amphp/amp/blob/3.x/README.md'
