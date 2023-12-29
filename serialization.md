@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/serialization/blob/1.x/README.md'
-title: 'Serialization in PHP'
+title: amphp/serialization
 description: 'Learn how to serialize data for IPC and data storage in PHP.'
 image: undraw/undraw_drone_delivery.svg
 permalink: /serialization
