@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/cluster/blob/2.x/README.md'
-title: '# Usage'
+title: 'Tools for server clusters in PHP'
 description: 'Learn how to create multiprocess server clusters.'
 image: undraw/undraw_server_cluster.svg
 permalink: /cluster
