@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/mysql/blob/3.x/README.md'
-title: 'MySQL Connection Pool in PHP'
+title: amphp/mysql
 description: 'Learn how to query and update data in MySQL databases.'
 image: undraw/undraw_fishing.svg
 permalink: /mysql
