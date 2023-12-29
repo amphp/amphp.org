@@ -1,8 +1,8 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-server-static-content/blob/2.x/README.md'
-title: 'Static File Serving'
-description: "Learn how to serve static files with Amp's HTTP server."
-image: undraw/undraw_logistics.svg
+title: http-server-static-content
+description: 'Learn how to create an HTTP server request handler to serve static content.'
+image: undraw/undraw_server_cluster.svg
 permalink: /http-server-static-content
 source: 'https://github.com/amphp/http-server-static-content/blob/2.x/README.md'
 layout: docs
