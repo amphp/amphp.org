@@ -1,8 +1,8 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-server-router/blob/2.x/README.md'
-title: http-server-router
-description: 'Learn how to create an HTTP server request handler based on path router.'
-image: undraw/undraw_server_cluster.svg
+title: 'Routing for HTTP servers in PHP'
+description: 'Learn how to route to different HTTP server RequestHandler instances based on the request path and method using FastRoute.'
+image: undraw/undraw_logistics.svg
 permalink: /http-server-router
 source: 'https://github.com/amphp/http-server-router/blob/2.x/README.md'
 layout: docs
