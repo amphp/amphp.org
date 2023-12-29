@@ -1,5 +1,12 @@
 This repository contains shared files for all documentation pages as well as the main website.
 
+## Setup for local development
+
+```bash
+bundle install --path vendor/bundle
+bundle exec jekyll serve
+```
+
 ## Setup for a new repository
 
  - Add documentation in `README.md`
