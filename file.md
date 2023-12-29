@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/file/blob/3.x/README.md'
-title: 'Non-blocking Filesystem Access in PHP'
-description: 'Learn how to read and write files without blocking the event loop.'
+title: amphp/file
+description: 'Learn how to read and write files without blocking.'
 image: undraw/undraw_my_files.svg
 permalink: /file
 source: 'https://github.com/amphp/file/blob/3.x/README.md'
