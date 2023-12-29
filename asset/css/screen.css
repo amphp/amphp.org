@@ -1449,9 +1449,11 @@ img.sponsor-logo {
 
 .shell::before {
     content: "Shell";
-    background: #333;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--color-highlight);
     font-weight: 800;
+    font-size: smaller;
     padding: 2px 8px;
     top: -1px;
     left: 16px;
