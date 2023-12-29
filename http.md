@@ -1,8 +1,8 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http/blob/2.x/README.md'
-title: amphp/http
-description: 'Learn how to use common HTTP components shared between servers and clients.'
-image: undraw/undraw_growing.svg
+title: 'HTTP in PHP'
+description: 'Learn how to use our standards-compliant collection of basic HTTP primitives which can be shared by servers and clients.'
+image: undraw/undraw_logistics.svg
 permalink: /http
 source: 'https://github.com/amphp/http/blob/2.x/README.md'
 layout: docs
