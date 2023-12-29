@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/socket/blob/2.x/README.md'
-title: amphp/socket
+title: 'Non-blocking TCP Servers and Clients in PHP'
 description: 'Learn how to connect to servers and serve connections yourself.'
 image: undraw/undraw_coffee.svg
 permalink: /socket
