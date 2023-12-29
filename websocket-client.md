@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/websocket-client/blob/2.x/README.md'
-title: websocket-client
+title: 'PHP WebSocket Client'
 description: 'Learn how to create WebSocket client connections.'
 image: undraw/undraw_coffee.svg
 permalink: /websocket-client
