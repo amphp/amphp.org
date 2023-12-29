@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/websocket-server/blob/4.x/README.md'
-title: amphp/websocket-server
+title: 'PHP WebSocket Server'
 description: 'Learn how to create WebSocket servers.'
 image: undraw/undraw_drone_delivery.svg
 permalink: /websocket-server
