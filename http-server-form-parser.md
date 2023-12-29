@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-server-form-parser/blob/2.x/README.md'
-title: http-server-form-parser
+title: 'HTTP Multipart Form Parsing'
 description: 'Learn how to parse x-www-form-urlencoded or multipart/form-data data submitted to an HTTP server request handler.'
 image: undraw/undraw_server_cluster.svg
 permalink: /http-server-form-parser
