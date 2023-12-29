@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/dns/blob/2.x/README.md'
-title: 'Non-blocking DNS Hostname Resolution and Queries in PHP'
-description: 'Learn how to resolve hostnames to IP addresses and query records the domain name system.'
+title: amphp/dns
+description: 'Learn how to resolve hostnames to IP addresses and query the domain name system.'
 image: undraw/undraw_searching.svg
 permalink: /dns
 source: 'https://github.com/amphp/dns/blob/2.x/README.md'
