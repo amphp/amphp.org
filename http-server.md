@@ -1,8 +1,8 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-server/blob/3.x/README.md'
-title: amphp/http-server
-description: 'Learn how to create an HTTP server.'
-image: undraw/undraw_server_cluster.svg
+title: 'HTTP server applications in PHP based on Revolt'
+description: 'Learn how to build non-blocking, concurrent HTTP/1.1 and HTTP/2 server applications in PHP based on Revolt.'
+image: undraw/undraw_logistics.svg
 permalink: /http-server
 source: 'https://github.com/amphp/http-server/blob/3.x/README.md'
 layout: docs
