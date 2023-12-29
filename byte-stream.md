@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/byte-stream/blob/2.x/README.md'
-title: 'Non-blocking I/O Streams in PHP'
-description: 'Learn how to stream data (ordered sequences of bytes) concurrently in PHP.'
+title: amphp/byte-stream
+description: 'Learn about stream abstractions for ordered sequences of bytes.'
 image: undraw/undraw_developer_activity.svg
 permalink: /byte-stream
 source: 'https://github.com/amphp/byte-stream/blob/2.x/README.md'
