@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/windows-registry/blob/1.x/README.md'
-title: 'Non-blocking Windows Registry Access in PHP'
+title: amphp/windows-registry
 description: 'Learn how to read values from the Windows Registry.'
 image: undraw/undraw_welcome.svg
 permalink: /windows-registry
