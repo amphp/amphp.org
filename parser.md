@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/parser/blob/1.x/README.md'
-title: 'Writing Parsers in PHP'
+title: amphp/parser
 description: 'Learn how to write streaming generator parsers in PHP.'
 image: undraw/undraw_reading_time.svg
 permalink: /parser
