@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-client/blob/5.x/README.md'
-title: amphp/http-client
+title: 'Non-blocking HTTP Client in PHP'
 description: 'Learn how to do standards-compliant HTTP resource traversal and RESTful web service consumption.'
 image: undraw/undraw_logistics.svg
 permalink: /http-client
