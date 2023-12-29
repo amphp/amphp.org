@@ -1,6 +1,6 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/process/blob/2.x/README.md'
-title: 'Non-blocking Child Processes in PHP'
+title: amphp/process
 description: 'Learn how to run child processes, stream data, and collect their exit codes.'
 image: undraw/undraw_fatherhood.svg
 permalink: /process
