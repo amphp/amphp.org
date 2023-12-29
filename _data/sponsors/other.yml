@@ -1,5 +1,9 @@
 - github: agustingomes
   highlight: false
+- github: alexdnepro
+  highlight: false
+- github: azjezz
+  highlight: false
 - github: Clearfacts
   highlight: false
 - github: cspray
@@ -8,19 +12,11 @@
   highlight: false
 - github: dantleech
   highlight: false
-- github: dwaysinc
-  highlight: true
 - github: ekinhbayar
   highlight: true
-- github: iHeat
+- github: nayleen
   highlight: false
-- github: markrandall
-  highlight: false
-- github: muglug
-  highlight: false
-- github: oqq
-  highlight: false
-- github: tiffany-taylor
+- github: tncrazvan
   highlight: false
 - github: uzulla
   highlight: true

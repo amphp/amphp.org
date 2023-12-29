@@ -11,26 +11,30 @@ layout: docs
     <a href="https://github.com/sponsors/amphp"><code>@amphp</code> on GitHub</a>
 </p>
 
+<!--
 <h2>Business Sponsors</h2>
 
 <div class="business-sponsors">
     {% for sponsor in site.data.sponsors.business %}
     <div class="business-sponsor">
-        <p><a href="{{ sponsor.link }}"><img class="sponsor-logo" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}"/></a></p>
-        <h3 class="my-0"><a href="{{ sponsor.link }}">{{ sponsor.name }}</a></h3>
+        <p><a href="{{ sponsor.link }}" target="_blank"><img class="sponsor-logo" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}"/></a></p>
+        <h3 class="my-0"><a href="{{ sponsor.link }}" target="_blank">{{ sponsor.name }}</a></h3>
         <p class="my-0">{{ sponsor.description }}</p>
     </div>
     {% endfor %}
 </div>
 
 <h2>Other Sponsors</h2>
+-->
+
+<h2>Current Sponsors</h2>
 
 <div class="other-sponsors">
     <p>Thank you to all our sponsors!</p>
     <ul>
     {% for sponsor in site.data.sponsors.other %}
         <li class="sponsor-github {% if sponsor.highlight %}sponsor-highlight{% endif %}">
-            <a title="{{ sponsor.github }}" href="https://github.com/{{ sponsor.github }}">{{ sponsor.github }}</a>
+            <a title="{{ sponsor.github }}" href="https://github.com/{{ sponsor.github }}" target="_blank">{{ sponsor.github }}</a>
         </li>
         {% endfor %}
     </ul>
