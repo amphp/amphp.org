@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/socket 2.2.2",
+        "package": "amphp\/socket",
+        "tag_name": "v2.2.2",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.2",
+        "date": "2023-12-31T18:17:35Z",
+        "body": "## What's Changed\r\n- Fixed bind errors being hidden when connecting in `DnsSocketConnector` ( #108).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.1...v2.2.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/websocket-server 4.0.0",
         "package": "amphp\/websocket-server",
         "tag_name": "v4.0.0",
@@ -60,15 +69,6 @@
         "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.1.0",
         "date": "2023-12-23T04:41:55Z",
         "body": "- Added `Pipeline::merge()` which combines multiple iterators, emitting a value whenever any iterator emits a value.\r\n- Fixed `Pipeline::take()` not completing until a value beyond the given count was emitted. The pipeline now completes immediately after emitting the last view.\r\n- Marked the template type of `ConcurrentIterator` as covariant.\r\n",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.2.1",
-        "package": "amphp\/socket",
-        "tag_name": "v2.2.1",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.1",
-        "date": "2023-12-16T18:26:17Z",
-        "body": "## What's Changed\r\n\r\n- Updated the default chunk size in `ResourceUdpSocket` to match the maximum UDP payload length.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.0...v2.2.1",
         "revolt": true
     },
     {
