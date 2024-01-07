@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.2.6",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.6",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.6",
+        "date": "2024-01-07T18:47:43Z",
+        "body": "## What's Changed\r\n- Fixed hang during shutdown if a process or thread context has not ended (fixes amphp\/file#75).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.5...v2.2.6",
+        "revolt": true
+    },
+    {
         "name": "amphp\/socket 2.2.2",
         "package": "amphp\/socket",
         "tag_name": "v2.2.2",
@@ -51,15 +60,6 @@
         "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.0.2",
         "date": "2023-12-27T22:56:38Z",
         "body": "## What's Changed\r\n- Fixed detecting if a file is writing from the file mode when `r+` (or similar) is used as the mode. (#77)\r\n- Fixed assertion failing during shutdown destruction of `ParallelFilesystemDriver`. (#81)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.1...v3.0.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.5",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.5",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.5",
-        "date": "2023-12-27T18:58:48Z",
-        "body": "## What's Changed\r\n\r\n- Fixed potential hang during shutdown if the process context returned from `DefaultContextFactory` was not shutdown.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.4...v2.2.5",
         "revolt": true
     },
     {
