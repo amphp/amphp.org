@@ -288,15 +288,6 @@
         "revolt": true
     },
     {
-        "name": "amphp\/rpc 1.0.0",
-        "package": "amphp\/rpc",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/rpc\/releases\/tag\/v1.0.0",
-        "date": "2022-02-02T22:13:33Z",
-        "body": "Initial release.",
-        "revolt": false
-    },
-    {
         "name": "amphp\/cluster 1.0.1",
         "package": "amphp\/cluster",
         "tag_name": "v1.0.1",
