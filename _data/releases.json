@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/windows-registry 1.0.1",
+        "package": "amphp\/windows-registry",
+        "tag_name": "v1.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/windows-registry\/releases\/tag\/v1.0.1",
+        "date": "2024-01-30T23:05:35Z",
+        "body": "## What's Changed\r\n- Removed nullability from return type of `WindowsRegistry::read()`, the method throws if the key is not found.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/windows-registry\/compare\/v1.0.0...v1.0.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel 2.2.6",
         "package": "amphp\/parallel",
         "tag_name": "v2.2.6",
@@ -213,15 +222,6 @@
         "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.1",
         "date": "2023-07-31T17:56:29Z",
         "body": "- Fixed error handling if the started process fails immediately.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/windows-registry 1.0.0",
-        "package": "amphp\/windows-registry",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/windows-registry\/releases\/tag\/v1.0.0",
-        "date": "2023-01-10T20:34:04Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- `WindowsRegistry` offers the methods as static methods now instead of instance methods.",
         "revolt": true
     },
     {
