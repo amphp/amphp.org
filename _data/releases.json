@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/dns v2.1.1",
+        "package": "amphp\/dns",
+        "tag_name": "v2.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.1.1",
+        "date": "2024-02-01T15:48:38Z",
+        "body": "## What's Changed\r\n* Corrected error message unit scale (ms -> seconds) by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/113\r\n* Fixed Windows nameserver detection by only enumerating real NICs by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/114\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/dns\/pull\/113\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.1.0...v2.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/windows-registry 1.0.1",
         "package": "amphp\/windows-registry",
         "tag_name": "v1.0.1",
@@ -114,15 +123,6 @@
         "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.0",
         "date": "2023-11-19T14:40:23Z",
         "body": "## What's Changed\r\n* `Payload` now implements `Stringable`\r\n* Add cancelation support for `split` by @xtrime-ru in https:\/\/github.com\/amphp\/byte-stream\/pull\/108\r\n\r\n## New Contributors\r\n* @xtrime-ru made their first contribution in https:\/\/github.com\/amphp\/byte-stream\/pull\/108\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.0.2...v2.1.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/dns 2.1.0",
-        "package": "amphp\/dns",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.1.0",
-        "date": "2023-11-18T16:02:11Z",
-        "body": "- Fixed name resolution when NDots > 1\r\n- Added `Cancellation` arguments to `Amp\\Dns\\query()` and `Amp\\Dns\\resolve()`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.0.1...v2.1.0",
         "revolt": true
     },
     {
