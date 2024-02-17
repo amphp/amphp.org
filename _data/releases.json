@@ -1,5 +1,23 @@
 [
     {
+        "name": "amphp\/socket 2.2.3",
+        "package": "amphp\/socket",
+        "tag_name": "v2.2.3",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.3",
+        "date": "2024-02-17T04:52:34Z",
+        "body": "## What's Changed\r\n- Updated deprecated use of `stream_context_set_option()` on PHP 8.3.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.2...v2.2.3",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/process 2.0.2",
+        "package": "amphp\/process",
+        "tag_name": "v2.0.2",
+        "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.2",
+        "date": "2024-02-17T04:24:19Z",
+        "body": "## What's Changed\r\n- Changed waiting for children during shutdown to be synchronous to ensure all children are properly cleaned up. This should avoid zombie processes left when running within an SAPI such as PHP-FPM.\r\n- Fixed `UnhandledFutureError` being thrown to event loop if reading the process exit code fails.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.1...v2.0.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns v2.1.1",
         "package": "amphp\/dns",
         "tag_name": "v2.1.1",
@@ -24,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.6",
         "date": "2024-01-07T18:47:43Z",
         "body": "## What's Changed\r\n- Fixed hang during shutdown if a process or thread context has not ended (fixes amphp\/file#75).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.5...v2.2.6",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.2.2",
-        "package": "amphp\/socket",
-        "tag_name": "v2.2.2",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.2",
-        "date": "2023-12-31T18:17:35Z",
-        "body": "## What's Changed\r\n- Fixed bind errors being hidden when connecting in `DnsSocketConnector` ( #108).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.1...v2.2.2",
         "revolt": true
     },
     {
@@ -213,15 +222,6 @@
         "html_url": "https:\/\/github.com\/amphp\/log\/releases\/tag\/v2.0.0",
         "date": "2023-08-05T19:05:50Z",
         "body": "- Increased minimum PHP version to 8.1\r\n- Make use of fibers with Amp v3 and Revolt\r\n- Added support for Monolog v3.x\r\n\r\nThis release does not contain any changes in comparison to `v2.0.0-beta.2`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/process 2.0.1",
-        "package": "amphp\/process",
-        "tag_name": "v2.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.1",
-        "date": "2023-07-31T17:56:29Z",
-        "body": "- Fixed error handling if the started process fails immediately.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.0...v2.0.1",
         "revolt": true
     },
     {
