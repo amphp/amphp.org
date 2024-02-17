@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/byte-stream 2.1.1",
+        "package": "amphp\/byte-stream",
+        "tag_name": "v2.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.1",
+        "date": "2024-02-17T04:56:28Z",
+        "body": "## What's Changed\r\n- Fixed cancellation not being forwarded to `split()` in `splitLines()`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.0...v2.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/socket 2.2.3",
         "package": "amphp\/socket",
         "tag_name": "v2.2.3",
@@ -123,15 +132,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v2.0.0",
         "date": "2023-11-25T01:11:38Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/byte-stream 2.1.0",
-        "package": "amphp\/byte-stream",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.0",
-        "date": "2023-11-19T14:40:23Z",
-        "body": "## What's Changed\r\n* `Payload` now implements `Stringable`\r\n* Add cancelation support for `split` by @xtrime-ru in https:\/\/github.com\/amphp\/byte-stream\/pull\/108\r\n\r\n## New Contributors\r\n* @xtrime-ru made their first contribution in https:\/\/github.com\/amphp\/byte-stream\/pull\/108\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.0.2...v2.1.0",
         "revolt": true
     },
     {
