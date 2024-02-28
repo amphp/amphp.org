@@ -1,20 +1,20 @@
 [
     {
+        "name": "amphp\/socket 2.2.4",
+        "package": "amphp\/socket",
+        "tag_name": "v2.2.4",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.4",
+        "date": "2024-02-28T15:58:33Z",
+        "body": "## What's Changed\r\n- Removed missed call to `stream_context_set_option()`, which was causing a deprecation notice on PHP 8.3.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.3...v2.2.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/byte-stream 2.1.1",
         "package": "amphp\/byte-stream",
         "tag_name": "v2.1.1",
         "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.1",
         "date": "2024-02-17T04:56:28Z",
         "body": "## What's Changed\r\n- Fixed cancellation not being forwarded to `split()` in `splitLines()`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.0...v2.1.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.2.3",
-        "package": "amphp\/socket",
-        "tag_name": "v2.2.3",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.3",
-        "date": "2024-02-17T04:52:34Z",
-        "body": "## What's Changed\r\n- Updated deprecated use of `stream_context_set_option()` on PHP 8.3.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.2...v2.2.3",
         "revolt": true
     },
     {
