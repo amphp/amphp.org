@@ -1,5 +1,32 @@
 [
     {
+        "name": "amphp\/sql-common 2.0.0",
+        "package": "amphp\/sql-common",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v2.0.0",
+        "date": "2024-03-10T15:29:54Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Added template types to interfaces for better type expression on implementations and extensions.\r\n- All classes now start with `Sql` as a prefix to avoid name collisions with other libraries.\r\n- Renamed `ConnectionPool` to `SqlCommonConnectionPool`.\r\n- Added `SqlNestedableTransactionExecutor` and `SqlNestedTransaction` to support nested transactions.\r\n- Added `SqlCommandResult` and `SqlConnectionTransaction`.\r\n- Renamed `PooledResultSet` to `SqlPooledResult`.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/sql 2.0.0",
+        "package": "amphp\/sql",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.0.0",
+        "date": "2024-03-10T15:16:34Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Added template types to interfaces for better type expression on implementations and extensions.\r\n- All classes now start with `Sql` as a prefix to avoid name collisions with other libraries.\r\n- Combined `ResultSet` and `CommandResult` into a single interface, `SqlResult`.\r\n- `SqlTransaction` now extends `SqlLink` instead of `SqlExecutor` to support nested transactions.\r\n- Added `onCommit()` and `onRollback()` methods to `SqlTransaction`. These methods attach callbacks after the transaction is either committed or rolled back, respectively.\r\n- Removed the methods `createSavepoint()`, `rollbackTo()`, and `releaseSavepont()` from `SqlTransaction`. Use nested transactions through `SqlTransaction::beginTransaction()` instead.\r\n- `SqlPool` now extends `SqlConnection` instead of `SqlLink`. `SqlPool::extractConnection()` returns an instance of `SqlConnection` instead of `SqlLink`.\r\n- Added `SqlResult::fetchRow()`, which will return a single row (associative array) from the result set on each call until no further rows remain in the result.\r\n- `SqlTransientResource` and now extends `Amp\\Closable`.\r\n- Added `SqlTransactionIsolation` and an enum-based implementation, `SqlTransactionIsolationLevel`.\r\n- Renamed `ConnectionConfig` to `SqlConfig`.\r\n- Renamed `FailureException` to `SqlException`.",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/pipeline 1.2.0",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.0",
+        "date": "2024-03-10T14:57:22Z",
+        "body": "## What's Changed\r\n* Added `Pipeline::buffer()`, which provides control of the number of values buffered by the pipeline before back-pressure is applied to the data source by @trowski in https:\/\/github.com\/amphp\/pipeline\/pull\/21\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.1.0...v1.2.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/socket 2.2.4",
         "package": "amphp\/socket",
         "tag_name": "v2.2.4",
@@ -96,15 +123,6 @@
         "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.0.2",
         "date": "2023-12-27T22:56:38Z",
         "body": "## What's Changed\r\n- Fixed detecting if a file is writing from the file mode when `r+` (or similar) is used as the mode. (#77)\r\n- Fixed assertion failing during shutdown destruction of `ParallelFilesystemDriver`. (#81)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.1...v3.0.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/pipeline 1.1.0",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.1.0",
-        "date": "2023-12-23T04:41:55Z",
-        "body": "- Added `Pipeline::merge()` which combines multiple iterators, emitting a value whenever any iterator emits a value.\r\n- Fixed `Pipeline::take()` not completing until a value beyond the given count was emitted. The pipeline now completes immediately after emitting the last view.\r\n- Marked the template type of `ConcurrentIterator` as covariant.\r\n",
         "revolt": true
     },
     {
@@ -243,15 +261,6 @@
         "revolt": false
     },
     {
-        "name": "amphp\/sql-common 1.1.4",
-        "package": "amphp\/sql-common",
-        "tag_name": "v1.1.4",
-        "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v1.1.4",
-        "date": "2023-01-06T04:33:14Z",
-        "body": "- Fixed potential double deferred resolve when a connection pool is full.",
-        "revolt": false
-    },
-    {
         "name": "amphp\/parser 1.1.0",
         "package": "amphp\/parser",
         "tag_name": "v1.1.0",
@@ -259,15 +268,6 @@
         "date": "2022-12-30T19:26:39Z",
         "body": "- PHP 7.4 now required\r\n- Improved performance of the parser when requesting small chunks of data and when yielding an integer length delimiter",
         "revolt": true
-    },
-    {
-        "name": "amphp\/sql 1.0.2",
-        "package": "amphp\/sql",
-        "tag_name": "v1.0.2",
-        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v1.0.2",
-        "date": "2022-12-18T23:03:07Z",
-        "body": "- Fix a deprecation notice on PHP 8.1 if a configuration key does not have a value.",
-        "revolt": false
     },
     {
         "name": "amphp\/phpunit-util 3.0.0",
