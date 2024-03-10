@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/mysql 3.0.0",
+        "package": "amphp\/mysql",
+        "tag_name": "v3.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.0.0",
+        "date": "2024-03-10T17:50:28Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Classes and interfaces now are prefixed with `Mysql` to avoid collisions with similar names from other libraries.\r\n- Marked most classes as internal, leaving only interfaces and concrete implementations required to use the API or create a custom connector.\r\n- `MysqlTransaction` now extends `MysqlLink` instead of `MysqlExecutor` to support nested transactions.\r\n- `MysqlDataType` is now an enum of MySQL data type codes and methods to decode data based on type.\r\n- Result set field data is now available from `MysqlResult::getColumnDefinitions()` which returns an array of `MysqlColumnDefinition` objects corresponding to the result set rows.\r\n- The second param of `MysqlStatement::bind()` now requires a string. Binding only makes sense with long strings anyway.\r\n- `MysqlConnection` is now an interface extending `SqlConnection`, with `SocketMysqlConnection` being the implementation.\r\n- Removed `MysqlConnector` since the interface was replaced by template types on `SqlConnector`, i.e. `SqlConnector<MysqlConfig, MysqlConnection>`",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql-common 2.0.0",
         "package": "amphp\/sql-common",
         "tag_name": "v2.0.0",
@@ -303,15 +312,6 @@
         "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v1.0.1",
         "date": "2021-12-14T00:48:53Z",
         "body": "Update to use [`amphp\/file`](https:\/\/github.com\/amphp\/file) `v2.x`.",
-        "revolt": false
-    },
-    {
-        "name": "amphp\/mysql 2.1.2",
-        "package": "amphp\/mysql",
-        "tag_name": "v2.1.2",
-        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v2.1.2",
-        "date": "2021-12-05T16:42:20Z",
-        "body": "- Fixed a bug when decoding a JSON field (#113)",
         "revolt": false
     },
     {
