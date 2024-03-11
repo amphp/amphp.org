@@ -9,6 +9,15 @@
         "revolt": true
     },
     {
+        "name": "amphp\/postgres 2.0.0",
+        "package": "amphp\/postgres",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.0.0",
+        "date": "2024-03-10T17:21:17Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Non-extension-specific classes and interfaces now are prefixed with `Postgres` to avoid collisions with similar names from other libraries.\r\n- Result sets now implement `Traversable`, allowing them to be used with `foreach` to iterate over result rows.\r\n- Marked most classes as internal, leaving only interfaces and concrete implementations required to use the API or create a custom connector.\r\n- `PostgresTransaction` now extends `PostgresLink` instead of `PostgresExecutor` to support nested transactions.\r\n- Removed `TimeoutConnector` in favor of `DefaultPostgresConnector` which has a `Cancellation` parameter on `connect()` which may be used with an `Amp\\TimeoutCancellation`.\r\n- Removed `PostgresConnector` since the interface was replaced by template types on `SqlConnector`, i.e. `SqlConnector<PostgresConfig, PostgresConnection>`\r\n- Added support for `BYTEA` fields. (#57)\r\n- Added the `PostgresConnection` interface extending `PostgresLink`.\r\n- Removed the `Receiver` interface. These methods are now a part of `PostgresConnection`.\r\n- Removed the `Quoter` Interface. These methods are now a part of `PostgresExecutor`.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql-common 2.0.0",
         "package": "amphp\/sql-common",
         "tag_name": "v2.0.0",
@@ -259,15 +268,6 @@
         "date": "2023-01-09T21:07:48Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Renamed `ArrayCache` to `LocalCache`, swapping the constructor argument order\r\n - Modified `LocalCache` to implement `IteratorAggregate` and `Countable`, acting as an LRU cache now (#20)\r\n - Support arbitrary values in `LocalCache`, `NullCache`, and `PrefixCache`\r\n - Changed `Cache` to support arbitrary values\r\n - Introduced separate `StringCache` interface for caching only strings\r\n - Added `StringCacheAdapter` to use any `Cache` in place of a `StringCache`\r\n - Removed `FileCache` (will be available in `amphp\/file` instead)",
         "revolt": true
-    },
-    {
-        "name": "amphp\/postgres 1.4.5",
-        "package": "amphp\/postgres",
-        "tag_name": "v1.4.5",
-        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v1.4.5",
-        "date": "2023-01-07T18:54:57Z",
-        "body": "- Fixed cancelling an active query if a connection is closed when using `ext-pgsql` (#54)",
-        "revolt": false
     },
     {
         "name": "amphp\/parser 1.1.0",
