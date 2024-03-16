@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/sync 2.2.0",
+        "package": "amphp\/sync",
+        "tag_name": "v2.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.2.0",
+        "date": "2024-03-16T15:47:09Z",
+        "body": "## What's Changed\r\n* Add PriorityQueue by @trowski in https:\/\/github.com\/amphp\/sync\/pull\/27\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.1.0...v2.2.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/mysql 3.0.0",
         "package": "amphp\/mysql",
         "tag_name": "v3.0.0",
@@ -231,15 +240,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-static-content\/releases\/tag\/v2.0.0",
         "date": "2023-08-20T15:20:11Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- `DocumentRoot` now requires an instance of `HttpServer` and `ErrorHandler` to construct\r\n- Removed `DocumentRoot::onStart()` and `DocumentRoot::onStop()`, as it's now internally registered\r\n- Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`\r\n- Added `StaticResource` to serve a single static file",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/sync 2.1.0",
-        "package": "amphp\/sync",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.1.0",
-        "date": "2023-08-19T13:59:33Z",
-        "body": "## What's Changed\r\n* Added re-entry support to `synchronized()` by @kelunik in https:\/\/github.com\/amphp\/sync\/pull\/26\r\n* Fixed error handling in `SharedMemoryParcel`\r\n* Fixed a typo by @thgs in https:\/\/github.com\/amphp\/sync\/pull\/25\r\n\r\n## New Contributors\r\n* @thgs made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/25\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.0.0...v2.1.0",
         "revolt": true
     },
     {
