@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.2.7",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.7",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.7",
+        "date": "2024-03-16T16:20:56Z",
+        "body": "## What's Changed\r\n* Fixed cancelled tasks still being submitted to task workers.\r\n* Marked result and receive template types on `Context` as covariant.\r\n* Small improvements on examples by @thgs in https:\/\/github.com\/amphp\/parallel\/pull\/194\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.6...v2.2.7",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sync 2.2.0",
         "package": "amphp\/sync",
         "tag_name": "v2.2.0",
@@ -96,15 +105,6 @@
         "html_url": "https:\/\/github.com\/amphp\/windows-registry\/releases\/tag\/v1.0.1",
         "date": "2024-01-30T23:05:35Z",
         "body": "## What's Changed\r\n- Removed nullability from return type of `WindowsRegistry::read()`, the method throws if the key is not found.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/windows-registry\/compare\/v1.0.0...v1.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.6",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.6",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.6",
-        "date": "2024-01-07T18:47:43Z",
-        "body": "## What's Changed\r\n- Fixed hang during shutdown if a process or thread context has not ended (fixes amphp\/file#75).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.5...v2.2.6",
         "revolt": true
     },
     {
