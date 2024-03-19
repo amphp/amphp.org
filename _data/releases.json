@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/socket 2.3.0",
+        "package": "amphp\/socket",
+        "tag_name": "v2.3.0",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.3.0",
+        "date": "2024-03-19T20:07:14Z",
+        "body": " - Added `Socks5SocketConnector` to connect to hosts via SOCKS5 proxies. A similar implementation was previously present in `amphp\/http-tunnel`.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/rpc 2.0.0",
         "package": "amphp\/rpc",
         "tag_name": "v2.0.0",
@@ -69,15 +78,6 @@
         "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.0",
         "date": "2024-03-10T14:57:22Z",
         "body": "## What's Changed\r\n* Added `Pipeline::buffer()`, which provides control of the number of values buffered by the pipeline before back-pressure is applied to the data source by @trowski in https:\/\/github.com\/amphp\/pipeline\/pull\/21\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.1.0...v1.2.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.2.4",
-        "package": "amphp\/socket",
-        "tag_name": "v2.2.4",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.2.4",
-        "date": "2024-02-28T15:58:33Z",
-        "body": "## What's Changed\r\n- Removed missed call to `stream_context_set_option()`, which was causing a deprecation notice on PHP 8.3.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.2.3...v2.2.4",
         "revolt": true
     },
     {
