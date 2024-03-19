@@ -1,11 +1,11 @@
 [
     {
-        "name": "amphp\/parallel 2.2.7",
+        "name": "amphp\/parallel 2.2.8",
         "package": "amphp\/parallel",
-        "tag_name": "v2.2.7",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.7",
-        "date": "2024-03-16T16:20:56Z",
-        "body": "## What's Changed\r\n* Fixed cancelled tasks still being submitted to task workers.\r\n* Marked result and receive template types on `Context` as covariant.\r\n* Small improvements on examples by @thgs in https:\/\/github.com\/amphp\/parallel\/pull\/194\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.6...v2.2.7",
+        "tag_name": "v2.2.8",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.8",
+        "date": "2024-03-19T17:05:19Z",
+        "body": " - Fixed race condition on concurrent IPC connect calls (#199)<br>Thank you @Nadyita for reporting and debugging this issue.",
         "revolt": true
     },
     {
