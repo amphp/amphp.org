@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.2.9",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.2.9",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.9",
+        "date": "2024-03-24T19:10:55Z",
+        "body": "## What's Changed\r\n\r\n- Fixed a race condition if outstanding accept calls were pending when closing `SocketIpcHub`.\r\n- Removed use of error-suppression operator to avoid warnings from mis-configured error handlers (#200).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.8...v2.2.9",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parser 1.1.1",
         "package": "amphp\/parser",
         "tag_name": "v1.1.1",
@@ -33,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/rpc\/releases\/tag\/v2.0.0",
         "date": "2024-03-19T19:48:01Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.8",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.8",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.8",
-        "date": "2024-03-19T17:05:19Z",
-        "body": " - Fixed race condition on concurrent IPC connect calls (#199)<br>Thank you @Nadyita for reporting and debugging this issue.",
         "revolt": true
     },
     {
