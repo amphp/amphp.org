@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http 2.1.1",
+        "package": "amphp\/http",
+        "tag_name": "v2.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.1",
+        "date": "2024-04-03T18:04:59Z",
+        "body": "## What's Changed\r\n\r\n- **Security**: Fix Denial of Service via HTTP\/2 CONTINUATION Frames by @kelunik\r\n\r\n## References\r\n\r\n - https:\/\/github.com\/amphp\/http\/security\/advisories\/GHSA-qjfw-cvjf-f4fm\r\n - https:\/\/kb.cert.org\/vuls\/id\/421644\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.1.0...2.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel 2.2.9",
         "package": "amphp\/parallel",
         "tag_name": "v2.2.9",
@@ -222,15 +231,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-form-parser\/releases\/tag\/v2.0.0",
         "date": "2023-08-25T03:01:02Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `BufferingParser` and `StreamingParser` to `FormParser` and `StreamingFormParser`, respectively.\r\n- Removed the `parseForm` function in favor of the `Form::fromRequest()` static method.\r\n- Removed `ParsingMiddleware`. Use `Form::fromRequest()` instead.\r\n- Removed `ParseException`. Form parsing errors will throw an `HttpErrorException` from `amphp\/http-server` instead, which do not need to be caught (the server will automatically return an error response).",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http 2.1.0",
-        "package": "amphp\/http",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.0",
-        "date": "2023-08-24T04:31:15Z",
-        "body": "- Updated `league\/uri-components` requirements to `^2.4.2 | ^7.1` as part of fixing #24 and allow `psr\/message@v2`\r\n- Changed request query string encoding to use RFC3986 rules to as part of fixing #24\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.0.0...v2.1.0",
         "revolt": true
     },
     {
