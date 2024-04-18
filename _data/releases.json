@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/amp 3.0.1",
+        "package": "amphp\/amp",
+        "tag_name": "v3.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.1",
+        "date": "2024-04-18T19:51:02Z",
+        "body": "## What's Changed\r\n* Fixed compatibility of `Amp\\weakClosure()` with changes made to closure names in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.0...v3.0.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http 2.1.1",
         "package": "amphp\/http",
         "tag_name": "v2.1.1",
@@ -294,15 +303,6 @@
         "html_url": "https:\/\/github.com\/amphp\/phpunit-util\/releases\/tag\/v3.0.0",
         "date": "2022-12-18T17:53:05Z",
         "body": "This package has been redesigned for compatibility with AMPHP v3 and fibers. `AsyncTestCase` serves a similar purpose as before, providing helper methods for unit testing within an async context. Each test case is run within a unique fiber to allow suspending during the test run.\r\n\r\n- `AsyncTestCase::setUpAsync()` and `tearDownAsync()` have been removed. Use `AsyncTestCase::setUp()` and `tearDown()` instead, as both of these methods are now able to execute async using fibers.\r\n- `AsyncTestCase::createCallback()` now returns a `Closure`. Additionally, an optional parameter for expected arguments upon invocation have been added (uses `InvocationMocker::with(...)` to set expected arguments).",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/amp 3.0.0",
-        "package": "amphp\/amp",
-        "tag_name": "v3.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.0",
-        "date": "2022-12-18T17:13:34Z",
-        "body": "\r\n#### Event Loop\r\n\r\nAmp no longer ships its own event loop. It's now based on [Revolt](https:\/\/revolt.run). `Revolt\\EventLoop` is quite similar to Amp's previous `Amp\\Loop`. A very important difference is using `float $seconds` instead of `int $milliseconds` for timers though!\r\n\r\n#### Promises\r\n\r\n`Future` is a replacement for the previous `Promise`.\r\nThere's no need for callbacks or `yield` anymore!\r\nIts `await()` method is based on fibers and replaces generator based coroutines \/ `Amp\\Promise\\wait()`.\r\n\r\n- Renamed `Amp\\Deferred` to `Amp\\DeferredFuture`.\r\n- Removed `Amp\\Promise\\wait()`: Use `Amp\\Future::await()` instead, which can be called in any (nested) context unlike before.\r\n- Removed `Amp\\call()`: Remove the passed closure boilerplate and all `yield` keywords, interruption is handled via fibers now instead of generator coroutines.\r\n- Removed `Amp\\asyncCall()`: Replace invocations with `Amp\\async()`, which starts a new fiber instead of using generators.\r\n- Removed `Amp\\coroutine()`: There's no direct replacement.\r\n- Removed `Amp\\asyncCoroutine()`: There's no direct replacement.\r\n- Removed `Amp\\Promise\\timeout()`: `Future::await()` accepts an optional `Cancellation`, which can be used as a replacement.\r\n- Removed `Amp\\Promise\\rethrow()`: Unhandled errors are now automatically thrown into the event loop, so there's no need for that function anymore.\r\n- Unhandled errors can be ignored using `Future::ignore()` if needed, but should usually be handled in some way.\r\n- Removed `Amp\\Promise\\wrap()`: Use `Future::finally()` instead.\r\n- Renamed `Amp\\getCurrentTime()` to `Amp\\now()` returning the time in seconds instead of milliseconds.\r\n- Changed `Amp\\delay()` to accept the delay in seconds now instead of milliseconds.\r\n- Added `Amp\\weakClosure()` to allow a class to hold a self-referencing Closure without creating a circular reference that prevents automatic garbage collection.\r\n- Added `Amp\\trapSignal()` to await one or multiple signals.\r\n\r\n#### Promise Combinators\r\n\r\nPromise combinators have been renamed:\r\n\r\n- `Amp\\Promise\\race()` has been renamed to `Amp\\Future\\awaitFirst()`\r\n- `Amp\\Promise\\first()` has been renamed to `Amp\\Future\\awaitAny()`\r\n- `Amp\\Promise\\some()` has been renamed to `Amp\\Future\\awaitAnyN()`\r\n- `Amp\\Promise\\any()` has been renamed to `Amp\\Future\\awaitAll()`\r\n- `Amp\\Promise\\all()` has been renamed to `Amp\\Future\\await()`\r\n\r\n#### CancellationToken\r\n\r\n- `CancellationToken` has been renamed to `Cancellation`.\r\n- `CancellationTokenSource` has been renamed to `DeferredCancellation`.\r\n- `NullCancellationToken` has been renamed to `NullCancellation`.\r\n- `TimeoutCancellationToken` has been renamed to `TimeoutCancellation`.\r\n- `CombinedCancellationToken` has been renamed to `CompositeCancellation`.\r\n- `SignalCancellation` has been added.\r\n\r\n#### Iterators\r\n\r\nIterators have been removed from `amphp\/amp` as normal PHP iterators can be used with fibers now and there's no need for a separate API.\r\nHowever, there's still some need for _concurrent_ iterators, which is covered by the new [`amphp\/pipeline`](https:\/\/github.com\/amphp\/pipeline) library now.\r\n\r\n#### Closable\r\n\r\n`Amp\\Closable` has been added as a new basic interface for closable resources such as streams or sockets.\r\n\r\n#### Strict Types\r\n\r\nStrict types now declared in all library files.\r\nThis will affect callbacks invoked within this library's code which use scalar types as parameters.\r\nFunctions used with `Amp\\async()` are the most likely to be affected by this change \u2014 these functions will now be invoked within a strict-types context.",
         "revolt": true
     },
     {
