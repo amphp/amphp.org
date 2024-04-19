@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/php-cs-fixer-config 2.1.0",
+        "package": "amphp\/php-cs-fixer-config",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.1.0",
+        "date": "2024-04-19T02:38:23Z",
+        "body": "## What's Changed\r\n* Add `nullable_type_declaration_for_default_null_value` to the default rules by @alexandre-daubois in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n## New Contributors\r\n* @alexandre-daubois made their first contribution in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.0.1...v2.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/amp 3.0.1",
         "package": "amphp\/amp",
         "tag_name": "v3.0.1",
@@ -204,15 +213,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.0.1",
         "date": "2023-12-11T04:02:24Z",
         "body": "## What's Changed\r\n* Fail streams only with StreamException by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/354. Response body streams will now only throw `StreamException` or `CancelledException` as specified by the `ReadableStream` interface.\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.0.0...v5.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/php-cs-fixer-config 2.0.1",
-        "package": "amphp\/php-cs-fixer-config",
-        "tag_name": "v2.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.0.1",
-        "date": "2023-12-03T16:47:19Z",
-        "body": "- Removed deprecated rules (#7)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.0.0...v2.0.1",
         "revolt": true
     },
     {
