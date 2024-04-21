@@ -1,11 +1,20 @@
 [
     {
+        "name": "amphp\/http-client 5.1.0",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.1.0",
+        "date": "2024-04-21T16:47:34Z",
+        "body": "## What's Changed\r\n* Add `BufferedContent::fromJson()` by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/355\r\n* Add `Form::addNestedFields()` by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/356\r\n* Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4\r\n* `RequestBody` -> `HttpContent` by @ShiSHcat in https:\/\/github.com\/amphp\/http-client\/pull\/358\r\n\r\n## New Contributors\r\n* @ShiSHcat made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/358\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.0.1...v5.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-server 3.3.1",
         "package": "amphp\/http-server",
         "tag_name": "v3.3.1",
         "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.3.1",
         "date": "2024-04-21T15:53:11Z",
-        "body": "## What's Changed\r\n\r\n* Made implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n* Typo in README.md by @tncrazvan in https:\/\/github.com\/amphp\/http-server\/pull\/361\r\n\r\n## New Contributors\r\n* @tncrazvan made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/361\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.3.0...v3.3.1",
+        "body": "## What's Changed\r\n\r\n* Made implicit nullable types explicit to avoid deprecation notice in PHP 8.4\r\n* Typo in README.md by @tncrazvan in https:\/\/github.com\/amphp\/http-server\/pull\/361\r\n\r\n## New Contributors\r\n* @tncrazvan made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/361\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.3.0...v3.3.1",
         "revolt": true
     },
     {
@@ -213,15 +222,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v2.0.0",
         "date": "2023-12-28T22:25:13Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nThis release is compatible with [`amphp\/http-client@^5`](https:\/\/github.com\/amphp\/http-client) and [`amphp\/websocket@^2`](https:\/\/github.com\/amphp\/websocket). See the release notes of these libraries for further change notes.\r\n\r\nSimilar to `v1`, a Websocket connection is created using `Amp\\Websocket\\Client\\connect()` or using an instance of `WebsocketConnector`, calling `WebsocketConnector::connect()`. The returned `WebsocketConnection` then is used to send and receive WebSocket messages.\r\n\r\n- Renamed most classes and interfaces to add `Websocket` as a prefix to avoid name collisions with similarly named classes in other packages which are frequently used together. For example, `Connection` is now `WebsocketConnection`.\r\n- Advanced handshake and connection parameters may be specified using a `Rfc6455ConnectionFactory` instance provided when constructing a `Rfc6455Connector`.\r\n- A global `WebsocketConnector` instance may be accessed and set via `Amp\\Websocket\\Client\\websocketConnector()`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.0.1",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.0.1",
-        "date": "2023-12-11T04:02:24Z",
-        "body": "## What's Changed\r\n* Fail streams only with StreamException by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/354. Response body streams will now only throw `StreamException` or `CancelledException` as specified by the `ReadableStream` interface.\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.0.0...v5.0.1",
         "revolt": true
     },
     {
