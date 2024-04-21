@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/socket 2.3.1",
+        "package": "amphp\/socket",
+        "tag_name": "v2.3.1",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.3.1",
+        "date": "2024-04-21T14:42:38Z",
+        "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.3.0...v2.3.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns 2.1.2",
         "package": "amphp\/dns",
         "tag_name": "v2.1.2",
@@ -78,15 +87,6 @@
         "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.1",
         "date": "2024-03-21T19:01:55Z",
         "body": "## What's Changed\r\n* Make implicit nullable types explicit by @nicolas-grekas in https:\/\/github.com\/amphp\/hpack\/pull\/16\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.2.0...v3.2.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.3.0",
-        "package": "amphp\/socket",
-        "tag_name": "v2.3.0",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.3.0",
-        "date": "2024-03-19T20:07:14Z",
-        "body": " - Added `Socks5SocketConnector` to connect to hosts via SOCKS5 proxies. A similar implementation was previously present in `amphp\/http-tunnel`.",
         "revolt": true
     },
     {
