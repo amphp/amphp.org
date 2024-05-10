@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/amp 3.0.2",
+        "package": "amphp\/amp",
+        "tag_name": "v3.0.2",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.2",
+        "date": "2024-05-10T21:41:16Z",
+        "body": "## What's Changed\r\n* Changed `Closure(mixed...)` annotation to `Closure(...)` to support PHPStan.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.1...v3.0.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.1.0",
         "package": "amphp\/http-client",
         "tag_name": "v5.1.0",
@@ -69,15 +78,6 @@
         "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.1.0",
         "date": "2024-04-19T02:38:23Z",
         "body": "## What's Changed\r\n* Add `nullable_type_declaration_for_default_null_value` to the default rules by @alexandre-daubois in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n## New Contributors\r\n* @alexandre-daubois made their first contribution in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.0.1...v2.1.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/amp 3.0.1",
-        "package": "amphp\/amp",
-        "tag_name": "v3.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.1",
-        "date": "2024-04-18T19:51:02Z",
-        "body": "## What's Changed\r\n* Fixed compatibility of `Amp\\weakClosure()` with changes made to closure names in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.0...v3.0.1",
         "revolt": true
     },
     {
