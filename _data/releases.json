@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/dns 2.2.0",
+        "package": "amphp\/dns",
+        "tag_name": "v2.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.2.0",
+        "date": "2024-06-02T19:57:54Z",
+        "body": "## What's Changed\r\n\r\n* Added `StaticDnsConfigLoader`\r\n* Fixed support for docker 26+ by @xtrime-ru in https:\/\/github.com\/amphp\/dns\/pull\/118\r\n\r\n## New Contributors\r\n\r\n* @xtrime-ru made their first contribution in https:\/\/github.com\/amphp\/dns\/pull\/118\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.1.2...v2.2.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/amp 3.0.2",
         "package": "amphp\/amp",
         "tag_name": "v3.0.2",
@@ -42,15 +51,6 @@
         "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.3.1",
         "date": "2024-04-21T14:42:38Z",
         "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.3.0...v2.3.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/dns 2.1.2",
-        "package": "amphp\/dns",
-        "tag_name": "v2.1.2",
-        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.1.2",
-        "date": "2024-04-19T03:54:39Z",
-        "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.1.1...v2.1.2",
         "revolt": true
     },
     {
