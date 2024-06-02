@@ -241,6 +241,7 @@ The big disadvantage of network interceptors is that they have to be rather quic
 - `SetRequestHeaderIfUnset`
 - `SetResponseHeader`
 - `SetResponseHeaderIfUnset`
+- `SetRequestTimeout`
 - [`CookieHandler`](https://github.com/amphp/http-client-cookies)
 - [`PrivateCache`](https://github.com/amphp/http-client-cache)
 
