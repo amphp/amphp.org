@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/pipeline 1.2.1",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.2.1",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.1",
+        "date": "2024-07-04T01:12:27Z",
+        "body": "## What's Changed\r\n* Fix a potential race condition when using a `Queue` to create a `ConcurrentIterator`. An `Error` with message \"Must call suspend() before calling throw()\" was thrown when a `Cancellation` provided to `ConcurrentIterator::continue()` was cancelled and the underlying `Queue` instance was simultaneously completed. See #22.\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.0...v1.2.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns 2.2.0",
         "package": "amphp\/dns",
         "tag_name": "v2.2.0",
@@ -168,15 +177,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.0.0",
         "date": "2024-03-10T15:16:34Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Added template types to interfaces for better type expression on implementations and extensions.\r\n- All classes now start with `Sql` as a prefix to avoid name collisions with other libraries.\r\n- Combined `ResultSet` and `CommandResult` into a single interface, `SqlResult`.\r\n- `SqlTransaction` now extends `SqlLink` instead of `SqlExecutor` to support nested transactions.\r\n- Added `onCommit()` and `onRollback()` methods to `SqlTransaction`. These methods attach callbacks after the transaction is either committed or rolled back, respectively.\r\n- Removed the methods `createSavepoint()`, `rollbackTo()`, and `releaseSavepont()` from `SqlTransaction`. Use nested transactions through `SqlTransaction::beginTransaction()` instead.\r\n- `SqlPool` now extends `SqlConnection` instead of `SqlLink`. `SqlPool::extractConnection()` returns an instance of `SqlConnection` instead of `SqlLink`.\r\n- Added `SqlResult::fetchRow()`, which will return a single row (associative array) from the result set on each call until no further rows remain in the result.\r\n- `SqlTransientResource` and now extends `Amp\\Closable`.\r\n- Added `SqlTransactionIsolation` and an enum-based implementation, `SqlTransactionIsolationLevel`.\r\n- Renamed `ConnectionConfig` to `SqlConfig`.\r\n- Renamed `FailureException` to `SqlException`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/pipeline 1.2.0",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.0",
-        "date": "2024-03-10T14:57:22Z",
-        "body": "## What's Changed\r\n* Added `Pipeline::buffer()`, which provides control of the number of values buffered by the pipeline before back-pressure is applied to the data source by @trowski in https:\/\/github.com\/amphp\/pipeline\/pull\/21\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.1.0...v1.2.0",
         "revolt": true
     },
     {
