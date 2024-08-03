@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/redis 2.0.1",
+        "package": "amphp\/redis",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.1",
+        "date": "2024-08-03T18:53:04Z",
+        "body": "## What's Changed\r\n* Fixed return type for `RedistList::get()` by @Bilge in https:\/\/github.com\/amphp\/redis\/pull\/96\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.0...v2.0.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/pipeline 1.2.1",
         "package": "amphp\/pipeline",
         "tag_name": "v1.2.1",
@@ -258,15 +267,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-session\/releases\/tag\/v3.0.0",
         "date": "2023-08-20T18:31:25Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `Storage`, `InMemoryStorage`, `RedisStorage`, `DefaultIdGenerator`, and `Driver` to `SessionStorage`, `LocalSessionStorage`, `RedisSessionStorage`, `Base64UrlSessionIdGenerator`, and `SessionFactory`, respectively\r\n- Renamed methods on `Session`: `open()` to `lock()`, `save()` to `commit()`\r\n- Added `Session::rollback()` to undo local changes and re-read the session data from storage\r\n- Added `SessionTrainer` for examining session changes unit testing",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/redis 2.0.0",
-        "package": "amphp\/redis",
-        "tag_name": "v2.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.0",
-        "date": "2023-08-20T16:57:56Z",
-        "body": "Initial release compatible with AMPHP v3. As with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n - Added `RedisParcel` in the `Sync` sub-namespace implementing the `Parcel` interface from `amphp\/sync`\r\n - Added `RedisConnector` interface to decouple connecting and init commands such as `AUTH` and `SELECT`\r\n - Reorganized class names \/ namespaces for better overview\r\n   - `Redis` moved to `RedisClient`\r\n   - `Subscriber` \/ `Subscription` moved to `RedisSubscriber` \/ `RedisSubscription`\r\n   -  `Cache` moved to `RedisCache`\r\n   - `Mutex` sub-namespace has been changed to `Sync`. All classes within now have a prefix of Redis, e.g., `Mutex` \u2192 `RedisMutex`, `MutexOptions` \u2192 `RedisMutexOptions`\r\n   - `Config` moved to `RedisConfig`\r\n   - `RespSocket` moved to `Amp\\Redis\\Connection\\RedisConnection` and is an interface now\r\n   - `RespParser` moved to `Amp\\Redis\\Protocol\\RespParser`\r\n   - `QueryExecutor` moved to `Amp\\Redis\\Connection\\RedisLink`\r\n   - `RemoteExecutor` moved to `Amp\\Redis\\Connection\\ReconnectingRedisLink`\r\n   - `RedisHyperLogLog` moved to `Amp\\Redis\\Command\\RedisHyperLogLog`\r\n   - `RedisList` moved to `Amp\\Redis\\Command\\RedisList`\r\n   - `RedisMap` moved to `Amp\\Redis\\Command\\RedisMap`\r\n   - `RedisSet` moved to `Amp\\Redis\\Command\\RedisSet`\r\n   - `RedisSortedSet` moved to `Amp\\Redis\\Command\\RedisSortedSet`\r\n   - `SortOptions` moved to `Amp\\Redis\\Command\\Option\\SortOptions`\r\n   - `SetOptions` moved to `Amp\\Redis\\Command\\Option\\SetOptions`\r\n   - `SocketException` moved to `Amp\\Redis\\Connection\/RedisConnectionException`\r\n   - `ParserException` moved to `Amp\\Redis\\Protocol\\ProtocolException`\r\n   - `QueryException` moved to `Amp\\Redis\\Protocol\\QueryException`\r\n - `RedisSubscription` is now a simple PHP iterator now that `Amp\\Iterator` is no longer necessary with fibers.\r\n",
         "revolt": true
     },
     {
