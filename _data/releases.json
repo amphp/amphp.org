@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/sync 2.3.0",
+        "package": "amphp\/sync",
+        "tag_name": "v2.3.0",
+        "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
+        "date": "2024-08-04T17:37:10Z",
+        "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/redis 2.0.1",
         "package": "amphp\/redis",
         "tag_name": "v2.0.1",
@@ -141,15 +150,6 @@
         "html_url": "https:\/\/github.com\/amphp\/rpc\/releases\/tag\/v2.0.0",
         "date": "2024-03-19T19:48:01Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/sync 2.2.0",
-        "package": "amphp\/sync",
-        "tag_name": "v2.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.2.0",
-        "date": "2024-03-16T15:47:09Z",
-        "body": "## What's Changed\r\n* Add PriorityQueue by @trowski in https:\/\/github.com\/amphp\/sync\/pull\/27\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.1.0...v2.2.0",
         "revolt": true
     },
     {
