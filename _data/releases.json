@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/file 3.1.1",
+        "package": "amphp\/file",
+        "tag_name": "v3.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.1.1",
+        "date": "2024-08-16T15:13:43Z",
+        "body": "## What's Changed\r\n\r\n- Dropped support for ext-uv < 0.3.0.\r\n- Changed the version check for ext-uv to avoid an ext-opcache bug (see https:\/\/github.com\/amphp\/http-client\/issues\/365).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.0...v3.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sync 2.3.0",
         "package": "amphp\/sync",
         "tag_name": "v2.3.0",
@@ -60,15 +69,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.3.1",
         "date": "2024-04-21T15:53:11Z",
         "body": "## What's Changed\r\n\r\n* Made implicit nullable types explicit to avoid deprecation notice in PHP 8.4\r\n* Typo in README.md by @tncrazvan in https:\/\/github.com\/amphp\/http-server\/pull\/361\r\n\r\n## New Contributors\r\n* @tncrazvan made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/361\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.3.0...v3.3.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/file 3.1.0",
-        "package": "amphp\/file",
-        "tag_name": "v3.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.1.0",
-        "date": "2024-04-21T15:10:06Z",
-        "body": "## What's Changed\r\n* Add `FileCache` class by @Nadyita in https:\/\/github.com\/amphp\/file\/pull\/83\r\n* Add `KeyedFileMutex` by @bwoebi in https:\/\/github.com\/amphp\/file\/pull\/62\r\n* Made implicit nullable types explicit to avoid deprecation notice in PHP 8.4\r\n\r\n## New Contributors\r\n* @Nadyita made their first contribution in https:\/\/github.com\/amphp\/file\/pull\/83\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.0.2...v3.1.0",
         "revolt": true
     },
     {
