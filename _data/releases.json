@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client-psr7 1.0.0",
+        "package": "amphp\/http-client-psr7",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-psr7\/releases\/tag\/v1.0.0",
+        "date": "2024-09-03T03:26:09Z",
+        "body": "Initial release. &#x1F389; ",
+        "revolt": true
+    },
+    {
         "name": "amphp\/file 3.1.1",
         "package": "amphp\/file",
         "tag_name": "v3.1.1",
