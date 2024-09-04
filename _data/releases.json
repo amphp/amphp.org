@@ -1,20 +1,20 @@
 [
     {
-        "name": "amphp\/http-client-guzzle-adapter 1.0.0",
+        "name": "amphp\/http-client-guzzle-adapter 1.1.0",
         "package": "amphp\/http-client-guzzle-adapter",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.0.0",
-        "date": "2024-09-03T04:18:52Z",
-        "body": "Initial release. :tada:",
+        "tag_name": "v1.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.1.0",
+        "date": "2024-09-04T00:35:54Z",
+        "body": "## What's Changed\r\n- Updated requirements to allow `psr\/http-message@^2`\r\n- Relaxed version constraints on `guzzlehttp\/guzzle` and `guzzlehttp\/psr7` as well as allowing `guzzlehttp\/promises@^1`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/compare\/v1.0.0...v1.1.0",
         "revolt": true
     },
     {
-        "name": "amphp\/http-client-psr7 1.0.0",
+        "name": "amphp\/http-client-psr7 1.1.0",
         "package": "amphp\/http-client-psr7",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client-psr7\/releases\/tag\/v1.0.0",
-        "date": "2024-09-03T03:26:09Z",
-        "body": "Initial release. &#x1F389; ",
+        "tag_name": "v1.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-psr7\/releases\/tag\/v1.1.0",
+        "date": "2024-09-04T00:29:58Z",
+        "body": "## What's Changed\r\n- Updated requirements to allow `psr\/http-message@^2`\r\n- Replaced development dependency on `laminas\/laminas-diactoros` with `guzzlehttp\/psr7`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-psr7\/compare\/v1.0.0...v1.1.0",
         "revolt": true
     },
     {
