@@ -242,15 +242,15 @@ individual keys in the component array are preserved from the `iterable` passed 
 
 ##### awaitAll
 
-`Amp\Promise\awaitAll($iterable, $cancellation)` awaits all futures and returns their results as `[$errors, $values]` array.
+`Amp\Future\awaitAll($iterable, $cancellation)` awaits all futures and returns their results as `[$errors, $values]` array.
 
 ##### awaitFirst
 
-`Amp\Promise\awaitFirst($iterable, $cancellation)` unwraps the first completed `Future`, whether successfully completed or errored.
+`Amp\Future\awaitFirst($iterable, $cancellation)` unwraps the first completed `Future`, whether successfully completed or errored.
 
 ##### awaitAny
 
-`Amp\Promise\awaitAny($iterable, $cancellation)` unwraps the first successfully completed `Future`.
+`Amp\Future\awaitAny($iterable, $cancellation)` unwraps the first successfully completed `Future`.
 
 #### Future Creation
 
