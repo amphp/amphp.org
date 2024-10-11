@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/postgres 2.1.0",
+        "package": "amphp\/postgres",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.1.0",
+        "date": "2024-10-11T02:53:21Z",
+        "body": "## What's Changed\r\n\r\n- Fixed type cast for `numeric` columns when using the `ext-pgsql` driver. The column value was being cast to a float, it is now cast to a string for parity with the `ext-pq` driver to retain value precision. (#66)\r\n- Added a parameter for the default transaction isolation to `PostgresConnectionPool` to set the default transaction level when constructing the pool.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.0.0...v2.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql-common 2.0.1",
         "package": "amphp\/sql-common",
         "tag_name": "v2.0.1",
@@ -186,15 +195,6 @@
         "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.0.0",
         "date": "2024-03-10T17:50:28Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Classes and interfaces now are prefixed with `Mysql` to avoid collisions with similar names from other libraries.\r\n- Marked most classes as internal, leaving only interfaces and concrete implementations required to use the API or create a custom connector.\r\n- `MysqlTransaction` now extends `MysqlLink` instead of `MysqlExecutor` to support nested transactions.\r\n- `MysqlDataType` is now an enum of MySQL data type codes and methods to decode data based on type.\r\n- Result set field data is now available from `MysqlResult::getColumnDefinitions()` which returns an array of `MysqlColumnDefinition` objects corresponding to the result set rows.\r\n- The second param of `MysqlStatement::bind()` now requires a string. Binding only makes sense with long strings anyway.\r\n- `MysqlConnection` is now an interface extending `SqlConnection`, with `SocketMysqlConnection` being the implementation.\r\n- Removed `MysqlConnector` since the interface was replaced by template types on `SqlConnector`, i.e. `SqlConnector<MysqlConfig, MysqlConnection>`",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/postgres 2.0.0",
-        "package": "amphp\/postgres",
-        "tag_name": "v2.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.0.0",
-        "date": "2024-03-10T17:21:17Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Non-extension-specific classes and interfaces now are prefixed with `Postgres` to avoid collisions with similar names from other libraries.\r\n- Result sets now implement `Traversable`, allowing them to be used with `foreach` to iterate over result rows.\r\n- Marked most classes as internal, leaving only interfaces and concrete implementations required to use the API or create a custom connector.\r\n- `PostgresTransaction` now extends `PostgresLink` instead of `PostgresExecutor` to support nested transactions.\r\n- Removed `TimeoutConnector` in favor of `DefaultPostgresConnector` which has a `Cancellation` parameter on `connect()` which may be used with an `Amp\\TimeoutCancellation`.\r\n- Removed `PostgresConnector` since the interface was replaced by template types on `SqlConnector`, i.e. `SqlConnector<PostgresConfig, PostgresConnection>`\r\n- Added support for `BYTEA` fields. (#57)\r\n- Added the `PostgresConnection` interface extending `PostgresLink`.\r\n- Removed the `Receiver` interface. These methods are now a part of `PostgresConnection`.\r\n- Removed the `Quoter` Interface. These methods are now a part of `PostgresExecutor`.",
         "revolt": true
     },
     {
