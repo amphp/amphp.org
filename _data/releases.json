@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.3.0",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.3.0",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.0",
+        "date": "2024-10-11T03:19:58Z",
+        "body": "## What's Changed\r\n* Added `LimitedWorkerPool` extending `WorkerPool` in https:\/\/github.com\/amphp\/parallel\/pull\/205.\r\n* Added `DelegatingWorkerPool` implementing `LimitedWorkerPool`, which will only allow a limited number of workers to be pulled from a delegate `WorkerPool` instance.\r\n* `ContextWorkerPool` also now implements `LimitedWorkerPool`, as this pool implementation was already spawned a limited number of workers.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.9...v2.3.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/postgres 2.1.0",
         "package": "amphp\/postgres",
         "tag_name": "v2.1.0",
@@ -150,15 +159,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.1",
         "date": "2024-04-03T18:04:59Z",
         "body": "## What's Changed\r\n\r\n- **Security**: Fix Denial of Service via HTTP\/2 CONTINUATION Frames by @kelunik\r\n\r\n## References\r\n\r\n - https:\/\/github.com\/amphp\/http\/security\/advisories\/GHSA-qjfw-cvjf-f4fm\r\n - https:\/\/kb.cert.org\/vuls\/id\/421644\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.1.0...2.1.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.2.9",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.2.9",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.2.9",
-        "date": "2024-03-24T19:10:55Z",
-        "body": "## What's Changed\r\n\r\n- Fixed a race condition if outstanding accept calls were pending when closing `SocketIpcHub`.\r\n- Removed use of error-suppression operator to avoid warnings from mis-configured error handlers (#200).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.8...v2.2.9",
         "revolt": true
     },
     {
