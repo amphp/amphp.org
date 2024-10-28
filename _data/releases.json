@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/websocket 2.0.4",
+        "package": "amphp\/websocket",
+        "tag_name": "v2.0.4",
+        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.4",
+        "date": "2024-10-28T21:59:38Z",
+        "body": "## What's Changed\r\n\r\n- Fixed assertion failure when interleaving control frames between continuation frames in `Rfc6455FrameCompiler`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket\/compare\/v2.0.3...v2.0.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql-common 2.0.2",
         "package": "amphp\/sql-common",
         "tag_name": "v2.0.2",
@@ -231,15 +240,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v4.0.0",
         "date": "2023-12-29T15:22:07Z",
         "body": "The `4.0.0` release fixes compression support with a couple small compatibility breaks from `3.x`.\r\n\r\nUsers of `2.x` should upgrade directly to `4.0.0`.\r\n\r\nUsers of `3.x` can upgrade directly to `4.0.0` if compression is not being used. If a custom `WebsocketAcceptor` was created to support compression, this custom implementation may be dropped, instead passing an instance of `WebsocketCompressionContextFactory` to each `Websocket` request handler.\r\n\r\n## Backward Compatibility Breaks\r\n\r\n- The `WebsocketCompressionContextFactory` constructor  parameter of `Rfc6455ClientFactory` has been removed and is instead a constructor parameter of the `Websocket` class.\r\n- A nullable `WebsocketCompressionContext` parameter was added to `WebsocketClientFactory::createClient()`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/websocket 2.0.3",
-        "package": "amphp\/websocket",
-        "tag_name": "v2.0.3",
-        "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.3",
-        "date": "2023-12-28T23:26:38Z",
-        "body": "## What's Changed\r\n- `WebsocketException` now extends `Amp\\ByteStream\\StreamException` to avoid violating the `ReadableStream` interface by throwing a non-`StreamException` from a stream method.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket\/compare\/v2.0.2...v2.0.3",
         "revolt": true
     },
     {
