@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client-psr7 1.1.1",
+        "package": "amphp\/http-client-psr7",
+        "tag_name": "v1.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-psr7\/releases\/tag\/v1.1.1",
+        "date": "2024-11-15T04:23:37Z",
+        "body": "## What's Changed\r\n\r\n- Fixed support for PSR-7 requests with a protocol version of `\"2.0\"` by converting the protocol version to `\"2\"` when converting to an `Amp\\Http\\Client\\Request` (#15).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-psr7\/compare\/v1.1.0...v1.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/websocket 2.0.4",
         "package": "amphp\/websocket",
         "tag_name": "v2.0.4",
@@ -42,15 +51,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.1.1",
         "date": "2024-09-05T00:06:04Z",
         "body": "## What's Changed\r\n- Updated requirements to allow guzzlehttp\/psr7@^1\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/compare\/v1.1.0...v1.1.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client-psr7 1.1.0",
-        "package": "amphp\/http-client-psr7",
-        "tag_name": "v1.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client-psr7\/releases\/tag\/v1.1.0",
-        "date": "2024-09-04T00:29:58Z",
-        "body": "## What's Changed\r\n- Updated requirements to allow `psr\/http-message@^2`\r\n- Replaced development dependency on `laminas\/laminas-diactoros` with `guzzlehttp\/psr7`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-psr7\/compare\/v1.0.0...v1.1.0",
         "revolt": true
     },
     {
