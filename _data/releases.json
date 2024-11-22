@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/postgres 2.1.1",
+        "package": "amphp\/postgres",
+        "tag_name": "v2.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.1.1",
+        "date": "2024-11-22T23:41:49Z",
+        "body": "## What's Changed\r\n- Fixed handling of `int2vector` and `oidvector` fields when using `ext-pgsql` (#68).\r\n- The type table is now loaded using an async query when using `ext-pgsql`. This query is only executed once per server upon the initial connection to that server. Using an async query will reduce latency when connecting to different Postgres servers.\r\n- Improved performance of array parsing when using `ext-pgsql`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.1.0...v2.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client-psr7 1.1.1",
         "package": "amphp\/http-client-psr7",
         "tag_name": "v1.1.1",
@@ -33,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.0",
         "date": "2024-10-11T03:19:58Z",
         "body": "## What's Changed\r\n* Added `LimitedWorkerPool` extending `WorkerPool` in https:\/\/github.com\/amphp\/parallel\/pull\/205.\r\n* Added `DelegatingWorkerPool` implementing `LimitedWorkerPool`, which will only allow a limited number of workers to be pulled from a delegate `WorkerPool` instance.\r\n* `ContextWorkerPool` also now implements `LimitedWorkerPool`, as this pool implementation was already spawned a limited number of workers.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.9...v2.3.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/postgres 2.1.0",
-        "package": "amphp\/postgres",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.1.0",
-        "date": "2024-10-11T02:53:21Z",
-        "body": "## What's Changed\r\n\r\n- Fixed type cast for `numeric` columns when using the `ext-pgsql` driver. The column value was being cast to a float, it is now cast to a string for parity with the `ext-pq` driver to retain value precision. (#66)\r\n- Added a parameter for the default transaction isolation to `PostgresConnectionPool` to set the default transaction level when constructing the pool.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.0.0...v2.1.0",
         "revolt": true
     },
     {
