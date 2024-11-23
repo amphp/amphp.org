@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http 2.1.2",
+        "package": "amphp\/http",
+        "tag_name": "v2.1.2",
+        "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.2",
+        "date": "2024-11-23T15:00:23Z",
+        "body": "## What's Changed\r\n\r\n* Added support for PHP 8.4 by @Bilge in https:\/\/github.com\/amphp\/http\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.1.1...v2.1.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/postgres 2.1.1",
         "package": "amphp\/postgres",
         "tag_name": "v2.1.1",
@@ -159,15 +168,6 @@
         "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.1.0",
         "date": "2024-04-19T02:38:23Z",
         "body": "## What's Changed\r\n* Add `nullable_type_declaration_for_default_null_value` to the default rules by @alexandre-daubois in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n## New Contributors\r\n* @alexandre-daubois made their first contribution in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.0.1...v2.1.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http 2.1.1",
-        "package": "amphp\/http",
-        "tag_name": "v2.1.1",
-        "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.1",
-        "date": "2024-04-03T18:04:59Z",
-        "body": "## What's Changed\r\n\r\n- **Security**: Fix Denial of Service via HTTP\/2 CONTINUATION Frames by @kelunik\r\n\r\n## References\r\n\r\n - https:\/\/github.com\/amphp\/http\/security\/advisories\/GHSA-qjfw-cvjf-f4fm\r\n - https:\/\/kb.cert.org\/vuls\/id\/421644\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.1.0...2.1.1",
         "revolt": true
     },
     {
