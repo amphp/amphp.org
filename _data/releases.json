@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/sql 2.0.1",
+        "package": "amphp\/sql",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.0.1",
+        "date": "2024-11-23T16:52:07Z",
+        "body": "## What's Changed\r\n* Added PHP 8.4 compatibility by @Bilge in https:\/\/github.com\/amphp\/sql\/pull\/9\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/sql\/pull\/9\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.0.0...v2.0.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http 2.1.2",
         "package": "amphp\/http",
         "tag_name": "v2.1.2",
@@ -204,15 +213,6 @@
         "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.0.0",
         "date": "2024-03-10T17:50:28Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Classes and interfaces now are prefixed with `Mysql` to avoid collisions with similar names from other libraries.\r\n- Marked most classes as internal, leaving only interfaces and concrete implementations required to use the API or create a custom connector.\r\n- `MysqlTransaction` now extends `MysqlLink` instead of `MysqlExecutor` to support nested transactions.\r\n- `MysqlDataType` is now an enum of MySQL data type codes and methods to decode data based on type.\r\n- Result set field data is now available from `MysqlResult::getColumnDefinitions()` which returns an array of `MysqlColumnDefinition` objects corresponding to the result set rows.\r\n- The second param of `MysqlStatement::bind()` now requires a string. Binding only makes sense with long strings anyway.\r\n- `MysqlConnection` is now an interface extending `SqlConnection`, with `SocketMysqlConnection` being the implementation.\r\n- Removed `MysqlConnector` since the interface was replaced by template types on `SqlConnector`, i.e. `SqlConnector<MysqlConfig, MysqlConnection>`",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/sql 2.0.0",
-        "package": "amphp\/sql",
-        "tag_name": "v2.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.0.0",
-        "date": "2024-03-10T15:16:34Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Added template types to interfaces for better type expression on implementations and extensions.\r\n- All classes now start with `Sql` as a prefix to avoid name collisions with other libraries.\r\n- Combined `ResultSet` and `CommandResult` into a single interface, `SqlResult`.\r\n- `SqlTransaction` now extends `SqlLink` instead of `SqlExecutor` to support nested transactions.\r\n- Added `onCommit()` and `onRollback()` methods to `SqlTransaction`. These methods attach callbacks after the transaction is either committed or rolled back, respectively.\r\n- Removed the methods `createSavepoint()`, `rollbackTo()`, and `releaseSavepont()` from `SqlTransaction`. Use nested transactions through `SqlTransaction::beginTransaction()` instead.\r\n- `SqlPool` now extends `SqlConnection` instead of `SqlLink`. `SqlPool::extractConnection()` returns an instance of `SqlConnection` instead of `SqlLink`.\r\n- Added `SqlResult::fetchRow()`, which will return a single row (associative array) from the result set on each call until no further rows remain in the result.\r\n- `SqlTransientResource` and now extends `Amp\\Closable`.\r\n- Added `SqlTransactionIsolation` and an enum-based implementation, `SqlTransactionIsolationLevel`.\r\n- Renamed `ConnectionConfig` to `SqlConfig`.\r\n- Renamed `FailureException` to `SqlException`.",
         "revolt": true
     },
     {
