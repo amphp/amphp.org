@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client 5.2.0",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.0",
+        "date": "2024-12-07T00:42:44Z",
+        "body": "## What's Changed\r\n* Added inactivity timeout to SetRequestTimeout interceptor by @Nek- in https:\/\/github.com\/amphp\/http-client\/pull\/362\r\n* Fixed the exception type thrown by `SizeLimitingReadableStream`, changing it to `StreamException` to comply with the `ReadableStream` interface\r\n* Fixed body size limit of 0 (no limit) causing an exception when using `DecompressingReadableStream`\r\n* Fixed handling of GOAWAY frames from servers, allowing streams with an ID lower than that provided in the GOAWAY frame to complete before closing the connection (#366)\r\n\r\n## New Contributors\r\n* @Nek- made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/362\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.1.0...v5.2.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql 2.0.1",
         "package": "amphp\/sql",
         "tag_name": "v2.0.1",
@@ -123,15 +132,6 @@
         "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.2",
         "date": "2024-05-10T21:41:16Z",
         "body": "## What's Changed\r\n* Changed `Closure(mixed...)` annotation to `Closure(...)` to support PHPStan.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.1...v3.0.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.1.0",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.1.0",
-        "date": "2024-04-21T16:47:34Z",
-        "body": "## What's Changed\r\n* Add `BufferedContent::fromJson()` by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/355\r\n* Add `Form::addNestedFields()` by @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/356\r\n* Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4\r\n* `RequestBody` -> `HttpContent` by @ShiSHcat in https:\/\/github.com\/amphp\/http-client\/pull\/358\r\n\r\n## New Contributors\r\n* @ShiSHcat made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/358\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.0.1...v5.1.0",
         "revolt": true
     },
     {
