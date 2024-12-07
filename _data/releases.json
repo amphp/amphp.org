@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/websocket-client 2.0.1",
+        "package": "amphp\/websocket-client",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v2.0.1",
+        "date": "2024-12-07T02:07:54Z",
+        "body": "## What's Changed\r\n* Fix missing semicolon in readme by @nimah79 in https:\/\/github.com\/amphp\/websocket-client\/pull\/50\r\n* Make Rfc6455Connector compatible with PHP 8.4 by @foxycode in https:\/\/github.com\/amphp\/websocket-client\/pull\/53\r\n\r\n## New Contributors\r\n* @nimah79 made their first contribution in https:\/\/github.com\/amphp\/websocket-client\/pull\/50\r\n* @foxycode made their first contribution in https:\/\/github.com\/amphp\/websocket-client\/pull\/53\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v2.0.0...v2.0.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.2.0",
         "package": "amphp\/http-client",
         "tag_name": "v5.2.0",
@@ -240,15 +249,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-server\/releases\/tag\/v4.0.0",
         "date": "2023-12-29T15:22:07Z",
         "body": "The `4.0.0` release fixes compression support with a couple small compatibility breaks from `3.x`.\r\n\r\nUsers of `2.x` should upgrade directly to `4.0.0`.\r\n\r\nUsers of `3.x` can upgrade directly to `4.0.0` if compression is not being used. If a custom `WebsocketAcceptor` was created to support compression, this custom implementation may be dropped, instead passing an instance of `WebsocketCompressionContextFactory` to each `Websocket` request handler.\r\n\r\n## Backward Compatibility Breaks\r\n\r\n- The `WebsocketCompressionContextFactory` constructor  parameter of `Rfc6455ClientFactory` has been removed and is instead a constructor parameter of the `Websocket` class.\r\n- A nullable `WebsocketCompressionContext` parameter was added to `WebsocketClientFactory::createClient()`.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/websocket-client 2.0.0",
-        "package": "amphp\/websocket-client",
-        "tag_name": "v2.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v2.0.0",
-        "date": "2023-12-28T22:25:13Z",
-        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nThis release is compatible with [`amphp\/http-client@^5`](https:\/\/github.com\/amphp\/http-client) and [`amphp\/websocket@^2`](https:\/\/github.com\/amphp\/websocket). See the release notes of these libraries for further change notes.\r\n\r\nSimilar to `v1`, a Websocket connection is created using `Amp\\Websocket\\Client\\connect()` or using an instance of `WebsocketConnector`, calling `WebsocketConnector::connect()`. The returned `WebsocketConnection` then is used to send and receive WebSocket messages.\r\n\r\n- Renamed most classes and interfaces to add `Websocket` as a prefix to avoid name collisions with similarly named classes in other packages which are frequently used together. For example, `Connection` is now `WebsocketConnection`.\r\n- Advanced handshake and connection parameters may be specified using a `Rfc6455ConnectionFactory` instance provided when constructing a `Rfc6455Connector`.\r\n- A global `WebsocketConnector` instance may be accessed and set via `Amp\\Websocket\\Client\\websocketConnector()`.",
         "revolt": true
     },
     {
