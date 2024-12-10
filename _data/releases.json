@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/file 3.2.0",
+        "package": "amphp\/file",
+        "tag_name": "v3.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.2.0",
+        "date": "2024-12-10T05:19:31Z",
+        "body": "## What's Changed\r\n* The parallel driver no longer reuses the global worker pool if a specific instance is not provided to the constructor. Instead, a new worker pool is created.\r\n* The `$workerLimit` parameter to the constructor of `ParallelFilesystemDriver` is now deprecated. Pass an instance of `LimitedWorkerPool` instead.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.1...v3.2.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/websocket-client 2.0.1",
         "package": "amphp\/websocket-client",
         "tag_name": "v2.0.1",
@@ -87,15 +96,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.1.1",
         "date": "2024-09-05T00:06:04Z",
         "body": "## What's Changed\r\n- Updated requirements to allow guzzlehttp\/psr7@^1\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/compare\/v1.1.0...v1.1.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/file 3.1.1",
-        "package": "amphp\/file",
-        "tag_name": "v3.1.1",
-        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.1.1",
-        "date": "2024-08-16T15:13:43Z",
-        "body": "## What's Changed\r\n\r\n- Dropped support for ext-uv < 0.3.0.\r\n- Changed the version check for ext-uv to avoid an ext-opcache bug (see https:\/\/github.com\/amphp\/http-client\/issues\/365).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.0...v3.1.1",
         "revolt": true
     },
     {
