@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client 5.2.1",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.2.1",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.1",
+        "date": "2024-12-13T18:04:03Z",
+        "body": "## What's Changed\r\n* Replaced deprecated method calls from `league\/uri` v6 by @Bilge in https:\/\/github.com\/amphp\/http-client\/pull\/372\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/372\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.0...v5.2.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/cluster 2.0.0",
         "package": "amphp\/cluster",
         "tag_name": "v2.0.0",
@@ -24,15 +33,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v2.0.1",
         "date": "2024-12-07T02:07:54Z",
         "body": "## What's Changed\r\n* Fix missing semicolon in readme by @nimah79 in https:\/\/github.com\/amphp\/websocket-client\/pull\/50\r\n* Make Rfc6455Connector compatible with PHP 8.4 by @foxycode in https:\/\/github.com\/amphp\/websocket-client\/pull\/53\r\n\r\n## New Contributors\r\n* @nimah79 made their first contribution in https:\/\/github.com\/amphp\/websocket-client\/pull\/50\r\n* @foxycode made their first contribution in https:\/\/github.com\/amphp\/websocket-client\/pull\/53\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.2.0",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.0",
-        "date": "2024-12-07T00:42:44Z",
-        "body": "## What's Changed\r\n* Added inactivity timeout to SetRequestTimeout interceptor by @Nek- in https:\/\/github.com\/amphp\/http-client\/pull\/362\r\n* Fixed the exception type thrown by `SizeLimitingReadableStream`, changing it to `StreamException` to comply with the `ReadableStream` interface\r\n* Fixed body size limit of 0 (no limit) causing an exception when using `DecompressingReadableStream`\r\n* Fixed handling of GOAWAY frames from servers, allowing streams with an ID lower than that provided in the GOAWAY frame to complete before closing the connection (#366)\r\n\r\n## New Contributors\r\n* @Nek- made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/362\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.1.0...v5.2.0",
         "revolt": true
     },
     {
