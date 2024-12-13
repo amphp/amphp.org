@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/cluster 2.0.0",
+        "package": "amphp\/cluster",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v2.0.0",
+        "date": "2024-12-13T17:48:35Z",
+        "body": "Initial stable release compatible with AMPHP v3 &#x1F389; (after a much longer beta than intended &#x1F60A;).\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of Promise<ResolutionType> have been replaced with ResolutionType.\r\n\r\nThe tools available in this library have been expanded beyond that of version 1. A component to request server sockets from a parent process is now included as part of the public API, as well as a pair of components to transfer client sockets between processes.\r\n\r\n## New Features\r\n- Added `ServerSocketPipeFactory` and `ServerSocketPipeProvider` for requesting and providing server sockets to a child process from a parent process ([Documentation](https:\/\/github.com\/amphp\/cluster\/tree\/2.x#transferring-server-sockets)).\r\n- Added `ClientSocketReceivePipe` and `ClientSocketSendPipe` for transferring client sockets and related data between processes ([Documentation](https:\/\/github.com\/amphp\/cluster\/tree\/2.x#transferring-client-sockets)).\r\n\r\n## Changes\r\n- `Cluster::getId()` has been renamed to `Cluster::getContextId()`, returning the worker ID or null if not running as a cluster worker.\r\n- `Cluster::listen()` has been replaced with `Cluster::getServerSocketFactory()`, which returns an instance of `Amp\\Socket\\SocketServerFactory` that may be used to create a server or passed to components requiring an instance of that interface.\r\n- `Cluster::onMessage()` and `Cluster::send()` has been replaced with `Cluster::getChannel()`, returning an instance of `Amp\\Sync\\Channel` which may be used to send and receive messages from the cluster watcher.\r\n- `Cluster::onTerminate()` has been replaced with `Cluster::awaitTermination()` which awaits a signal from the cluster watch to stop.\r\n- `Watcher` has been renamed to `ClusterWatcher`.\r\n- `Watcher::onMessage()` has been replaced with `ClusterWatcher::getMessageIterator()`, returning a concurrent iterator of `ClusterWorkerMessage` objects.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/file 3.2.0",
         "package": "amphp\/file",
         "tag_name": "v3.2.0",
@@ -322,15 +331,6 @@
         "date": "2022-12-18T17:53:05Z",
         "body": "This package has been redesigned for compatibility with AMPHP v3 and fibers. `AsyncTestCase` serves a similar purpose as before, providing helper methods for unit testing within an async context. Each test case is run within a unique fiber to allow suspending during the test run.\r\n\r\n- `AsyncTestCase::setUpAsync()` and `tearDownAsync()` have been removed. Use `AsyncTestCase::setUp()` and `tearDown()` instead, as both of these methods are now able to execute async using fibers.\r\n- `AsyncTestCase::createCallback()` now returns a `Closure`. Additionally, an optional parameter for expected arguments upon invocation have been added (uses `InvocationMocker::with(...)` to set expected arguments).",
         "revolt": true
-    },
-    {
-        "name": "amphp\/cluster 1.0.1",
-        "package": "amphp\/cluster",
-        "tag_name": "v1.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v1.0.1",
-        "date": "2021-12-14T00:48:53Z",
-        "body": "Update to use [`amphp\/file`](https:\/\/github.com\/amphp\/file) `v2.x`.",
-        "revolt": false
     },
     {
         "name": "amphp\/beanstalk 0.3.2",
