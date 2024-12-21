@@ -1,5 +1,23 @@
 [
     {
+        "name": "amphp\/cluster 2.0.1",
+        "package": "amphp\/cluster",
+        "tag_name": "v2.0.1",
+        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v2.0.1",
+        "date": "2024-12-21T02:01:10Z",
+        "body": "## What's Changed\r\n* Report ExitFailures from cluster worker exits by @bwoebi in https:\/\/github.com\/amphp\/cluster\/pull\/21\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/cluster\/pull\/21\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/cluster\/compare\/v2.0.0...v2.0.1",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/parallel 2.3.1",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.3.1",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.1",
+        "date": "2024-12-21T01:59:12Z",
+        "body": "## What's Changed\r\n* Prevent silencing ExitFailure in ProcessContext->join() by @bwoebi in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.0...v2.3.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns 2.3.0",
         "package": "amphp\/dns",
         "tag_name": "v2.3.0",
@@ -24,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.1",
         "date": "2024-12-13T18:04:03Z",
         "body": "## What's Changed\r\n* Replaced deprecated method calls from `league\/uri` v6 by @Bilge in https:\/\/github.com\/amphp\/http-client\/pull\/372\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/372\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.0...v5.2.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/cluster 2.0.0",
-        "package": "amphp\/cluster",
-        "tag_name": "v2.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v2.0.0",
-        "date": "2024-12-13T17:48:35Z",
-        "body": "Initial stable release compatible with AMPHP v3 &#x1F389; (after a much longer beta than intended &#x1F60A;).\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of Promise<ResolutionType> have been replaced with ResolutionType.\r\n\r\nThe tools available in this library have been expanded beyond that of version 1. A component to request server sockets from a parent process is now included as part of the public API, as well as a pair of components to transfer client sockets between processes.\r\n\r\n## New Features\r\n- Added `ServerSocketPipeFactory` and `ServerSocketPipeProvider` for requesting and providing server sockets to a child process from a parent process ([Documentation](https:\/\/github.com\/amphp\/cluster\/tree\/2.x#transferring-server-sockets)).\r\n- Added `ClientSocketReceivePipe` and `ClientSocketSendPipe` for transferring client sockets and related data between processes ([Documentation](https:\/\/github.com\/amphp\/cluster\/tree\/2.x#transferring-client-sockets)).\r\n\r\n## Changes\r\n- `Cluster::getId()` has been renamed to `Cluster::getContextId()`, returning the worker ID or null if not running as a cluster worker.\r\n- `Cluster::listen()` has been replaced with `Cluster::getServerSocketFactory()`, which returns an instance of `Amp\\Socket\\SocketServerFactory` that may be used to create a server or passed to components requiring an instance of that interface.\r\n- `Cluster::onMessage()` and `Cluster::send()` has been replaced with `Cluster::getChannel()`, returning an instance of `Amp\\Sync\\Channel` which may be used to send and receive messages from the cluster watcher.\r\n- `Cluster::onTerminate()` has been replaced with `Cluster::awaitTermination()` which awaits a signal from the cluster watch to stop.\r\n- `Watcher` has been renamed to `ClusterWatcher`.\r\n- `Watcher::onMessage()` has been replaced with `ClusterWatcher::getMessageIterator()`, returning a concurrent iterator of `ClusterWorkerMessage` objects.",
         "revolt": true
     },
     {
@@ -105,15 +114,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v2.0.2",
         "date": "2024-10-27T16:13:23Z",
         "body": "## What's Changed\r\n\r\n- Fixed a memory leak due to `SqlStatementPool` accumulating on-close callbacks in `SqlCommonConnectionPool`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql-common\/compare\/v2.0.1...v2.0.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.3.0",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.3.0",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.0",
-        "date": "2024-10-11T03:19:58Z",
-        "body": "## What's Changed\r\n* Added `LimitedWorkerPool` extending `WorkerPool` in https:\/\/github.com\/amphp\/parallel\/pull\/205.\r\n* Added `DelegatingWorkerPool` implementing `LimitedWorkerPool`, which will only allow a limited number of workers to be pulled from a delegate `WorkerPool` instance.\r\n* `ContextWorkerPool` also now implements `LimitedWorkerPool`, as this pool implementation was already spawned a limited number of workers.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.2.9...v2.3.0",
         "revolt": true
     },
     {
