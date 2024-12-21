@@ -1,11 +1,20 @@
 [
     {
-        "name": "amphp\/http-server 3.4.0",
+        "name": "amphp\/dns 2.3.0",
+        "package": "amphp\/dns",
+        "tag_name": "v2.3.0",
+        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.3.0",
+        "date": "2024-12-21T01:21:42Z",
+        "body": "## What's Changed\r\n* Replaced Windows registry lookup with WMIC process invocation by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/115\r\n* Fix #120: Incorrect error message on missing domain by @trowski in https:\/\/github.com\/amphp\/dns\/pull\/121\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.2.0...v2.3.0",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-server 3.4.1",
         "package": "amphp\/http-server",
-        "tag_name": "v3.4.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.0",
-        "date": "2024-12-15T17:21:09Z",
-        "body": "## What's Changed\r\n* Fix method property in logger context by @luzrain in https:\/\/github.com\/amphp\/http-server\/pull\/373\r\n* Add `ExceptionHandler` interface and middleware by @trowski in https:\/\/github.com\/amphp\/http-server\/pull\/375\r\n* Add `_` to host validation by @maximal in https:\/\/github.com\/amphp\/http-server\/pull\/372\r\n* Fixed issue #371, suspending the connection or stream timeout until the request handler returns a response.\r\n\r\n## New Contributors\r\n* @luzrain made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/373\r\n* @maximal made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/372\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.3.1...v3.4.0",
+        "tag_name": "v3.4.1",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.1",
+        "date": "2024-12-21T00:59:36Z",
+        "body": "## What's Changed\r\n- Fixed #376, removing calls to deprecated methods in `league\/uri`, dropping support for `league\/uri@6.x`\r\n- Fixed #367 and #370 where a pending request could cause the server to hang during shutdown. Pending request reads are now cancelled when shutting down the HTTP\/1.1 driver.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.0...v3.4.1",
         "revolt": true
     },
     {
@@ -141,15 +150,6 @@
         "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.1",
         "date": "2024-07-04T01:12:27Z",
         "body": "## What's Changed\r\n* Fix a potential race condition when using a `Queue` to create a `ConcurrentIterator`. An `Error` with message \"Must call suspend() before calling throw()\" was thrown when a `Cancellation` provided to `ConcurrentIterator::continue()` was cancelled and the underlying `Queue` instance was simultaneously completed. See #22.\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.0...v1.2.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/dns 2.2.0",
-        "package": "amphp\/dns",
-        "tag_name": "v2.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.2.0",
-        "date": "2024-06-02T19:57:54Z",
-        "body": "## What's Changed\r\n\r\n* Added `StaticDnsConfigLoader`\r\n* Fixed support for docker 26+ by @xtrime-ru in https:\/\/github.com\/amphp\/dns\/pull\/118\r\n\r\n## New Contributors\r\n\r\n* @xtrime-ru made their first contribution in https:\/\/github.com\/amphp\/dns\/pull\/118\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.1.2...v2.2.0",
         "revolt": true
     },
     {
