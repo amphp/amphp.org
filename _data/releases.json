@@ -1,5 +1,23 @@
 [
     {
+        "name": "amphp\/redis 2.0.3",
+        "package": "amphp\/redis",
+        "tag_name": "v2.0.3",
+        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.3",
+        "date": "2025-01-15T04:15:05Z",
+        "body": "## What's Changed\r\n* Dropped support for `league\/uri@6.x`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.2...v2.0.3",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/http-client 5.2.2",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.2.2",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.2",
+        "date": "2025-01-15T04:08:07Z",
+        "body": "## What's Changed\r\n* Changed the default `User-Agent` header to contain only characters which should be accepted by all HTTP servers (#371).\r\n* Fixed window update potentially causing two HTTP\/2 frames to be sent with the `END_STREAM` flag set (#373).\r\n* Fixed early responses on HTTP\/2 (a response sent before the request is fully sent) causing an `HttpException` to be thrown instead of returning the response.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.1...v5.2.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-server 3.4.2",
         "package": "amphp\/http-server",
         "tag_name": "v3.4.2",
@@ -33,15 +51,6 @@
         "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.3.0",
         "date": "2024-12-21T01:21:42Z",
         "body": "## What's Changed\r\n* Replaced Windows registry lookup with WMIC process invocation by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/115\r\n* Fix #120: Incorrect error message on missing domain by @trowski in https:\/\/github.com\/amphp\/dns\/pull\/121\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.2.1",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.2.1",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.1",
-        "date": "2024-12-13T18:04:03Z",
-        "body": "## What's Changed\r\n* Replaced deprecated method calls from `league\/uri` v6 by @Bilge in https:\/\/github.com\/amphp\/http-client\/pull\/372\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/372\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.0...v5.2.1",
         "revolt": true
     },
     {
@@ -132,15 +141,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
         "date": "2024-08-04T17:37:10Z",
         "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/redis 2.0.1",
-        "package": "amphp\/redis",
-        "tag_name": "v2.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.1",
-        "date": "2024-08-03T18:53:04Z",
-        "body": "## What's Changed\r\n* Fixed return type for `RedistList::get()` by @Bilge in https:\/\/github.com\/amphp\/redis\/pull\/96\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.0...v2.0.1",
         "revolt": true
     },
     {
