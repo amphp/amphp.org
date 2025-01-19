@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/pipeline 1.2.2",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.2.2",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.2",
+        "date": "2025-01-19T15:57:18Z",
+        "body": "## What's Changed\r\n* Fixed clearing back-pressure if a `Queue` was completed while containing emitted values which had not been consumed, then the consumer explicitly disposed (called `ConcurrentIterator::dispose()`) of the associated iterator without consuming those values. Prior, the futures were not properly resolved with a `DisposedException`, but now will resolve as expected.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.1...v1.2.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns 2.4.0",
         "package": "amphp\/dns",
         "tag_name": "v2.4.0",
@@ -141,15 +150,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
         "date": "2024-08-04T17:37:10Z",
         "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/pipeline 1.2.1",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.2.1",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.1",
-        "date": "2024-07-04T01:12:27Z",
-        "body": "## What's Changed\r\n* Fix a potential race condition when using a `Queue` to create a `ConcurrentIterator`. An `Error` with message \"Must call suspend() before calling throw()\" was thrown when a `Cancellation` provided to `ConcurrentIterator::continue()` was cancelled and the underlying `Queue` instance was simultaneously completed. See #22.\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.0...v1.2.1",
         "revolt": true
     },
     {
