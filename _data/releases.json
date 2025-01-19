@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/dns 2.4.0",
+        "package": "amphp\/dns",
+        "tag_name": "v2.4.0",
+        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.4.0",
+        "date": "2025-01-19T15:50:32Z",
+        "body": "## What's Changed\r\n* Replaced WMIC nameserver lookup with PowerShell equivalent by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/116\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.3.0...v2.4.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/redis 2.0.3",
         "package": "amphp\/redis",
         "tag_name": "v2.0.3",
@@ -42,15 +51,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.1",
         "date": "2024-12-21T01:59:12Z",
         "body": "## What's Changed\r\n* Prevent silencing ExitFailure in ProcessContext->join() by @bwoebi in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.0...v2.3.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/dns 2.3.0",
-        "package": "amphp\/dns",
-        "tag_name": "v2.3.0",
-        "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.3.0",
-        "date": "2024-12-21T01:21:42Z",
-        "body": "## What's Changed\r\n* Replaced Windows registry lookup with WMIC process invocation by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/115\r\n* Fix #120: Incorrect error message on missing domain by @trowski in https:\/\/github.com\/amphp\/dns\/pull\/121\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.2.0...v2.3.0",
         "revolt": true
     },
     {
