@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/amp 3.1.0",
+        "package": "amphp\/amp",
+        "tag_name": "v3.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.0",
+        "date": "2025-01-26T17:18:16Z",
+        "body": "## What's Changed\r\n* Add `Interval` by @trowski in https:\/\/github.com\/amphp\/amp\/pull\/441\r\n* Added a throwing `__unserialize` method to `ForbidSerialization` to guard against malicious payloads unserializing to forbidden class instances.\r\n\r\n## New Contributors\r\n* @gauthier-scano made their first contribution in https:\/\/github.com\/amphp\/amp\/pull\/446\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.2...v3.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/pipeline 1.2.2",
         "package": "amphp\/pipeline",
         "tag_name": "v1.2.2",
@@ -150,15 +159,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
         "date": "2024-08-04T17:37:10Z",
         "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/amp 3.0.2",
-        "package": "amphp\/amp",
-        "tag_name": "v3.0.2",
-        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.0.2",
-        "date": "2024-05-10T21:41:16Z",
-        "body": "## What's Changed\r\n* Changed `Closure(mixed...)` annotation to `Closure(...)` to support PHPStan.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.1...v3.0.2",
         "revolt": true
     },
     {
