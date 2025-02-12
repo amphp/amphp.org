@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-tunnel 2.0.0",
+        "package": "amphp\/http-tunnel",
+        "tag_name": "v2.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v2.0.0",
+        "date": "2025-02-12T23:42:21Z",
+        "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nThis library provides an implementation of `Amp\\Socket\\SocketConnector` from [`amphp\/socket`](https:\/\/github.com\/amphp\/socket) which establishes a socket connection via an HTTP\/1.1 `CONNECT` request to a proxy.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/amp 3.1.0",
         "package": "amphp\/amp",
         "tag_name": "v3.1.0",
@@ -349,15 +358,6 @@
         "date": "2020-03-28T14:03:14Z",
         "body": "Initial release.",
         "revolt": true
-    },
-    {
-        "name": "amphp\/http-tunnel 1.0.0",
-        "package": "amphp\/http-tunnel",
-        "tag_name": "v1.0.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v1.0.0",
-        "date": "2019-12-31T17:10:50Z",
-        "body": "Initial release.",
-        "revolt": false
     },
     {
         "name": "amphp\/http-client-cache 1.0.0",
