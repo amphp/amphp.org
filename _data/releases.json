@@ -351,6 +351,15 @@
         "revolt": false
     },
     {
+        "name": "amphp\/serialization 1.0.0",
+        "package": "amphp\/serialization",
+        "tag_name": "v1.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/serialization\/releases\/tag\/v1.0.0",
+        "date": "2020-03-28T14:03:14Z",
+        "body": "Initial release.",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client-cache 1.0.0",
         "package": "amphp\/http-client-cache",
         "tag_name": "v1.0.0",
