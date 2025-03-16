@@ -1,5 +1,32 @@
 [
     {
+        "name": "amphp\/http-client 5.3.0",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.3.0",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.0",
+        "date": "2025-03-16T17:45:02Z",
+        "body": "## What's Changed\r\n* Enhance TLS handshake error message with additional details from previous exception by @luzrain in https:\/\/github.com\/amphp\/http-client\/pull\/385\r\n* Proposal: TlsException to replace SocketException for TLS handshake errors by @luzrain in https:\/\/github.com\/amphp\/http-client\/pull\/384\r\n* Support for simultaneously streaming request body and response body by @Nek- and @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/380\r\n* Throws TimeoutException when TransferTimeout is exceeded by @luzrain in https:\/\/github.com\/amphp\/http-client\/pull\/382\r\n\r\n## New Contributors\r\n* @luzrain made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/385\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.2...v5.3.0",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/byte-stream 2.1.2",
+        "package": "amphp\/byte-stream",
+        "tag_name": "v2.1.2",
+        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.2",
+        "date": "2025-03-16T17:25:22Z",
+        "body": "- Fixed the exception type thrown if `ReadableIterableStream` is closed (`Amp\\Pipeline\\DisposedException` was leaked, now an `Amp\\ByteStream\\ClosedException` is thrown).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.1...v2.1.2",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/pipeline 1.2.3",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.2.3",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.3",
+        "date": "2025-03-16T17:12:47Z",
+        "body": "- Fixed failing any pending value consumption when a `Queue` is disposed (regression in `1.2.2`).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.2...v1.2.3",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client-guzzle-adapter 1.1.2",
         "package": "amphp\/http-client-guzzle-adapter",
         "tag_name": "v1.1.2",
@@ -27,15 +54,6 @@
         "revolt": true
     },
     {
-        "name": "amphp\/pipeline 1.2.2",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.2.2",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.2",
-        "date": "2025-01-19T15:57:18Z",
-        "body": "## What's Changed\r\n* Fixed clearing back-pressure if a `Queue` was completed while containing emitted values which had not been consumed, then the consumer explicitly disposed (called `ConcurrentIterator::dispose()`) of the associated iterator without consuming those values. Prior, the futures were not properly resolved with a `DisposedException`, but now will resolve as expected.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.1...v1.2.2",
-        "revolt": true
-    },
-    {
         "name": "amphp\/dns 2.4.0",
         "package": "amphp\/dns",
         "tag_name": "v2.4.0",
@@ -51,15 +69,6 @@
         "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.3",
         "date": "2025-01-15T04:15:05Z",
         "body": "## What's Changed\r\n* Dropped support for `league\/uri@6.x`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.2...v2.0.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.2.2",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.2.2",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.2.2",
-        "date": "2025-01-15T04:08:07Z",
-        "body": "## What's Changed\r\n* Changed the default `User-Agent` header to contain only characters which should be accepted by all HTTP servers (#371).\r\n* Fixed window update potentially causing two HTTP\/2 frames to be sent with the `END_STREAM` flag set (#373).\r\n* Fixed early responses on HTTP\/2 (a response sent before the request is fully sent) causing an `HttpException` to be thrown instead of returning the response.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.1...v5.2.2",
         "revolt": true
     },
     {
@@ -240,15 +249,6 @@
         "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.0.0",
         "date": "2024-03-10T17:50:28Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\n- Classes and interfaces now are prefixed with `Mysql` to avoid collisions with similar names from other libraries.\r\n- Marked most classes as internal, leaving only interfaces and concrete implementations required to use the API or create a custom connector.\r\n- `MysqlTransaction` now extends `MysqlLink` instead of `MysqlExecutor` to support nested transactions.\r\n- `MysqlDataType` is now an enum of MySQL data type codes and methods to decode data based on type.\r\n- Result set field data is now available from `MysqlResult::getColumnDefinitions()` which returns an array of `MysqlColumnDefinition` objects corresponding to the result set rows.\r\n- The second param of `MysqlStatement::bind()` now requires a string. Binding only makes sense with long strings anyway.\r\n- `MysqlConnection` is now an interface extending `SqlConnection`, with `SocketMysqlConnection` being the implementation.\r\n- Removed `MysqlConnector` since the interface was replaced by template types on `SqlConnector`, i.e. `SqlConnector<MysqlConfig, MysqlConnection>`",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/byte-stream 2.1.1",
-        "package": "amphp\/byte-stream",
-        "tag_name": "v2.1.1",
-        "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.1",
-        "date": "2024-02-17T04:56:28Z",
-        "body": "## What's Changed\r\n- Fixed cancellation not being forwarded to `split()` in `splitLines()`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.0...v2.1.1",
         "revolt": true
     },
     {
