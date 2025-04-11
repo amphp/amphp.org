@@ -276,7 +276,7 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v2.0.0",
         "date": "2023-11-25T01:11:38Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/http-client-cookies 2.0.0",
@@ -330,7 +330,7 @@
         "html_url": "https:\/\/github.com\/amphp\/log\/releases\/tag\/v2.0.0",
         "date": "2023-08-05T19:05:50Z",
         "body": "- Increased minimum PHP version to 8.1\r\n- Make use of fibers with Amp v3 and Revolt\r\n- Added support for Monolog v3.x\r\n\r\nThis release does not contain any changes in comparison to `v2.0.0-beta.2`.",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/phpunit-util 3.0.0",
