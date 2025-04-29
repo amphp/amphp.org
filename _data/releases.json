@@ -105,7 +105,7 @@
         "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.2.0",
         "date": "2024-12-10T05:19:31Z",
         "body": "## What's Changed\r\n* The parallel driver no longer reuses the global worker pool if a specific instance is not provided to the constructor. Instead, a new worker pool is created.\r\n* The `$workerLimit` parameter to the constructor of `ParallelFilesystemDriver` is now deprecated. Pass an instance of `LimitedWorkerPool` instead.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.1...v3.2.0",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/websocket-client 2.0.1",
@@ -195,7 +195,7 @@
         "html_url": "https:\/\/github.com\/amphp\/cache\/releases\/tag\/v2.0.1",
         "date": "2024-04-19T03:41:45Z",
         "body": "# What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/cache\/compare\/v2.0.0...v2.0.1",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/process 2.0.3",
