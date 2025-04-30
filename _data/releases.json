@@ -1,11 +1,11 @@
 [
     {
-        "name": "amphp\/http-client 5.3.0",
+        "name": "amphp\/http-client 5.3.1",
         "package": "amphp\/http-client",
-        "tag_name": "v5.3.0",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.0",
-        "date": "2025-03-16T17:45:02Z",
-        "body": "## What's Changed\r\n* Enhance TLS handshake error message with additional details from previous exception by @luzrain in https:\/\/github.com\/amphp\/http-client\/pull\/385\r\n* Proposal: TlsException to replace SocketException for TLS handshake errors by @luzrain in https:\/\/github.com\/amphp\/http-client\/pull\/384\r\n* Support for simultaneously streaming request body and response body by @Nek- and @trowski in https:\/\/github.com\/amphp\/http-client\/pull\/380\r\n* Throws TimeoutException when TransferTimeout is exceeded by @luzrain in https:\/\/github.com\/amphp\/http-client\/pull\/382\r\n\r\n## New Contributors\r\n* @luzrain made their first contribution in https:\/\/github.com\/amphp\/http-client\/pull\/385\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.2.2...v5.3.0",
+        "tag_name": "v5.3.1",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.1",
+        "date": "2025-04-30T03:05:40Z",
+        "body": "## What's Changed\r\n- Fixed setting the stream \"ended\" flag on HTTP\/2 streams for requests which have no body (regression in 5.3.0). Without this flag, an empty data frame was being sent, which was considered invalid by some HTTP\/2 servers, causing the stream to be closed without completing the response.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.0...v5.3.1",
         "revolt": true
     },
     {
