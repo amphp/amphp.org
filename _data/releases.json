@@ -312,7 +312,7 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-static-content\/releases\/tag\/v2.0.0",
         "date": "2023-08-20T15:20:11Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- `DocumentRoot` now requires an instance of `HttpServer` and `ErrorHandler` to construct\r\n- Removed `DocumentRoot::onStart()` and `DocumentRoot::onStop()`, as it's now internally registered\r\n- Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`\r\n- Added `StaticResource` to serve a single static file",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/http-server-router 2.0.0",
