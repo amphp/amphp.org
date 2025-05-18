@@ -1,20 +1,20 @@
 [
     {
+        "name": "amphp\/http-client 5.3.2",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.3.2",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.2",
+        "date": "2025-05-18T18:38:55Z",
+        "body": "## What's Changed\r\n- Fixed HTTP\/1.x connections remaining open if the response body was not fully consumed (#390)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.1...v5.3.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-server 3.4.3",
         "package": "amphp\/http-server",
         "tag_name": "v3.4.3",
         "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.3",
         "date": "2025-05-18T15:54:00Z",
         "body": "## What's Changed\r\n* Avoid hanging requests in case a request body is closed prematurely by @danog in https:\/\/github.com\/amphp\/http-server\/pull\/380\r\n* Fix parsing of raw ipv6 address in host header by @luzrain in https:\/\/github.com\/amphp\/http-server\/pull\/378\r\n\r\n## New Contributors\r\n* @danog made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/380\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.2...v3.4.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.3.1",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.3.1",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.1",
-        "date": "2025-04-30T03:05:40Z",
-        "body": "## What's Changed\r\n- Fixed setting the stream \"ended\" flag on HTTP\/2 streams for requests which have no body (regression in 5.3.0). Without this flag, an empty data frame was being sent, which was considered invalid by some HTTP\/2 servers, causing the stream to be closed without completing the response.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.0...v5.3.1",
         "revolt": true
     },
     {
