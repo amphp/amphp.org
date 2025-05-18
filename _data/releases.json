@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-server 3.4.3",
+        "package": "amphp\/http-server",
+        "tag_name": "v3.4.3",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.3",
+        "date": "2025-05-18T15:54:00Z",
+        "body": "## What's Changed\r\n* Avoid hanging requests in case a request body is closed prematurely by @danog in https:\/\/github.com\/amphp\/http-server\/pull\/380\r\n* Fix parsing of raw ipv6 address in host header by @luzrain in https:\/\/github.com\/amphp\/http-server\/pull\/378\r\n\r\n## New Contributors\r\n* @danog made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/380\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.2...v3.4.3",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.3.1",
         "package": "amphp\/http-client",
         "tag_name": "v5.3.1",
@@ -69,15 +78,6 @@
         "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.3",
         "date": "2025-01-15T04:15:05Z",
         "body": "## What's Changed\r\n* Dropped support for `league\/uri@6.x`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.2...v2.0.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-server 3.4.2",
-        "package": "amphp\/http-server",
-        "tag_name": "v3.4.2",
-        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.2",
-        "date": "2024-12-31T16:36:45Z",
-        "body": "## What's Changed\r\n* Forward Cancellation in ConnectionLimitingServerSocket by @Fneufneu in https:\/\/github.com\/amphp\/http-server\/pull\/377\r\n\r\n## New Contributors\r\n* @Fneufneu made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/377\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.1...v3.4.2",
         "revolt": true
     },
     {
