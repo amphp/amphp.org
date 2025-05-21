@@ -1,11 +1,11 @@
 [
     {
-        "name": "amphp\/http-client 5.3.2",
+        "name": "amphp\/http-client 5.3.3",
         "package": "amphp\/http-client",
-        "tag_name": "v5.3.2",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.2",
-        "date": "2025-05-18T18:38:55Z",
-        "body": "## What's Changed\r\n- Fixed HTTP\/1.x connections remaining open if the response body was not fully consumed (#390)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.1...v5.3.2",
+        "tag_name": "v5.3.3",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.3",
+        "date": "2025-05-21T03:30:53Z",
+        "body": "## What's Changed\r\n- Provided a better fix for #390, restoring back-pressure on the connection as the response body is consumed\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.2...v5.3.3",
         "revolt": true
     },
     {
