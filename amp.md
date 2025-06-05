@@ -453,9 +453,9 @@ time differences independent of wall-time.
 
 ```php
 /**
- * @template TReturn
- * @param Closure(...):TReturn $closure
- * @return Closure(...):TReturn
+ * @template TClosure of \Closure
+ * @param TClosure $closure
+ * @return TClosure
  */
 function weakClosure(Closure $closure): Closure
 ```
