@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/sql-common 2.0.3",
+        "package": "amphp\/sql-common",
+        "tag_name": "v2.0.3",
+        "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v2.0.3",
+        "date": "2025-06-07T15:53:44Z",
+        "body": "## What's Changed\r\n- Added a reference to $this in the returned `Generator` from `SqlPooledResult::getIterator()` to prevent destruction of the `SqlPooledResult` while the returned `Generator` object exists.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql-common\/compare\/v2.0.2...v2.0.3",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.3.3",
         "package": "amphp\/http-client",
         "tag_name": "v5.3.3",
@@ -159,15 +168,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket\/releases\/tag\/v2.0.4",
         "date": "2024-10-28T21:59:38Z",
         "body": "## What's Changed\r\n\r\n- Fixed assertion failure when interleaving control frames between continuation frames in `Rfc6455FrameCompiler`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket\/compare\/v2.0.3...v2.0.4",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/sql-common 2.0.2",
-        "package": "amphp\/sql-common",
-        "tag_name": "v2.0.2",
-        "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v2.0.2",
-        "date": "2024-10-27T16:13:23Z",
-        "body": "## What's Changed\r\n\r\n- Fixed a memory leak due to `SqlStatementPool` accumulating on-close callbacks in `SqlCommonConnectionPool`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql-common\/compare\/v2.0.1...v2.0.2",
         "revolt": true
     },
     {
