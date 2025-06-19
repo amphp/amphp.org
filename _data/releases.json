@@ -177,7 +177,7 @@
         "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
         "date": "2024-08-04T17:37:10Z",
         "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/socket 2.3.1",
@@ -330,7 +330,7 @@
         "html_url": "https:\/\/github.com\/amphp\/log\/releases\/tag\/v2.0.0",
         "date": "2023-08-05T19:05:50Z",
         "body": "- Increased minimum PHP version to 8.1\r\n- Make use of fibers with Amp v3 and Revolt\r\n- Added support for Monolog v3.x\r\n\r\nThis release does not contain any changes in comparison to `v2.0.0-beta.2`.",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/phpunit-util 3.0.0",
