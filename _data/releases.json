@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client-guzzle-adapter 1.1.3",
+        "package": "amphp\/http-client-guzzle-adapter",
+        "tag_name": "v1.1.3",
+        "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.1.3",
+        "date": "2025-06-26T20:13:43Z",
+        "body": "## What's Changed\r\n* Improved curl options check by @root-aza in https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/pull\/4\r\n\r\n## New Contributors\r\n* @root-aza made their first contribution in https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/pull\/4\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/compare\/v1.1.2...v1.1.3",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql-common 2.0.3",
         "package": "amphp\/sql-common",
         "tag_name": "v2.0.3",
@@ -42,15 +51,6 @@
         "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.3",
         "date": "2025-03-16T17:12:47Z",
         "body": "- Fixed failing any pending value consumption when a `Queue` is disposed (regression in `1.2.2`).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.2...v1.2.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client-guzzle-adapter 1.1.2",
-        "package": "amphp\/http-client-guzzle-adapter",
-        "tag_name": "v1.1.2",
-        "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.1.2",
-        "date": "2025-02-13T00:42:08Z",
-        "body": "## What's Changed\r\n* Require amphp\/http-tunnel and switch to Socks5SocketConnector by @danog in https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/pull\/2\r\n\r\n## New Contributors\r\n* @danog made their first contribution in https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/pull\/2\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/compare\/v1.1.1...v1.1.2",
         "revolt": true
     },
     {
