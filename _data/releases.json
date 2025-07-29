@@ -42,7 +42,7 @@
         "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.2",
         "date": "2025-03-16T17:25:22Z",
         "body": "- Fixed the exception type thrown if `ReadableIterableStream` is closed (`Amp\\Pipeline\\DisposedException` was leaked, now an `Amp\\ByteStream\\ClosedException` is thrown).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.1...v2.1.2",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/pipeline 1.2.3",
@@ -60,7 +60,7 @@
         "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v2.0.0",
         "date": "2025-02-12T23:42:21Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nThis library provides an implementation of `Amp\\Socket\\SocketConnector` from [`amphp\/socket`](https:\/\/github.com\/amphp\/socket) which establishes a socket connection via an HTTP\/1.1 `CONNECT` request to a proxy.",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/amp 3.1.0",
@@ -105,7 +105,7 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.1",
         "date": "2024-12-21T01:59:12Z",
         "body": "## What's Changed\r\n* Prevent silencing ExitFailure in ProcessContext->join() by @bwoebi in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.0...v2.3.1",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/file 3.2.0",
@@ -186,7 +186,7 @@
         "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.3.1",
         "date": "2024-04-21T14:42:38Z",
         "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.3.0...v2.3.1",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/cache 2.0.1",
