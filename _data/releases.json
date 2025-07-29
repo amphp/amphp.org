@@ -177,7 +177,7 @@
         "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
         "date": "2024-08-04T17:37:10Z",
         "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/socket 2.3.1",
@@ -321,7 +321,7 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-router\/releases\/tag\/v2.0.0",
         "date": "2023-08-05T19:33:16Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n - A PSR-3 logger is now required in the `Router` constructor\r\n - Starting the server with an empty `Router` is now allowed and only logs a notice instead of throwing an exception\r\n - Middleware can be added via `addMiddleware()` instead of `stack()`\r\n - Removed support for adding middleware directly via `addRoute()`, use `stackMiddleware()` instead if you need this\r\n - Removed `Router::onStart()`, as it's now internally registered\r\n - Removed support for `ServerObserver`, as it's been removed from `amphp\/http-server`",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/log 2.0.0",
