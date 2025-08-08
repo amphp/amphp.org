@@ -366,7 +366,7 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client-cache\/releases\/tag\/v1.0.0",
         "date": "2019-12-21T19:52:55Z",
         "body": "Initial release.",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/react-adapter 2.1.0",
