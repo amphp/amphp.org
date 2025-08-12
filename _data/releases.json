@@ -342,6 +342,15 @@
         "revolt": true
     },
     {
+        "name": "amphp\/beanstalk 0.3.2",
+        "package": "amphp\/beanstalk",
+        "tag_name": "v0.3.2",
+        "html_url": "https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.3.2",
+        "date": "2020-11-18T18:43:53Z",
+        "body": " - Added support for Symfony YAML library v4 and v5. (#34)\r\n",
+        "revolt": false
+    },
+    {
         "name": "amphp\/serialization 1.0.0",
         "package": "amphp\/serialization",
         "tag_name": "v1.0.0",
@@ -357,15 +366,6 @@
         "html_url": "https:\/\/github.com\/amphp\/react-adapter\/releases\/tag\/v2.1.0",
         "date": "2019-11-04T22:20:56Z",
         "body": " - `React\\EventLoop\\Factory` is now automatically replaced with another implementation that throws on each usage to prevent two loops existing concurrently by accident.\r\n   Set `AMP_REACT_ADAPTER_DISABLE_FACTORY_OVERRIDE=1` as environment variable or constant to disable this protection.",
-        "revolt": false
-    },
-    {
-        "name": "amphp\/react-stream-adapter 0.1.0",
-        "package": "amphp\/react-stream-adapter",
-        "tag_name": "v0.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/react-stream-adapter\/releases\/tag\/v0.1.0",
-        "date": "2018-03-07T10:13:55Z",
-        "body": "Initial release.",
         "revolt": false
     }
 ]
