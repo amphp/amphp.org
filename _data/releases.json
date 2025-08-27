@@ -1,5 +1,23 @@
 [
     {
+        "name": "amphp\/amp 3.1.1",
+        "package": "amphp\/amp",
+        "tag_name": "v3.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.1",
+        "date": "2025-08-27T21:45:49Z",
+        "body": "## What's Changed\r\n\r\n* Improve `weakClosure()` signature by @vudaltsov in https:\/\/github.com\/amphp\/amp\/pull\/452\r\n* Use `str_increment()` to fix PHP 8.5 deprecation by @nicolas-grekas in https:\/\/github.com\/amphp\/amp\/pull\/456\r\n\r\n## New Contributors\r\n\r\n* @vudaltsov made their first contribution in https:\/\/github.com\/amphp\/amp\/pull\/452\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.0...v3.1.1",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/php-cs-fixer-config 2.1.1",
+        "package": "amphp\/php-cs-fixer-config",
+        "tag_name": "v2.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.1.1",
+        "date": "2025-08-27T21:31:06Z",
+        "body": " - Fix formatting of `str_increment`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.1.0...v2.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/websocket-client 2.0.2",
         "package": "amphp\/websocket-client",
         "tag_name": "v2.0.2",
@@ -69,15 +87,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v2.0.0",
         "date": "2025-02-12T23:42:21Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nThis library provides an implementation of `Amp\\Socket\\SocketConnector` from [`amphp\/socket`](https:\/\/github.com\/amphp\/socket) which establishes a socket connection via an HTTP\/1.1 `CONNECT` request to a proxy.",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/amp 3.1.0",
-        "package": "amphp\/amp",
-        "tag_name": "v3.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.0",
-        "date": "2025-01-26T17:18:16Z",
-        "body": "## What's Changed\r\n* Add `Interval` by @trowski in https:\/\/github.com\/amphp\/amp\/pull\/441\r\n* Added a throwing `__unserialize` method to `ForbidSerialization` to guard against malicious payloads unserializing to forbidden class instances.\r\n\r\n## New Contributors\r\n* @gauthier-scano made their first contribution in https:\/\/github.com\/amphp\/amp\/pull\/446\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.0.2...v3.1.0",
         "revolt": true
     },
     {
@@ -204,15 +213,6 @@
         "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.3",
         "date": "2024-04-19T03:26:11Z",
         "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.2...v2.0.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/php-cs-fixer-config 2.1.0",
-        "package": "amphp\/php-cs-fixer-config",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/php-cs-fixer-config\/releases\/tag\/v2.1.0",
-        "date": "2024-04-19T02:38:23Z",
-        "body": "## What's Changed\r\n* Add `nullable_type_declaration_for_default_null_value` to the default rules by @alexandre-daubois in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n## New Contributors\r\n* @alexandre-daubois made their first contribution in https:\/\/github.com\/amphp\/php-cs-fixer-config\/pull\/8\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/php-cs-fixer-config\/compare\/v2.0.1...v2.1.0",
         "revolt": true
     },
     {
