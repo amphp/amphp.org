@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.3.2",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.3.2",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.2",
+        "date": "2025-08-31T17:48:49Z",
+        "body": "## What's Changed\r\n* Use `str_increment()` to fix PHP 8.5 deprecation by @nicolas-grekas in https:\/\/github.com\/amphp\/parallel\/pull\/222\r\n* Add .github and psalm.xml to export-ignore by @savinmikhail in https:\/\/github.com\/amphp\/parallel\/pull\/210\r\n\r\n## New Contributors\r\n* @savinmikhail made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/210\r\n* @nicolas-grekas made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/222\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.1...v2.3.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/amp 3.1.1",
         "package": "amphp\/amp",
         "tag_name": "v3.1.1",
@@ -114,15 +123,6 @@
         "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v2.0.1",
         "date": "2024-12-21T02:01:10Z",
         "body": "## What's Changed\r\n* Report ExitFailures from cluster worker exits by @bwoebi in https:\/\/github.com\/amphp\/cluster\/pull\/21\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/cluster\/pull\/21\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/cluster\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.3.1",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.3.1",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.1",
-        "date": "2024-12-21T01:59:12Z",
-        "body": "## What's Changed\r\n* Prevent silencing ExitFailure in ProcessContext->join() by @bwoebi in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/207\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.0...v2.3.1",
         "revolt": true
     },
     {
