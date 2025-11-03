@@ -141,7 +141,7 @@
         "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.0.1",
         "date": "2024-11-23T16:52:07Z",
         "body": "## What's Changed\r\n* Added PHP 8.4 compatibility by @Bilge in https:\/\/github.com\/amphp\/sql\/pull\/9\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/sql\/pull\/9\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/http 2.1.2",
