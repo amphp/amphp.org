@@ -1,11 +1,11 @@
 [
     {
-        "name": "amphp\/parallel 2.3.2",
+        "name": "amphp\/parallel 2.3.3",
         "package": "amphp\/parallel",
-        "tag_name": "v2.3.2",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.2",
-        "date": "2025-08-31T17:48:49Z",
-        "body": "## What's Changed\r\n* Use `str_increment()` to fix PHP 8.5 deprecation by @nicolas-grekas in https:\/\/github.com\/amphp\/parallel\/pull\/222\r\n* Add .github and psalm.xml to export-ignore by @savinmikhail in https:\/\/github.com\/amphp\/parallel\/pull\/210\r\n\r\n## New Contributors\r\n* @savinmikhail made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/210\r\n* @nicolas-grekas made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/222\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.1...v2.3.2",
+        "tag_name": "v2.3.3",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.3",
+        "date": "2025-12-02T22:03:38Z",
+        "body": "## What's Changed\r\n* Avoid deprecated `SplObjectStorage::attach` by @eliashaeussler in https:\/\/github.com\/amphp\/parallel\/pull\/224\r\n\r\n## New Contributors\r\n* @eliashaeussler made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/224\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.2...v2.3.3",
         "revolt": true
     },
     {
