@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-server 3.4.4",
+        "package": "amphp\/http-server",
+        "tag_name": "v3.4.4",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.4",
+        "date": "2026-02-08T18:32:58Z",
+        "body": "## What's Changed\r\n\r\nFixed \"MadeYouReset\" HTTP\/2 DoS attack vector described by CVE-2025-8671 and https:\/\/kb.cert.org\/vuls\/id\/767506. \r\n\r\nStream reset protection has been refactored to account for the number of reset streams within a sliding time window. Note that your application must expose HTTP\/2 connections directly to be affected by this vulnerability. Servers behind a proxy using HTTP\/1.x such as nginx are not affected.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.3...v3.4.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-server-session 3.0.1",
         "package": "amphp\/http-server-session",
         "tag_name": "v3.0.1",
@@ -69,15 +78,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/releases\/tag\/v1.1.3",
         "date": "2025-06-26T20:13:43Z",
         "body": "## What's Changed\r\n* Improved curl options check by @root-aza in https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/pull\/4\r\n\r\n## New Contributors\r\n* @root-aza made their first contribution in https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/pull\/4\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client-guzzle-adapter\/compare\/v1.1.2...v1.1.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-server 3.4.3",
-        "package": "amphp\/http-server",
-        "tag_name": "v3.4.3",
-        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.3",
-        "date": "2025-05-18T15:54:00Z",
-        "body": "## What's Changed\r\n* Avoid hanging requests in case a request body is closed prematurely by @danog in https:\/\/github.com\/amphp\/http-server\/pull\/380\r\n* Fix parsing of raw ipv6 address in host header by @luzrain in https:\/\/github.com\/amphp\/http-server\/pull\/378\r\n\r\n## New Contributors\r\n* @danog made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/380\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.2...v3.4.3",
         "revolt": true
     },
     {
