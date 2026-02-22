@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/postgres 2.2.0",
+        "package": "amphp\/postgres",
+        "tag_name": "v2.2.0",
+        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.2.0",
+        "date": "2026-02-22T19:08:01Z",
+        "body": "## What's Changed\r\n* Support Postgres config options by @PNixx in https:\/\/github.com\/amphp\/postgres\/pull\/70\r\n\r\n## New Contributors\r\n* @PNixx made their first contribution in https:\/\/github.com\/amphp\/postgres\/pull\/70\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.1.1...v2.2.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/sql 2.1.0",
         "package": "amphp\/sql",
         "tag_name": "v2.1.0",
@@ -168,15 +177,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http\/releases\/tag\/v2.1.2",
         "date": "2024-11-23T15:00:23Z",
         "body": "## What's Changed\r\n\r\n* Added support for PHP 8.4 by @Bilge in https:\/\/github.com\/amphp\/http\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http\/compare\/v2.1.1...v2.1.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/postgres 2.1.1",
-        "package": "amphp\/postgres",
-        "tag_name": "v2.1.1",
-        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.1.1",
-        "date": "2024-11-22T23:41:49Z",
-        "body": "## What's Changed\r\n- Fixed handling of `int2vector` and `oidvector` fields when using `ext-pgsql` (#68).\r\n- The type table is now loaded using an async query when using `ext-pgsql`. This query is only executed once per server upon the initial connection to that server. Using an async query will reduce latency when connecting to different Postgres servers.\r\n- Improved performance of array parsing when using `ext-pgsql`.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.1.0...v2.1.1",
         "revolt": true
     },
     {
