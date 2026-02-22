@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/sql 2.1.0",
+        "package": "amphp\/sql",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.1.0",
+        "date": "2026-02-22T17:44:51Z",
+        "body": "## What's Changed\r\n- Added support for quoted strings within connection strings, e.g. `\"host=localhost port=5432 options='--client_encoding=UTF8'\"`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.0.1...v2.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/mysql 3.0.1",
         "package": "amphp\/mysql",
         "tag_name": "v3.0.1",
@@ -150,15 +159,6 @@
         "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.2.0",
         "date": "2024-12-10T05:19:31Z",
         "body": "## What's Changed\r\n* The parallel driver no longer reuses the global worker pool if a specific instance is not provided to the constructor. Instead, a new worker pool is created.\r\n* The `$workerLimit` parameter to the constructor of `ParallelFilesystemDriver` is now deprecated. Pass an instance of `LimitedWorkerPool` instead.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.1...v3.2.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/sql 2.0.1",
-        "package": "amphp\/sql",
-        "tag_name": "v2.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.0.1",
-        "date": "2024-11-23T16:52:07Z",
-        "body": "## What's Changed\r\n* Added PHP 8.4 compatibility by @Bilge in https:\/\/github.com\/amphp\/sql\/pull\/9\r\n\r\n## New Contributors\r\n* @Bilge made their first contribution in https:\/\/github.com\/amphp\/sql\/pull\/9\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.0.0...v2.0.1",
         "revolt": true
     },
     {
