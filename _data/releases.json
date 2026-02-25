@@ -1,20 +1,20 @@
 [
     {
-        "name": "amphp\/postgres 2.2.0",
+        "name": "amphp\/postgres 2.2.1",
         "package": "amphp\/postgres",
-        "tag_name": "v2.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.2.0",
-        "date": "2026-02-22T19:08:01Z",
-        "body": "## What's Changed\r\n* Support Postgres config options by @PNixx in https:\/\/github.com\/amphp\/postgres\/pull\/70\r\n\r\n## New Contributors\r\n* @PNixx made their first contribution in https:\/\/github.com\/amphp\/postgres\/pull\/70\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.1.1...v2.2.0",
+        "tag_name": "v2.2.1",
+        "html_url": "https:\/\/github.com\/amphp\/postgres\/releases\/tag\/v2.2.1",
+        "date": "2026-02-25T04:51:36Z",
+        "body": "## What's Changed\r\n\r\n- Fixed generation of connection strings if a connection parameter value contains a space.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/postgres\/compare\/v2.2.0...v2.2.1",
         "revolt": true
     },
     {
-        "name": "amphp\/sql 2.1.0",
+        "name": "amphp\/sql 2.1.1",
         "package": "amphp\/sql",
-        "tag_name": "v2.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.1.0",
-        "date": "2026-02-22T17:44:51Z",
-        "body": "## What's Changed\r\n- Added support for quoted strings within connection strings, e.g. `\"host=localhost port=5432 options='--client_encoding=UTF8'\"`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.0.1...v2.1.0",
+        "tag_name": "v2.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.1.1",
+        "date": "2026-02-25T04:49:40Z",
+        "body": "## What's Changed\r\n\r\n- Fix acceptance of escaped spaces in connection strings\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.1.0...v2.1.1",
         "revolt": true
     },
     {
