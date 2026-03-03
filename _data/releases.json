@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/redis 2.0.4",
+        "package": "amphp\/redis",
+        "tag_name": "v2.0.4",
+        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.4",
+        "date": "2026-03-03T20:57:30Z",
+        "body": "## What's Changed\r\n* Fix `hget` TypeError instead of returning `null` by @PNixx in https:\/\/github.com\/amphp\/redis\/pull\/101\r\n\r\n## New Contributors\r\n* @PNixx made their first contribution in https:\/\/github.com\/amphp\/redis\/pull\/101\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.3...v2.0.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/postgres 2.2.1",
         "package": "amphp\/postgres",
         "tag_name": "v2.2.1",
@@ -141,15 +150,6 @@
         "html_url": "https:\/\/github.com\/amphp\/dns\/releases\/tag\/v2.4.0",
         "date": "2025-01-19T15:50:32Z",
         "body": "## What's Changed\r\n* Replaced WMIC nameserver lookup with PowerShell equivalent by @Bilge in https:\/\/github.com\/amphp\/dns\/pull\/116\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/dns\/compare\/v2.3.0...v2.4.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/redis 2.0.3",
-        "package": "amphp\/redis",
-        "tag_name": "v2.0.3",
-        "html_url": "https:\/\/github.com\/amphp\/redis\/releases\/tag\/v2.0.3",
-        "date": "2025-01-15T04:15:05Z",
-        "body": "## What's Changed\r\n* Dropped support for `league\/uri@6.x`\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/redis\/compare\/v2.0.2...v2.0.3",
         "revolt": true
     },
     {
