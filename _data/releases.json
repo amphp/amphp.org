@@ -78,7 +78,7 @@
         "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.1",
         "date": "2025-08-27T21:45:49Z",
         "body": "## What's Changed\r\n\r\n* Improve `weakClosure()` signature by @vudaltsov in https:\/\/github.com\/amphp\/amp\/pull\/452\r\n* Use `str_increment()` to fix PHP 8.5 deprecation by @nicolas-grekas in https:\/\/github.com\/amphp\/amp\/pull\/456\r\n\r\n## New Contributors\r\n\r\n* @vudaltsov made their first contribution in https:\/\/github.com\/amphp\/amp\/pull\/452\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.0...v3.1.1",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/php-cs-fixer-config 2.1.1",
@@ -168,7 +168,7 @@
         "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.2.0",
         "date": "2024-12-10T05:19:31Z",
         "body": "## What's Changed\r\n* The parallel driver no longer reuses the global worker pool if a specific instance is not provided to the constructor. Instead, a new worker pool is created.\r\n* The `$workerLimit` parameter to the constructor of `ParallelFilesystemDriver` is now deprecated. Pass an instance of `LimitedWorkerPool` instead.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.1...v3.2.0",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/http 2.1.2",
