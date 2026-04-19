@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/socket 2.4.0",
+        "package": "amphp\/socket",
+        "tag_name": "v2.4.0",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.4.0",
+        "date": "2026-04-19T15:28:38Z",
+        "body": "## What's Changed\r\n* ServerTlsContext: allow disabling verify peer name by @Thomas-Gelf in https:\/\/github.com\/amphp\/socket\/pull\/112\r\n* Dropped support for `league\/uri@6.x`, fixing a deprecation notice in PHP 8.4+\r\n\r\n## New Contributors\r\n* @Thomas-Gelf made their first contribution in https:\/\/github.com\/amphp\/socket\/pull\/112\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.3.1...v2.4.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/serialization 1.1.0",
         "package": "amphp\/serialization",
         "tag_name": "v1.1.0",
@@ -213,15 +222,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sync\/releases\/tag\/v2.3.0",
         "date": "2024-08-04T17:37:10Z",
         "body": "## What's Changed\r\n* Fixed posix semaphore blocking thread when there is no space left on device by @azjezz in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n* Added a buffer size parameter to `createChannelPair()` to specify a number of items which may be buffered in memory before back pressure is applied.\r\n\r\n## New Contributors\r\n* @azjezz made their first contribution in https:\/\/github.com\/amphp\/sync\/pull\/29\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sync\/compare\/v2.2.0...v2.3.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.3.1",
-        "package": "amphp\/socket",
-        "tag_name": "v2.3.1",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.3.1",
-        "date": "2024-04-21T14:42:38Z",
-        "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.3.0...v2.3.1",
         "revolt": true
     },
     {
