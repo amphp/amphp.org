@@ -349,14 +349,5 @@
         "date": "2022-12-18T17:53:05Z",
         "body": "This package has been redesigned for compatibility with AMPHP v3 and fibers. `AsyncTestCase` serves a similar purpose as before, providing helper methods for unit testing within an async context. Each test case is run within a unique fiber to allow suspending during the test run.\r\n\r\n- `AsyncTestCase::setUpAsync()` and `tearDownAsync()` have been removed. Use `AsyncTestCase::setUp()` and `tearDown()` instead, as both of these methods are now able to execute async using fibers.\r\n- `AsyncTestCase::createCallback()` now returns a `Closure`. Additionally, an optional parameter for expected arguments upon invocation have been added (uses `InvocationMocker::with(...)` to set expected arguments).",
         "revolt": true
-    },
-    {
-        "name": "amphp\/beanstalk 0.3.2",
-        "package": "amphp\/beanstalk",
-        "tag_name": "v0.3.2",
-        "html_url": "https:\/\/github.com\/amphp\/beanstalk\/releases\/tag\/v0.3.2",
-        "date": "2020-11-18T18:43:53Z",
-        "body": " - Added support for Symfony YAML library v4 and v5. (#34)\r\n",
-        "revolt": false
     }
 ]
