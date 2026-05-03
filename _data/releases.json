@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/hpack 3.2.2",
+        "package": "amphp\/hpack",
+        "tag_name": "v3.2.2",
+        "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.2",
+        "date": "2026-05-03T19:32:05Z",
+        "body": "## What's Changed\r\n* Fix `chr()` deprecation warning in Huffman encoding  by @aleswita in https:\/\/github.com\/amphp\/hpack\/pull\/18\r\n* Add PHP 8.5, 8.4, 8.3 to test matrix by @kelunik in https:\/\/github.com\/amphp\/hpack\/pull\/24\r\n\r\n## New Contributors\r\n* @aleswita made their first contribution in https:\/\/github.com\/amphp\/hpack\/pull\/18\r\n* @dependabot made their first contribution in https:\/\/github.com\/amphp\/hpack\/pull\/22\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.2.1...v3.2.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-server 3.4.5",
         "package": "amphp\/http-server",
         "tag_name": "v3.4.5",
@@ -249,15 +258,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parser\/releases\/tag\/v1.1.1",
         "date": "2024-03-21T19:18:46Z",
         "body": "## What's Changed\r\n* Make implicit nullable types explicit by @nicolas-grekas in https:\/\/github.com\/amphp\/parser\/pull\/6\r\n\r\n## New Contributors\r\n* @nicolas-grekas made their first contribution in https:\/\/github.com\/amphp\/parser\/pull\/6\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parser\/compare\/v1.1.0...v1.1.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/hpack 3.2.1",
-        "package": "amphp\/hpack",
-        "tag_name": "v3.2.1",
-        "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.1",
-        "date": "2024-03-21T19:01:55Z",
-        "body": "## What's Changed\r\n* Make implicit nullable types explicit by @nicolas-grekas in https:\/\/github.com\/amphp\/hpack\/pull\/16\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.2.0...v3.2.1",
         "revolt": true
     },
     {
