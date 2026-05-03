@@ -1,7 +1,7 @@
 ---
 notice: 'This file is imported and can be edited at https://github.com/amphp/http-server-session/blob/3.x/README.md'
 title: 'HTTP Server Sessions'
-description: 'Learn how to create and store session data in the HTTP server.'
+description: 'Learn how to handle user sessions, securely managing data across requests.'
 image: undraw/undraw_server_cluster.svg
 permalink: /http-server-session
 source: 'https://github.com/amphp/http-server-session/blob/3.x/README.md'
