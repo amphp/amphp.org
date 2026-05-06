@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.3.4",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.3.4",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.4",
+        "date": "2026-05-06T19:33:19Z",
+        "body": "## What's Changed\r\n* Fix NAN to string coercion on PHP 8.5\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.3...v2.3.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/hpack 3.2.2",
         "package": "amphp\/hpack",
         "tag_name": "v3.2.2",
@@ -87,15 +96,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v2.0.4",
         "date": "2025-12-17T04:34:27Z",
         "body": "## What's Changed\r\n* Fix PHP 8.5 deprecation by @luzrain in https:\/\/github.com\/amphp\/sql-common\/pull\/7\r\n\r\n## New Contributors\r\n* @luzrain made their first contribution in https:\/\/github.com\/amphp\/sql-common\/pull\/7\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql-common\/compare\/v2.0.3...v2.0.4",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.3.3",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.3.3",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.3",
-        "date": "2025-12-02T22:03:38Z",
-        "body": "## What's Changed\r\n* Avoid deprecated `SplObjectStorage::attach` by @eliashaeussler in https:\/\/github.com\/amphp\/parallel\/pull\/224\r\n\r\n## New Contributors\r\n* @eliashaeussler made their first contribution in https:\/\/github.com\/amphp\/parallel\/pull\/224\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.2...v2.3.3",
         "revolt": true
     },
     {
