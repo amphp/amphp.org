@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/file 4.0.0",
+        "package": "amphp\/file",
+        "tag_name": "v4.0.0",
+        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v4.0.0",
+        "date": "2026-05-09T16:38:08Z",
+        "body": "Users of `3.x` should be able to update to `4.x` without code changes unless their application did one of the following:\r\n* Defined a custom `File` implementation\r\n* Initialized `ParallelFilesystemDriver` with a custom worker count.\r\n\r\n---\r\n\r\n## Breaking Changes\r\n\r\nThis release adds a `lock()`, `tryLock()`, and `unlock()` to the `File` interface. These methods provide a non-blocking means of locking and unlocking a file.\r\n* `File::lock()`: Non-blocking method to obtain a shared or exclusive lock on the file. This method must only return once the lock has been obtained.\r\n* `File::tryLock()`: Makes a single non-blocking attempt to obtain a shared or exclusive lock on the file. Returns true if the lock was obtained, otherwise false.\r\n* `File::unlock()`: Unlocks the file if the lock is currently held.\r\n\r\nIn `3.x`, the constructor of `ParallelFilesystemDriver` accepted an optional `WorkerPool` and a number of workers to use from that pool. In `4.x`, instead the constructor now requires only an optional `LimitedWorkerPool` (a new pool is created if one is not provided). The number of workers used for opening files is determined by the value returned from `LimitedWorkerPool::getWorkerLimit()`. Use a `DelegateWorkerPool` if you wish to use an existing pool and limit the number of workers used from the pool to open files. In general, it is not necessary to customize the parallel filesystem driver.\r\n\r\n---\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.2.0...v4.0.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/pipeline 1.2.4",
         "package": "amphp\/pipeline",
         "tag_name": "v1.2.4",
@@ -186,15 +195,6 @@
         "html_url": "https:\/\/github.com\/amphp\/cluster\/releases\/tag\/v2.0.1",
         "date": "2024-12-21T02:01:10Z",
         "body": "## What's Changed\r\n* Report ExitFailures from cluster worker exits by @bwoebi in https:\/\/github.com\/amphp\/cluster\/pull\/21\r\n\r\n## New Contributors\r\n* @bwoebi made their first contribution in https:\/\/github.com\/amphp\/cluster\/pull\/21\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/cluster\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/file 3.2.0",
-        "package": "amphp\/file",
-        "tag_name": "v3.2.0",
-        "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v3.2.0",
-        "date": "2024-12-10T05:19:31Z",
-        "body": "## What's Changed\r\n* The parallel driver no longer reuses the global worker pool if a specific instance is not provided to the constructor. Instead, a new worker pool is created.\r\n* The `$workerLimit` parameter to the constructor of `ParallelFilesystemDriver` is now deprecated. Pass an instance of `LimitedWorkerPool` instead.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.1.1...v3.2.0",
         "revolt": true
     },
     {
