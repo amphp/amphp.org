@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/pipeline 1.2.4",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.2.4",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.4",
+        "date": "2026-05-09T10:05:31Z",
+        "body": "## What's Changed\r\n* Return static in methods that return `self<T>` by @vudaltsov in https:\/\/github.com\/amphp\/pipeline\/pull\/24\r\n* Add `#[Override]` attributes\r\n\r\n## New Contributors\r\n* @vudaltsov made their first contribution in https:\/\/github.com\/amphp\/pipeline\/pull\/24\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.3...v1.2.4",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel 2.3.4",
         "package": "amphp\/parallel",
         "tag_name": "v2.3.4",
@@ -150,15 +159,6 @@
         "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.2",
         "date": "2025-03-16T17:25:22Z",
         "body": "- Fixed the exception type thrown if `ReadableIterableStream` is closed (`Amp\\Pipeline\\DisposedException` was leaked, now an `Amp\\ByteStream\\ClosedException` is thrown).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.1...v2.1.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/pipeline 1.2.3",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.2.3",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.3",
-        "date": "2025-03-16T17:12:47Z",
-        "body": "- Fixed failing any pending value consumption when a `Queue` is disposed (regression in `1.2.2`).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.2...v1.2.3",
         "revolt": true
     },
     {
