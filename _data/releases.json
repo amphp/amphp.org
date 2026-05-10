@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/mysql 3.1.0",
+        "package": "amphp\/mysql",
+        "tag_name": "v3.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.1.0",
+        "date": "2026-05-10T14:51:15Z",
+        "body": "## What's Changed\r\n* Added a parameter for the default transaction isolation to `MysqlConnectionPool` to set the default transaction level when constructing the pool\r\n* Fixed setting `NULL` for `JSON` typed columns (#136)\r\n* Fixed decoding `MEDIUMINT` columns using the binary protocol (#140)\r\n* Use VarString for string parameter encoding in binary protocol by @webpatser in https:\/\/github.com\/amphp\/mysql\/pull\/142\r\n\r\n## New Contributors\r\n* @webpatser made their first contribution in https:\/\/github.com\/amphp\/mysql\/pull\/143\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/mysql\/compare\/v3.0.1...v3.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/file 4.0.0",
         "package": "amphp\/file",
         "tag_name": "v4.0.0",
@@ -87,15 +96,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sql\/releases\/tag\/v2.1.1",
         "date": "2026-02-25T04:49:40Z",
         "body": "## What's Changed\r\n\r\n- Fix acceptance of escaped spaces in connection strings\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql\/compare\/v2.1.0...v2.1.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/mysql 3.0.1",
-        "package": "amphp\/mysql",
-        "tag_name": "v3.0.1",
-        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.0.1",
-        "date": "2026-02-12T20:40:31Z",
-        "body": " - Fixed PHP 8.5 deprecations.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/mysql\/compare\/v3.0.0...v3.0.1",
         "revolt": true
     },
     {
