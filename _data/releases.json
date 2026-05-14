@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-client 5.3.5",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.3.5",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.5",
+        "date": "2026-05-14T03:23:31Z",
+        "body": "## What's Changed\r\n\r\n* Use `str_increment()` to fix PHP 8.5+ deprecation\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.4...v5.3.5",
+        "revolt": true
+    },
+    {
         "name": "amphp\/mysql 3.1.0",
         "package": "amphp\/mysql",
         "tag_name": "v3.1.0",
@@ -141,15 +150,6 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v2.0.2",
         "date": "2025-08-24T17:29:57Z",
         "body": "## What's Changed\r\n\r\n* Fix `League\\Uri\\Http` deprecation warning by @foxycode in https:\/\/github.com\/amphp\/websocket-client\/pull\/56\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v2.0.1...v2.0.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.3.4",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.3.4",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.4",
-        "date": "2025-08-16T20:50:21Z",
-        "body": "## What's Changed\r\n\r\n- Fixed an issue where an HTTP\/2 connection was closed unexpectedly, on rare occasions an exception was being thrown to the event-loop error handler\r\n- Made an optimization when shutting down an HTTP\/2 connection to only create an exception instance if there are outstanding requests on the connection.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.3...v5.3.4",
         "revolt": true
     },
     {
