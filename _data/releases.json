@@ -1,20 +1,20 @@
 [
     {
+        "name": "amphp\/http-client 5.3.6",
+        "package": "amphp\/http-client",
+        "tag_name": "v5.3.6",
+        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.6",
+        "date": "2026-05-16T18:20:31Z",
+        "body": "## What's Changed\r\n* Fix idle HTTP\/1 connection GC leak by @danog in https:\/\/github.com\/amphp\/http-client\/pull\/400\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.5...v5.3.6",
+        "revolt": true
+    },
+    {
         "name": "amphp\/parallel 2.4.0",
         "package": "amphp\/parallel",
         "tag_name": "v2.4.0",
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.4.0",
         "date": "2026-05-16T17:05:19Z",
         "body": "## What's Changed\r\n* Silently ignore result send failure during shutdown by @nicolas-grekas in https:\/\/github.com\/amphp\/parallel\/pull\/226\r\n* Add ForkContext by @trowski and @danog  in https:\/\/github.com\/amphp\/parallel\/pull\/212\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.4...v2.4.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-client 5.3.5",
-        "package": "amphp\/http-client",
-        "tag_name": "v5.3.5",
-        "html_url": "https:\/\/github.com\/amphp\/http-client\/releases\/tag\/v5.3.5",
-        "date": "2026-05-14T03:23:31Z",
-        "body": "## What's Changed\r\n\r\n* Use `str_increment()` to fix PHP 8.5+ deprecation\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-client\/compare\/v5.3.4...v5.3.5",
         "revolt": true
     },
     {
