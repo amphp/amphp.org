@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/mysql 3.1.1",
+        "package": "amphp\/mysql",
+        "tag_name": "v3.1.1",
+        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.1.1",
+        "date": "2026-05-16T19:13:01Z",
+        "body": "## What's Changed\r\n* Add MariaDB CI job and integration test for native UUID column by @webpatser in https:\/\/github.com\/amphp\/mysql\/pull\/144\r\n* Silence PHP 8.5 chr() deprecation in encodeInt8 by @webpatser in https:\/\/github.com\/amphp\/mysql\/pull\/145\r\n* Added compatibility for [`amphp\/file@4.x`](https:\/\/github.com\/amphp\/file)\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/mysql\/compare\/v3.1.0...v3.1.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.3.6",
         "package": "amphp\/http-client",
         "tag_name": "v5.3.6",
@@ -15,15 +24,6 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.4.0",
         "date": "2026-05-16T17:05:19Z",
         "body": "## What's Changed\r\n* Silently ignore result send failure during shutdown by @nicolas-grekas in https:\/\/github.com\/amphp\/parallel\/pull\/226\r\n* Add ForkContext by @trowski and @danog  in https:\/\/github.com\/amphp\/parallel\/pull\/212\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.4...v2.4.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/mysql 3.1.0",
-        "package": "amphp\/mysql",
-        "tag_name": "v3.1.0",
-        "html_url": "https:\/\/github.com\/amphp\/mysql\/releases\/tag\/v3.1.0",
-        "date": "2026-05-10T14:51:15Z",
-        "body": "## What's Changed\r\n* Added a parameter for the default transaction isolation to `MysqlConnectionPool` to set the default transaction level when constructing the pool\r\n* Fixed setting `NULL` for `JSON` typed columns (#136)\r\n* Fixed decoding `MEDIUMINT` columns using the binary protocol (#140)\r\n* Use VarString for string parameter encoding in binary protocol by @webpatser in https:\/\/github.com\/amphp\/mysql\/pull\/142\r\n\r\n## New Contributors\r\n* @webpatser made their first contribution in https:\/\/github.com\/amphp\/mysql\/pull\/143\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/mysql\/compare\/v3.0.1...v3.1.0",
         "revolt": true
     },
     {
