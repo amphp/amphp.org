@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/parallel 2.4.0",
+        "package": "amphp\/parallel",
+        "tag_name": "v2.4.0",
+        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.4.0",
+        "date": "2026-05-16T17:05:19Z",
+        "body": "## What's Changed\r\n* Silently ignore result send failure during shutdown by @nicolas-grekas in https:\/\/github.com\/amphp\/parallel\/pull\/226\r\n* Add ForkContext by @trowski and @danog  in https:\/\/github.com\/amphp\/parallel\/pull\/212\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.4...v2.4.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-client 5.3.5",
         "package": "amphp\/http-client",
         "tag_name": "v5.3.5",
@@ -33,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.4",
         "date": "2026-05-09T10:05:31Z",
         "body": "## What's Changed\r\n* Return static in methods that return `self<T>` by @vudaltsov in https:\/\/github.com\/amphp\/pipeline\/pull\/24\r\n* Add `#[Override]` attributes\r\n\r\n## New Contributors\r\n* @vudaltsov made their first contribution in https:\/\/github.com\/amphp\/pipeline\/pull\/24\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.3...v1.2.4",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/parallel 2.3.4",
-        "package": "amphp\/parallel",
-        "tag_name": "v2.3.4",
-        "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.3.4",
-        "date": "2026-05-06T19:33:19Z",
-        "body": "## What's Changed\r\n* Fix NAN to string coercion on PHP 8.5\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.3...v2.3.4",
         "revolt": true
     },
     {
