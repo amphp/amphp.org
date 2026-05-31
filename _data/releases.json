@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/process 2.1.0",
+        "package": "amphp\/process",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.1.0",
+        "date": "2026-05-31T15:15:22Z",
+        "body": "## What's Changed\r\n* Added `getSignalName()` function which returns the signal constant name, if defined, from a signal number. Requires `ext-pcntl`, otherwise `null` is always returned.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.3...v2.1.0",
+        "revolt": true
+    },
+    {
         "name": "amphp\/mysql 3.1.1",
         "package": "amphp\/mysql",
         "tag_name": "v3.1.1",
@@ -240,15 +249,6 @@
         "html_url": "https:\/\/github.com\/amphp\/cache\/releases\/tag\/v2.0.1",
         "date": "2024-04-19T03:41:45Z",
         "body": "# What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/cache\/compare\/v2.0.0...v2.0.1",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/process 2.0.3",
-        "package": "amphp\/process",
-        "tag_name": "v2.0.3",
-        "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.0.3",
-        "date": "2024-04-19T03:26:11Z",
-        "body": "## What's Changed\r\n\r\n- Make implicit nullable types explicit to avoid deprecation notice in PHP 8.4.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.2...v2.0.3",
         "revolt": true
     },
     {
