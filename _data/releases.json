@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/amp 3.1.2",
+        "package": "amphp\/amp",
+        "tag_name": "v3.1.2",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.2",
+        "date": "2026-06-21T14:11:43Z",
+        "body": "## What's Changed\r\n* Fixed detection of `AMP_DEBUG` when set as a PHP constant when a falsey environment `AMP_DEBUG` value is present\r\n* Forbid cloning and serialization of `Interval` to prevent cancellation of event-loop callbacks from the original object for cloning or arbitrary callbacks on deserialization\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.1...v3.1.2",
+        "revolt": true
+    },
+    {
         "name": "amphp\/process 2.1.0",
         "package": "amphp\/process",
         "tag_name": "v2.1.0",
@@ -132,15 +141,6 @@
         "html_url": "https:\/\/github.com\/amphp\/sql-common\/releases\/tag\/v2.0.4",
         "date": "2025-12-17T04:34:27Z",
         "body": "## What's Changed\r\n* Fix PHP 8.5 deprecation by @luzrain in https:\/\/github.com\/amphp\/sql-common\/pull\/7\r\n\r\n## New Contributors\r\n* @luzrain made their first contribution in https:\/\/github.com\/amphp\/sql-common\/pull\/7\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/sql-common\/compare\/v2.0.3...v2.0.4",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/amp 3.1.1",
-        "package": "amphp\/amp",
-        "tag_name": "v3.1.1",
-        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.1",
-        "date": "2025-08-27T21:45:49Z",
-        "body": "## What's Changed\r\n\r\n* Improve `weakClosure()` signature by @vudaltsov in https:\/\/github.com\/amphp\/amp\/pull\/452\r\n* Use `str_increment()` to fix PHP 8.5 deprecation by @nicolas-grekas in https:\/\/github.com\/amphp\/amp\/pull\/456\r\n\r\n## New Contributors\r\n\r\n* @vudaltsov made their first contribution in https:\/\/github.com\/amphp\/amp\/pull\/452\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.0...v3.1.1",
         "revolt": true
     },
     {
