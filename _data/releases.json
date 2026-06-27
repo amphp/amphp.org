@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-server 3.4.6",
+        "package": "amphp\/http-server",
+        "tag_name": "v3.4.6",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.6",
+        "date": "2026-06-27T10:38:04Z",
+        "body": "- [Fix SocketException import in ClientFactory](https:\/\/github.com\/amphp\/http-server\/commit\/8a971bf92cf8cf2bc511f37a75b39126d5305315)",
+        "revolt": true
+    },
+    {
         "name": "amphp\/amp 3.1.2",
         "package": "amphp\/amp",
         "tag_name": "v3.1.2",
@@ -69,15 +78,6 @@
         "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.2",
         "date": "2026-05-03T19:32:05Z",
         "body": "## What's Changed\r\n* Fix `chr()` deprecation warning in Huffman encoding  by @aleswita in https:\/\/github.com\/amphp\/hpack\/pull\/18\r\n* Add PHP 8.5, 8.4, 8.3 to test matrix by @kelunik in https:\/\/github.com\/amphp\/hpack\/pull\/24\r\n\r\n## New Contributors\r\n* @aleswita made their first contribution in https:\/\/github.com\/amphp\/hpack\/pull\/18\r\n* @dependabot made their first contribution in https:\/\/github.com\/amphp\/hpack\/pull\/22\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.2.1...v3.2.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-server 3.4.5",
-        "package": "amphp\/http-server",
-        "tag_name": "v3.4.5",
-        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.5",
-        "date": "2026-05-01T23:06:21Z",
-        "body": "## What's Changed\r\n* Fix http\/2 ping flood behaviour by @kafkiansky in https:\/\/github.com\/amphp\/http-server\/pull\/386\r\n\r\n## New Contributors\r\n* @kafkiansky made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/386\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.4...v3.4.5",
         "revolt": true
     },
     {
