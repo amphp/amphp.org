@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/pipeline 1.2.5",
+        "package": "amphp\/pipeline",
+        "tag_name": "v1.2.5",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.5",
+        "date": "2026-06-27T14:51:56Z",
+        "body": "## What's Changed\r\n* Fixed early disposal of iterator created with `Pipeline::generate()`\r\n* Fixed inverted return value of `isComplete()` on iterator returned from `Pipeline::concat()`\r\n* Fixed termination of pipelines when concurrency > 1 when the source throws and another concurrent coroutine already completed the pipeline\r\n* Fixed the call ordering on an initial pipeline operator if the source is async\r\n* Improved the garbage collection speed of concurrent pipelines when terminated early\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.4...v1.2.5",
+        "revolt": true
+    },
+    {
         "name": "amphp\/http-server 3.4.6",
         "package": "amphp\/http-server",
         "tag_name": "v3.4.6",
@@ -60,15 +69,6 @@
         "html_url": "https:\/\/github.com\/amphp\/file\/releases\/tag\/v4.0.0",
         "date": "2026-05-09T16:38:08Z",
         "body": "Users of `3.x` should be able to update to `4.x` without code changes unless their application did one of the following:\r\n* Defined a custom `File` implementation\r\n* Initialized `ParallelFilesystemDriver` with a custom worker count.\r\n\r\n---\r\n\r\n## Breaking Changes\r\n\r\nThis release adds a `lock()`, `tryLock()`, and `unlock()` to the `File` interface. These methods provide a non-blocking means of locking and unlocking a file.\r\n* `File::lock()`: Non-blocking method to obtain a shared or exclusive lock on the file. This method must only return once the lock has been obtained.\r\n* `File::tryLock()`: Makes a single non-blocking attempt to obtain a shared or exclusive lock on the file. Returns true if the lock was obtained, otherwise false.\r\n* `File::unlock()`: Unlocks the file if the lock is currently held.\r\n\r\nIn `3.x`, the constructor of `ParallelFilesystemDriver` accepted an optional `WorkerPool` and a number of workers to use from that pool. In `4.x`, instead the constructor now requires only an optional `LimitedWorkerPool` (a new pool is created if one is not provided). The number of workers used for opening files is determined by the value returned from `LimitedWorkerPool::getWorkerLimit()`. Use a `DelegateWorkerPool` if you wish to use an existing pool and limit the number of workers used from the pool to open files. In general, it is not necessary to customize the parallel filesystem driver.\r\n\r\n---\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/file\/compare\/v3.2.0...v4.0.0",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/pipeline 1.2.4",
-        "package": "amphp\/pipeline",
-        "tag_name": "v1.2.4",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.4",
-        "date": "2026-05-09T10:05:31Z",
-        "body": "## What's Changed\r\n* Return static in methods that return `self<T>` by @vudaltsov in https:\/\/github.com\/amphp\/pipeline\/pull\/24\r\n* Add `#[Override]` attributes\r\n\r\n## New Contributors\r\n* @vudaltsov made their first contribution in https:\/\/github.com\/amphp\/pipeline\/pull\/24\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.3...v1.2.4",
         "revolt": true
     },
     {
