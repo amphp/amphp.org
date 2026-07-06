@@ -177,7 +177,7 @@
         "html_url": "https:\/\/github.com\/amphp\/byte-stream\/releases\/tag\/v2.1.2",
         "date": "2025-03-16T17:25:22Z",
         "body": "- Fixed the exception type thrown if `ReadableIterableStream` is closed (`Amp\\Pipeline\\DisposedException` was leaked, now an `Amp\\ByteStream\\ClosedException` is thrown).\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/byte-stream\/compare\/v2.1.1...v2.1.2",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/http-tunnel 2.0.0",
@@ -186,7 +186,7 @@
         "html_url": "https:\/\/github.com\/amphp\/http-tunnel\/releases\/tag\/v2.0.0",
         "date": "2025-02-12T23:42:21Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.\r\n\r\nThis library provides an implementation of `Amp\\Socket\\SocketConnector` from [`amphp\/socket`](https:\/\/github.com\/amphp\/socket) which establishes a socket connection via an HTTP\/1.1 `CONNECT` request to a proxy.",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/dns 2.4.0",
@@ -348,7 +348,7 @@
         "html_url": "https:\/\/github.com\/amphp\/phpunit-util\/releases\/tag\/v3.0.0",
         "date": "2022-12-18T17:53:05Z",
         "body": "This package has been redesigned for compatibility with AMPHP v3 and fibers. `AsyncTestCase` serves a similar purpose as before, providing helper methods for unit testing within an async context. Each test case is run within a unique fiber to allow suspending during the test run.\r\n\r\n- `AsyncTestCase::setUpAsync()` and `tearDownAsync()` have been removed. Use `AsyncTestCase::setUp()` and `tearDown()` instead, as both of these methods are now able to execute async using fibers.\r\n- `AsyncTestCase::createCallback()` now returns a `Closure`. Additionally, an optional parameter for expected arguments upon invocation have been added (uses `InvocationMocker::with(...)` to set expected arguments).",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/beanstalk 0.3.2",
