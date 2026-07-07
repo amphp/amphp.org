@@ -60,7 +60,7 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel\/releases\/tag\/v2.4.0",
         "date": "2026-05-16T17:05:19Z",
         "body": "## What's Changed\r\n* Silently ignore result send failure during shutdown by @nicolas-grekas in https:\/\/github.com\/amphp\/parallel\/pull\/226\r\n* Add ForkContext by @trowski and @danog  in https:\/\/github.com\/amphp\/parallel\/pull\/212\r\n\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/parallel\/compare\/v2.3.4...v2.4.0",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/file 4.0.0",
