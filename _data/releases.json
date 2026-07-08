@@ -276,7 +276,7 @@
         "html_url": "https:\/\/github.com\/amphp\/windows-registry\/releases\/tag\/v1.0.1",
         "date": "2024-01-30T23:05:35Z",
         "body": "## What's Changed\r\n- Removed nullability from return type of `WindowsRegistry::read()`, the method throws if the key is not found.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/windows-registry\/compare\/v1.0.0...v1.0.1",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/websocket-server 4.0.0",
