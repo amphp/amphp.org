@@ -294,7 +294,7 @@
         "html_url": "https:\/\/github.com\/amphp\/parallel-functions\/releases\/tag\/v2.0.0",
         "date": "2023-11-25T01:11:38Z",
         "body": "Stable release compatible with AMPHP v3 and fibers! &#x1F389;\r\n\r\nAs with other libraries compatible with AMPHP v3, most cases of parameters or returns of `Promise<ResolutionType>` have been replaced with `ResolutionType`.",
-        "revolt": true
+        "revolt": false
     },
     {
         "name": "amphp\/http-client-cookies 2.0.0",
