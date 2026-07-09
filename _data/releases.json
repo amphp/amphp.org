@@ -312,7 +312,7 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server-form-parser\/releases\/tag\/v2.0.0",
         "date": "2023-08-25T03:01:02Z",
         "body": "This release is compatible with `amphp\/http-server@^3`.\r\n\r\n- Renamed `BufferingParser` and `StreamingParser` to `FormParser` and `StreamingFormParser`, respectively.\r\n- Removed the `parseForm` function in favor of the `Form::fromRequest()` static method.\r\n- Removed `ParsingMiddleware`. Use `Form::fromRequest()` instead.\r\n- Removed `ParseException`. Form parsing errors will throw an `HttpErrorException` from `amphp\/http-server` instead, which do not need to be caught (the server will automatically return an error response).",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/http-server-static-content 2.0.0",
