@@ -33,7 +33,7 @@
         "html_url": "https:\/\/github.com\/amphp\/process\/releases\/tag\/v2.1.0",
         "date": "2026-05-31T15:15:22Z",
         "body": "## What's Changed\r\n* Added `getSignalName()` function which returns the signal constant name, if defined, from a signal number. Requires `ext-pcntl`, otherwise `null` is always returned.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/process\/compare\/v2.0.3...v2.1.0",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/mysql 3.1.1",
@@ -159,7 +159,7 @@
         "html_url": "https:\/\/github.com\/amphp\/websocket-client\/releases\/tag\/v2.0.2",
         "date": "2025-08-24T17:29:57Z",
         "body": "## What's Changed\r\n\r\n* Fix `League\\Uri\\Http` deprecation warning by @foxycode in https:\/\/github.com\/amphp\/websocket-client\/pull\/56\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/websocket-client\/compare\/v2.0.1...v2.0.2",
-        "revolt": false
+        "revolt": true
     },
     {
         "name": "amphp\/http-client-guzzle-adapter 1.1.3",
