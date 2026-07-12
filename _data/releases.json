@@ -1,11 +1,11 @@
 [
     {
-        "name": "amphp\/pipeline 1.2.5",
+        "name": "amphp\/pipeline 1.2.6",
         "package": "amphp\/pipeline",
-        "tag_name": "v1.2.5",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.5",
-        "date": "2026-06-27T14:51:56Z",
-        "body": "## What's Changed\r\n* Fixed early disposal of iterator created with `Pipeline::generate()`\r\n* Fixed inverted return value of `isComplete()` on iterator returned from `Pipeline::concat()`\r\n* Fixed termination of pipelines when concurrency > 1 when the source throws and another concurrent coroutine already completed the pipeline\r\n* Fixed the call ordering on an initial pipeline operator if the source is async\r\n* Improved the garbage collection speed of concurrent pipelines when terminated early\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.4...v1.2.5",
+        "tag_name": "v1.2.6",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.6",
+        "date": "2026-07-12T17:18:01Z",
+        "body": "## What's Changed\r\n\r\n* Fixed incorrect position value returned from the concurrent iterator from a `Queue` when multiple consumers are waiting for a value and one of those waiting in the middle of the waiting list is cancelled (#23, thanks to @wtsergo)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.5...v1.2.6",
         "revolt": true
     },
     {
