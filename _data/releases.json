@@ -1,11 +1,20 @@
 [
     {
-        "name": "amphp\/pipeline 1.2.6",
+        "name": "amphp\/pipeline 1.2.7",
         "package": "amphp\/pipeline",
-        "tag_name": "v1.2.6",
-        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.6",
-        "date": "2026-07-12T17:18:01Z",
-        "body": "## What's Changed\r\n\r\n* Fixed incorrect position value returned from the concurrent iterator from a `Queue` when multiple consumers are waiting for a value and one of those waiting in the middle of the waiting list is cancelled (#23, thanks to @wtsergo)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.5...v1.2.6",
+        "tag_name": "v1.2.7",
+        "html_url": "https:\/\/github.com\/amphp\/pipeline\/releases\/tag\/v1.2.7",
+        "date": "2026-07-26T15:31:26Z",
+        "body": "## What's Changed\r\n* Fixed consuming a value from the concurrent iterator returned from `Pipeline::generate()` if consumption of the prior emitted value was cancelled in the same event-loop tick\r\n* Fixed relieving back-pressure from `Queue` when the consume disposes of the concurrent iterator\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/pipeline\/compare\/v1.2.6...v1.2.7",
+        "revolt": true
+    },
+    {
+        "name": "amphp\/amp 3.1.3",
+        "package": "amphp\/amp",
+        "tag_name": "v3.1.3",
+        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.3",
+        "date": "2026-07-26T15:00:11Z",
+        "body": "## What's Changed\r\n* Fixed garbage collection of the iterable returned from `Future::iterate()` when the source iterable is a `Traversable`. Previously, iteration would continue even if the returned iterable was destroyed.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.2...v3.1.3",
         "revolt": true
     },
     {
@@ -15,15 +24,6 @@
         "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.6",
         "date": "2026-06-27T10:38:04Z",
         "body": "- [Fix SocketException import in ClientFactory](https:\/\/github.com\/amphp\/http-server\/commit\/8a971bf92cf8cf2bc511f37a75b39126d5305315)",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/amp 3.1.2",
-        "package": "amphp\/amp",
-        "tag_name": "v3.1.2",
-        "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.2",
-        "date": "2026-06-21T14:11:43Z",
-        "body": "## What's Changed\r\n* Fixed detection of `AMP_DEBUG` when set as a PHP constant when a falsey environment `AMP_DEBUG` value is present\r\n* Forbid cloning and serialization of `Interval` to prevent cancellation of event-loop callbacks from the original object for cloning or arbitrary callbacks on deserialization\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.1...v3.1.2",
         "revolt": true
     },
     {
