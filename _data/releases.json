@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/socket 2.4.1",
+        "package": "amphp\/socket",
+        "tag_name": "v2.4.1",
+        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.4.1",
+        "date": "2026-08-22T20:43:44Z",
+        "body": "## What's Changed\r\n* Fixed validation of port in string provided to `InternetAddress::tryFromString`\r\n* `Socks5SocketConnector::tunnel()` now accepts target URLs which do not contain a scheme, fixing compatibility with providing an instance of `InternetAddress`\r\n* Fixed validation of CIDR mask bits when constructing an instance of `CidrMatcher` to be between 0 and 32 (for IPv4) or 128 (for IPv6)\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.4.0...v2.4.1",
+        "revolt": true
+    },
+    {
         "name": "amphp\/dns 2.4.1",
         "package": "amphp\/dns",
         "tag_name": "v2.4.1",
@@ -87,15 +96,6 @@
         "html_url": "https:\/\/github.com\/amphp\/hpack\/releases\/tag\/v3.2.2",
         "date": "2026-05-03T19:32:05Z",
         "body": "## What's Changed\r\n* Fix `chr()` deprecation warning in Huffman encoding  by @aleswita in https:\/\/github.com\/amphp\/hpack\/pull\/18\r\n* Add PHP 8.5, 8.4, 8.3 to test matrix by @kelunik in https:\/\/github.com\/amphp\/hpack\/pull\/24\r\n\r\n## New Contributors\r\n* @aleswita made their first contribution in https:\/\/github.com\/amphp\/hpack\/pull\/18\r\n* @dependabot made their first contribution in https:\/\/github.com\/amphp\/hpack\/pull\/22\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/hpack\/compare\/v3.2.1...v3.2.2",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/socket 2.4.0",
-        "package": "amphp\/socket",
-        "tag_name": "v2.4.0",
-        "html_url": "https:\/\/github.com\/amphp\/socket\/releases\/tag\/v2.4.0",
-        "date": "2026-04-19T15:28:38Z",
-        "body": "## What's Changed\r\n* ServerTlsContext: allow disabling verify peer name by @Thomas-Gelf in https:\/\/github.com\/amphp\/socket\/pull\/112\r\n* Dropped support for `league\/uri@6.x`, fixing a deprecation notice in PHP 8.4+\r\n\r\n## New Contributors\r\n* @Thomas-Gelf made their first contribution in https:\/\/github.com\/amphp\/socket\/pull\/112\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/socket\/compare\/v2.3.1...v2.4.0",
         "revolt": true
     },
     {
