@@ -1,5 +1,14 @@
 [
     {
+        "name": "amphp\/http-server 3.4.7",
+        "package": "amphp\/http-server",
+        "tag_name": "v3.4.7",
+        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.7",
+        "date": "2026-10-10T14:05:54Z",
+        "body": "## What's Changed\r\n* Fix HTTP\/2 stream receive window taken from client SETTINGS by @lav45 in https:\/\/github.com\/amphp\/http-server\/pull\/394\r\n* Do not apply chunked encoding to 204\/304 responses by @DmitryBoiadji in https:\/\/github.com\/amphp\/http-server\/pull\/392\r\n* Fix race in HTTP\/2 buffered data writes by @kafkiansky in https:\/\/github.com\/amphp\/http-server\/pull\/396\r\n\r\n## New Contributors\r\n* @lav45 made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/394\r\n* @DmitryBoiadji made their first contribution in https:\/\/github.com\/amphp\/http-server\/pull\/392\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/http-server\/compare\/v3.4.6...v3.4.7",
+        "revolt": true
+    },
+    {
         "name": "amphp\/socket 2.4.1",
         "package": "amphp\/socket",
         "tag_name": "v2.4.1",
@@ -33,15 +42,6 @@
         "html_url": "https:\/\/github.com\/amphp\/amp\/releases\/tag\/v3.1.3",
         "date": "2026-07-26T15:00:11Z",
         "body": "## What's Changed\r\n* Fixed garbage collection of the iterable returned from `Future::iterate()` when the source iterable is a `Traversable`. Previously, iteration would continue even if the returned iterable was destroyed.\r\n\r\n**Full Changelog**: https:\/\/github.com\/amphp\/amp\/compare\/v3.1.2...v3.1.3",
-        "revolt": true
-    },
-    {
-        "name": "amphp\/http-server 3.4.6",
-        "package": "amphp\/http-server",
-        "tag_name": "v3.4.6",
-        "html_url": "https:\/\/github.com\/amphp\/http-server\/releases\/tag\/v3.4.6",
-        "date": "2026-06-27T10:38:04Z",
-        "body": "- [Fix SocketException import in ClientFactory](https:\/\/github.com\/amphp\/http-server\/commit\/8a971bf92cf8cf2bc511f37a75b39126d5305315)",
         "revolt": true
     },
     {
