@@ -369,6 +369,15 @@
         "revolt": false
     },
     {
+        "name": "amphp\/react-adapter 2.1.0",
+        "package": "amphp\/react-adapter",
+        "tag_name": "v2.1.0",
+        "html_url": "https:\/\/github.com\/amphp\/react-adapter\/releases\/tag\/v2.1.0",
+        "date": "2019-11-04T22:20:56Z",
+        "body": " - `React\\EventLoop\\Factory` is now automatically replaced with another implementation that throws on each usage to prevent two loops existing concurrently by accident.\r\n   Set `AMP_REACT_ADAPTER_DISABLE_FACTORY_OVERRIDE=1` as environment variable or constant to disable this protection.",
+        "revolt": false
+    },
+    {
         "name": "amphp\/react-stream-adapter 0.1.0",
         "package": "amphp\/react-stream-adapter",
         "tag_name": "v0.1.0",
